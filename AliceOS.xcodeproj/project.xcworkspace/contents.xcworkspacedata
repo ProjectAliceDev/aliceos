@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../game"
+      name = "game">
+      <Group
+         location = "container:"
+         name = "Ren&apos;Py">
+      </Group>
+      <FileRef
+         location = "group:screens.rpyc">
+      </FileRef>
+      <FileRef
+         location = "group:options.rpy">
+      </FileRef>
+      <FileRef
+         location = "group:script.rpy">
+      </FileRef>
+      <Group
+         location = "group:cache"
+         name = "cache">
+         <FileRef
+            location = "group:screens.rpyb">
+         </FileRef>
+         <FileRef
+            location = "group:bytecode.rpyb">
+         </FileRef>
+         <FileRef
+            location = "group:pyanalysis.rpyb">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:images"
+         name = "images">
+      </Group>
+      <Group
+         location = "group:tl"
+         name = "tl">
+         <Group
+            location = "group:None"
+            name = "None">
+            <FileRef
+               location = "group:common.rpymc">
+            </FileRef>
+            <FileRef
+               location = "group:common.rpym">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:screens.rpy">
+      </FileRef>
+      <FileRef
+         location = "group:log.txt">
+      </FileRef>
+      <Group
+         location = "group:saves"
+         name = "saves">
+         <FileRef
+            location = "group:persistent">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:gui.rpyc">
+      </FileRef>
+      <Group
+         location = "group:gui"
+         name = "gui">
+         <FileRef
+            location = "group:textbox.png">
+         </FileRef>
+         <FileRef
+            location = "group:nvl.png">
+         </FileRef>
+         <FileRef
+            location = "group:window_icon.png">
+         </FileRef>
+         <Group
+            location = "group:slider"
+            name = "slider">
+            <FileRef
+               location = "group:horizontal_idle_bar.png">
+            </FileRef>
+            <FileRef
+               location = "group:horizontal_idle_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_hover_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_hover_bar.png">
+            </FileRef>
+            <FileRef
+               location = "group:horizontal_hover_bar.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_idle_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:horizontal_hover_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_idle_bar.png">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:game_menu.png">
+         </FileRef>
+         <FileRef
+            location = "group:skip.png">
+         </FileRef>
+         <Group
+            location = "group:button"
+            name = "button">
+            <FileRef
+               location = "group:radio_selected_foreground.png">
+            </FileRef>
+            <FileRef
+               location = "group:check_selected_foreground.png">
+            </FileRef>
+            <FileRef
+               location = "group:check_foreground.png">
+            </FileRef>
+            <FileRef
+               location = "group:quick_idle_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:radio_foreground.png">
+            </FileRef>
+            <FileRef
+               location = "group:idle_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:hover_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:quick_hover_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:slot_idle_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:choice_idle_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:slot_hover_background.png">
+            </FileRef>
+            <FileRef
+               location = "group:choice_hover_background.png">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:notify.png">
+         </FileRef>
+         <FileRef
+            location = "group:namebox.png">
+         </FileRef>
+         <FileRef
+            location = "group:main_menu.png">
+         </FileRef>
+         <Group
+            location = "group:phone"
+            name = "phone">
+            <FileRef
+               location = "group:textbox.png">
+            </FileRef>
+            <FileRef
+               location = "group:nvl.png">
+            </FileRef>
+            <Group
+               location = "group:overlay"
+               name = "overlay">
+               <FileRef
+                  location = "group:game_menu.png">
+               </FileRef>
+               <FileRef
+                  location = "group:main_menu.png">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:frame.png">
+         </FileRef>
+         <Group
+            location = "group:bar"
+            name = "bar">
+            <FileRef
+               location = "group:bottom.png">
+            </FileRef>
+            <FileRef
+               location = "group:left.png">
+            </FileRef>
+            <FileRef
+               location = "group:top.png">
+            </FileRef>
+            <FileRef
+               location = "group:right.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:overlay"
+            name = "overlay">
+            <FileRef
+               location = "group:game_menu.png">
+            </FileRef>
+            <FileRef
+               location = "group:confirm.png">
+            </FileRef>
+            <FileRef
+               location = "group:main_menu.png">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:scrollbar"
+            name = "scrollbar">
+            <FileRef
+               location = "group:horizontal_idle_bar.png">
+            </FileRef>
+            <FileRef
+               location = "group:horizontal_idle_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_hover_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_hover_bar.png">
+            </FileRef>
+            <FileRef
+               location = "group:horizontal_hover_bar.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_idle_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:horizontal_hover_thumb.png">
+            </FileRef>
+            <FileRef
+               location = "group:vertical_idle_bar.png">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:script.rpyc">
+      </FileRef>
+      <FileRef
+         location = "group:options.rpyc">
+      </FileRef>
+      <FileRef
+         location = "group:gui.rpy">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

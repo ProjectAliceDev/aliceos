@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		BF6BC6DD22C8503B002C96FB /* screens.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = screens.rpyc; sourceTree = "<group>"; };
+		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
+		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
+		BF6BC6E122C8503B002C96FB /* screens.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = screens.rpyb; sourceTree = "<group>"; };
+		BF6BC6E222C8503B002C96FB /* bytecode.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = bytecode.rpyb; sourceTree = "<group>"; };
+		BF6BC6E322C8503B002C96FB /* pyanalysis.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = pyanalysis.rpyb; sourceTree = "<group>"; };
+		BF6BC6E722C8503B002C96FB /* common.rpymc */ = {isa = PBXFileReference; lastKnownFileType = file; path = common.rpymc; sourceTree = "<group>"; };
+		BF6BC6E822C8503B002C96FB /* common.rpym */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.rpym; sourceTree = "<group>"; };
+		BF6BC6E922C8503B002C96FB /* screens.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = screens.rpy; sourceTree = "<group>"; };
+		BF6BC6EA22C8503B002C96FB /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
+		BF6BC6EC22C8503B002C96FB /* persistent */ = {isa = PBXFileReference; lastKnownFileType = file; path = persistent; sourceTree = "<group>"; };
+		BF6BC6ED22C8503B002C96FB /* gui.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = gui.rpyc; sourceTree = "<group>"; };
+		BF6BC6EF22C8503B002C96FB /* textbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox.png; sourceTree = "<group>"; };
+		BF6BC6F022C8503B002C96FB /* nvl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nvl.png; sourceTree = "<group>"; };
+		BF6BC6F122C8503B002C96FB /* window_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window_icon.png; sourceTree = "<group>"; };
+		BF6BC6F322C8503B002C96FB /* horizontal_idle_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_idle_bar.png; sourceTree = "<group>"; };
+		BF6BC6F422C8503B002C96FB /* horizontal_idle_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_idle_thumb.png; sourceTree = "<group>"; };
+		BF6BC6F522C8503B002C96FB /* vertical_hover_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_hover_thumb.png; sourceTree = "<group>"; };
+		BF6BC6F622C8503B002C96FB /* vertical_hover_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_hover_bar.png; sourceTree = "<group>"; };
+		BF6BC6F722C8503B002C96FB /* horizontal_hover_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_hover_bar.png; sourceTree = "<group>"; };
+		BF6BC6F822C8503B002C96FB /* vertical_idle_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_thumb.png; sourceTree = "<group>"; };
+		BF6BC6F922C8503B002C96FB /* horizontal_hover_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_hover_thumb.png; sourceTree = "<group>"; };
+		BF6BC6FA22C8503B002C96FB /* vertical_idle_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_bar.png; sourceTree = "<group>"; };
+		BF6BC6FB22C8503B002C96FB /* game_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_menu.png; sourceTree = "<group>"; };
+		BF6BC6FC22C8503B002C96FB /* skip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skip.png; sourceTree = "<group>"; };
+		BF6BC6FE22C8503B002C96FB /* radio_selected_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_selected_foreground.png; sourceTree = "<group>"; };
+		BF6BC6FF22C8503B002C96FB /* check_selected_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_selected_foreground.png; sourceTree = "<group>"; };
+		BF6BC70022C8503B002C96FB /* check_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_foreground.png; sourceTree = "<group>"; };
+		BF6BC70122C8503B002C96FB /* quick_idle_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quick_idle_background.png; sourceTree = "<group>"; };
+		BF6BC70222C8503B002C96FB /* radio_foreground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio_foreground.png; sourceTree = "<group>"; };
+		BF6BC70322C8503B002C96FB /* idle_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idle_background.png; sourceTree = "<group>"; };
+		BF6BC70422C8503B002C96FB /* hover_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hover_background.png; sourceTree = "<group>"; };
+		BF6BC70522C8503B002C96FB /* quick_hover_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quick_hover_background.png; sourceTree = "<group>"; };
+		BF6BC70622C8503B002C96FB /* slot_idle_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot_idle_background.png; sourceTree = "<group>"; };
+		BF6BC70722C8503B002C96FB /* choice_idle_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choice_idle_background.png; sourceTree = "<group>"; };
+		BF6BC70822C8503B002C96FB /* slot_hover_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot_hover_background.png; sourceTree = "<group>"; };
+		BF6BC70922C8503B002C96FB /* choice_hover_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = choice_hover_background.png; sourceTree = "<group>"; };
+		BF6BC70A22C8503B002C96FB /* notify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notify.png; sourceTree = "<group>"; };
+		BF6BC70B22C8503B002C96FB /* namebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = namebox.png; sourceTree = "<group>"; };
+		BF6BC70C22C8503B002C96FB /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
+		BF6BC70E22C8503B002C96FB /* textbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox.png; sourceTree = "<group>"; };
+		BF6BC70F22C8503B002C96FB /* nvl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nvl.png; sourceTree = "<group>"; };
+		BF6BC71122C8503B002C96FB /* game_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_menu.png; sourceTree = "<group>"; };
+		BF6BC71222C8503B002C96FB /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
+		BF6BC71322C8503B002C96FB /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = "<group>"; };
+		BF6BC71522C8503B002C96FB /* bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom.png; sourceTree = "<group>"; };
+		BF6BC71622C8503B002C96FB /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		BF6BC71722C8503B002C96FB /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top.png; sourceTree = "<group>"; };
+		BF6BC71822C8503B002C96FB /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		BF6BC71A22C8503B002C96FB /* game_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_menu.png; sourceTree = "<group>"; };
+		BF6BC71B22C8503B002C96FB /* confirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confirm.png; sourceTree = "<group>"; };
+		BF6BC71C22C8503B002C96FB /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
+		BF6BC71E22C8503B002C96FB /* horizontal_idle_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_idle_bar.png; sourceTree = "<group>"; };
+		BF6BC71F22C8503B002C96FB /* horizontal_idle_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_idle_thumb.png; sourceTree = "<group>"; };
+		BF6BC72022C8503B002C96FB /* vertical_hover_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_hover_thumb.png; sourceTree = "<group>"; };
+		BF6BC72122C8503B002C96FB /* vertical_hover_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_hover_bar.png; sourceTree = "<group>"; };
+		BF6BC72222C8503B002C96FB /* horizontal_hover_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_hover_bar.png; sourceTree = "<group>"; };
+		BF6BC72322C8503B002C96FB /* vertical_idle_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_thumb.png; sourceTree = "<group>"; };
+		BF6BC72422C8503B002C96FB /* horizontal_hover_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_hover_thumb.png; sourceTree = "<group>"; };
+		BF6BC72522C8503B002C96FB /* vertical_idle_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_bar.png; sourceTree = "<group>"; };
+		BF6BC72622C8503B002C96FB /* script.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = script.rpyc; sourceTree = "<group>"; };
+		BF6BC72722C8503B002C96FB /* options.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = options.rpyc; sourceTree = "<group>"; };
+		BF6BC72822C8503B002C96FB /* gui.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gui.rpy; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BF48420322C84EBE00850E05 = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6DC22C8503B002C96FB /* game */,
+				BF6BC6DB22C84F03002C96FB /* Config.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		BF6BC6DC22C8503B002C96FB /* game */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC72922C8504D002C96FB /* Ren'Py Base */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		BF6BC6E022C8503B002C96FB /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6E122C8503B002C96FB /* screens.rpyb */,
+				BF6BC6E222C8503B002C96FB /* bytecode.rpyb */,
+				BF6BC6E322C8503B002C96FB /* pyanalysis.rpyb */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		BF6BC6E422C8503B002C96FB /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		BF6BC6E522C8503B002C96FB /* tl */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6E622C8503B002C96FB /* None */,
+			);
+			path = tl;
+			sourceTree = "<group>";
+		};
+		BF6BC6E622C8503B002C96FB /* None */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6E722C8503B002C96FB /* common.rpymc */,
+				BF6BC6E822C8503B002C96FB /* common.rpym */,
+			);
+			path = None;
+			sourceTree = "<group>";
+		};
+		BF6BC6EB22C8503B002C96FB /* saves */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6EC22C8503B002C96FB /* persistent */,
+			);
+			path = saves;
+			sourceTree = "<group>";
+		};
+		BF6BC6EE22C8503B002C96FB /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6EF22C8503B002C96FB /* textbox.png */,
+				BF6BC6F022C8503B002C96FB /* nvl.png */,
+				BF6BC6F122C8503B002C96FB /* window_icon.png */,
+				BF6BC6F222C8503B002C96FB /* slider */,
+				BF6BC6FB22C8503B002C96FB /* game_menu.png */,
+				BF6BC6FC22C8503B002C96FB /* skip.png */,
+				BF6BC6FD22C8503B002C96FB /* button */,
+				BF6BC70A22C8503B002C96FB /* notify.png */,
+				BF6BC70B22C8503B002C96FB /* namebox.png */,
+				BF6BC70C22C8503B002C96FB /* main_menu.png */,
+				BF6BC70D22C8503B002C96FB /* phone */,
+				BF6BC71322C8503B002C96FB /* frame.png */,
+				BF6BC71422C8503B002C96FB /* bar */,
+				BF6BC71922C8503B002C96FB /* overlay */,
+				BF6BC71D22C8503B002C96FB /* scrollbar */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		BF6BC6F222C8503B002C96FB /* slider */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6F322C8503B002C96FB /* horizontal_idle_bar.png */,
+				BF6BC6F422C8503B002C96FB /* horizontal_idle_thumb.png */,
+				BF6BC6F522C8503B002C96FB /* vertical_hover_thumb.png */,
+				BF6BC6F622C8503B002C96FB /* vertical_hover_bar.png */,
+				BF6BC6F722C8503B002C96FB /* horizontal_hover_bar.png */,
+				BF6BC6F822C8503B002C96FB /* vertical_idle_thumb.png */,
+				BF6BC6F922C8503B002C96FB /* horizontal_hover_thumb.png */,
+				BF6BC6FA22C8503B002C96FB /* vertical_idle_bar.png */,
+			);
+			path = slider;
+			sourceTree = "<group>";
+		};
+		BF6BC6FD22C8503B002C96FB /* button */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6FE22C8503B002C96FB /* radio_selected_foreground.png */,
+				BF6BC6FF22C8503B002C96FB /* check_selected_foreground.png */,
+				BF6BC70022C8503B002C96FB /* check_foreground.png */,
+				BF6BC70122C8503B002C96FB /* quick_idle_background.png */,
+				BF6BC70222C8503B002C96FB /* radio_foreground.png */,
+				BF6BC70322C8503B002C96FB /* idle_background.png */,
+				BF6BC70422C8503B002C96FB /* hover_background.png */,
+				BF6BC70522C8503B002C96FB /* quick_hover_background.png */,
+				BF6BC70622C8503B002C96FB /* slot_idle_background.png */,
+				BF6BC70722C8503B002C96FB /* choice_idle_background.png */,
+				BF6BC70822C8503B002C96FB /* slot_hover_background.png */,
+				BF6BC70922C8503B002C96FB /* choice_hover_background.png */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
+		BF6BC70D22C8503B002C96FB /* phone */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC70E22C8503B002C96FB /* textbox.png */,
+				BF6BC70F22C8503B002C96FB /* nvl.png */,
+				BF6BC71022C8503B002C96FB /* overlay */,
+			);
+			path = phone;
+			sourceTree = "<group>";
+		};
+		BF6BC71022C8503B002C96FB /* overlay */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC71122C8503B002C96FB /* game_menu.png */,
+				BF6BC71222C8503B002C96FB /* main_menu.png */,
+			);
+			path = overlay;
+			sourceTree = "<group>";
+		};
+		BF6BC71422C8503B002C96FB /* bar */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC71522C8503B002C96FB /* bottom.png */,
+				BF6BC71622C8503B002C96FB /* left.png */,
+				BF6BC71722C8503B002C96FB /* top.png */,
+				BF6BC71822C8503B002C96FB /* right.png */,
+			);
+			path = bar;
+			sourceTree = "<group>";
+		};
+		BF6BC71922C8503B002C96FB /* overlay */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC71A22C8503B002C96FB /* game_menu.png */,
+				BF6BC71B22C8503B002C96FB /* confirm.png */,
+				BF6BC71C22C8503B002C96FB /* main_menu.png */,
+			);
+			path = overlay;
+			sourceTree = "<group>";
+		};
+		BF6BC71D22C8503B002C96FB /* scrollbar */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC71E22C8503B002C96FB /* horizontal_idle_bar.png */,
+				BF6BC71F22C8503B002C96FB /* horizontal_idle_thumb.png */,
+				BF6BC72022C8503B002C96FB /* vertical_hover_thumb.png */,
+				BF6BC72122C8503B002C96FB /* vertical_hover_bar.png */,
+				BF6BC72222C8503B002C96FB /* horizontal_hover_bar.png */,
+				BF6BC72322C8503B002C96FB /* vertical_idle_thumb.png */,
+				BF6BC72422C8503B002C96FB /* horizontal_hover_thumb.png */,
+				BF6BC72522C8503B002C96FB /* vertical_idle_bar.png */,
+			);
+			path = scrollbar;
+			sourceTree = "<group>";
+		};
+		BF6BC72922C8504D002C96FB /* Ren'Py Base */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BC6DD22C8503B002C96FB /* screens.rpyc */,
+				BF6BC6DE22C8503B002C96FB /* options.rpy */,
+				BF6BC6DF22C8503B002C96FB /* script.rpy */,
+				BF6BC6E022C8503B002C96FB /* cache */,
+				BF6BC6E422C8503B002C96FB /* images */,
+				BF6BC6E522C8503B002C96FB /* tl */,
+				BF6BC6E922C8503B002C96FB /* screens.rpy */,
+				BF6BC6EA22C8503B002C96FB /* log.txt */,
+				BF6BC6EB22C8503B002C96FB /* saves */,
+				BF6BC6ED22C8503B002C96FB /* gui.rpyc */,
+				BF6BC6EE22C8503B002C96FB /* gui */,
+				BF6BC72622C8503B002C96FB /* script.rpyc */,
+				BF6BC72722C8503B002C96FB /* options.rpyc */,
+				BF6BC72822C8503B002C96FB /* gui.rpy */,
+			);
+			name = "Ren'Py Base";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		BF48420822C84EBE00850E05 /* AliceOS */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(BUILD_ACTION)";
+			buildConfigurationList = BF48420B22C84EBE00850E05 /* Build configuration list for PBXLegacyTarget "AliceOS" */;
+			buildPhases = (
+			);
+			buildToolPath = "/Users/marquiskurt/Applications/renpy-6.99.12.4-sdk/renpy.sh";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = AliceOS;
+			passBuildSettingsInEnvironment = 1;
+			productName = AliceOS;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		BF48420422C84EBE00850E05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = ProjectAliceDev;
+				TargetAttributes = {
+					BF48420822C84EBE00850E05 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = BF48420722C84EBE00850E05 /* Build configuration list for PBXProject "AliceOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF48420322C84EBE00850E05;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF48420822C84EBE00850E05 /* AliceOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		BF48420922C84EBE00850E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6BC6DB22C84F03002C96FB /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		BF48420A22C84EBE00850E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6BC6DB22C84F03002C96FB /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		BF48420C22C84EBE00850E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6BC6DB22C84F03002C96FB /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF48420D22C84EBE00850E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6BC6DB22C84F03002C96FB /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF48420722C84EBE00850E05 /* Build configuration list for PBXProject "AliceOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF48420922C84EBE00850E05 /* Debug */,
+				BF48420A22C84EBE00850E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF48420B22C84EBE00850E05 /* Build configuration list for PBXLegacyTarget "AliceOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF48420C22C84EBE00850E05 /* Debug */,
+				BF48420D22C84EBE00850E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF48420422C84EBE00850E05 /* Project object */;
+}

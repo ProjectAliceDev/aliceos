@@ -1,0 +1,15 @@
+//
+//  Config.xcconfig
+//  Forgotten
+//
+//  Created by Marquis Kurt on 6/9/19.
+//  Copyright © 2019 Project Alice. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+RENPY_TOOL=/Users/marquiskurt/Applications/renpy-6.99.12.4-sdk/renpy.sh
+BUILD_ACTION=$(SRCROOT)/game lint
+RUN_ACTION=$(SRCROOT)/game
+RELEASE_ACTION=/Users/marquiskurt/Applications/renpy-6.99.12.4-sdk/launcher distribute $(SRCROOT)/stein
