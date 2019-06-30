@@ -14,6 +14,7 @@ define AS_FRAMEWORKS_DIR = "System/Frameworks/"
 define AS_CORESERVICES_DIR = "System/CoreServices/"
 define AS_DEFAULT_APP_DIR = "System/Applications/"
 define AS_FONTS_DIR = "System/Fonts/"
+define AS_APPS_DIR = "Applications/"
 
 init python:
     
@@ -22,3 +23,8 @@ init python:
     # AliceOS frameworks.
     def AS_FRAMEWORK_DIR(FRAMEWORK_NAME="Default"):
         return AS_FRAMEWORKS_DIR + "/" + FRAMEWORK_NAME + ".aosframework/"
+
+# MARK: OS permissions definitions
+define AS_REQUIRES_NOTIIFICATIONKIT = "REQ_NOTIFICATIONKIT"
+define AS_REQUIRES_FULL_DISK_ACCESS = "REQ_FULL_DISK"
+define AS_REQUIRES_SYSTEM_EVENTS = "REQ_SYSTEM_EVENTS"

@@ -8,7 +8,6 @@
 
 /* Begin PBXFileReference section */
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
-		BF6BC6DD22C8503B002C96FB /* screens.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = screens.rpyc; sourceTree = "<group>"; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
 		BF6BC6E122C8503B002C96FB /* screens.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = screens.rpyb; sourceTree = "<group>"; };
@@ -19,7 +18,6 @@
 		BF6BC6E922C8503B002C96FB /* screens.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = screens.rpy; sourceTree = "<group>"; };
 		BF6BC6EA22C8503B002C96FB /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
 		BF6BC6EC22C8503B002C96FB /* persistent */ = {isa = PBXFileReference; lastKnownFileType = file; path = persistent; sourceTree = "<group>"; };
-		BF6BC6ED22C8503B002C96FB /* gui.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = gui.rpyc; sourceTree = "<group>"; };
 		BF6BC6EF22C8503B002C96FB /* textbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox.png; sourceTree = "<group>"; };
 		BF6BC6F022C8503B002C96FB /* nvl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nvl.png; sourceTree = "<group>"; };
 		BF6BC6F122C8503B002C96FB /* window_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window_icon.png; sourceTree = "<group>"; };
@@ -68,8 +66,6 @@
 		BF6BC72322C8503B002C96FB /* vertical_idle_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_thumb.png; sourceTree = "<group>"; };
 		BF6BC72422C8503B002C96FB /* horizontal_hover_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_hover_thumb.png; sourceTree = "<group>"; };
 		BF6BC72522C8503B002C96FB /* vertical_idle_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_bar.png; sourceTree = "<group>"; };
-		BF6BC72622C8503B002C96FB /* script.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = script.rpyc; sourceTree = "<group>"; };
-		BF6BC72722C8503B002C96FB /* options.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = options.rpyc; sourceTree = "<group>"; };
 		BF6BC72822C8503B002C96FB /* gui.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gui.rpy; sourceTree = "<group>"; };
 		BF86C18E22C90D7300FD10E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF86C19622C90EDA00FD10E4 /* ASNotificationBanner.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationBanner.rpy; sourceTree = "<group>"; };
@@ -92,6 +88,7 @@
 		BF86C1A922C9164A00FD10E4 /* MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MediumItalic.ttf; sourceTree = "<group>"; };
 		BF86C1AA22C9164A00FD10E4 /* ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThinItalic.ttf; sourceTree = "<group>"; };
 		BF86C1AB22C916BF00FD10E4 /* ASFonts.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASFonts.rpy; sourceTree = "<group>"; };
+		BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASAppRepresentative.rpy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -269,7 +266,6 @@
 		BF6BC72922C8504D002C96FB /* Ren'Py Base */ = {
 			isa = PBXGroup;
 			children = (
-				BF6BC6DD22C8503B002C96FB /* screens.rpyc */,
 				BF6BC6DE22C8503B002C96FB /* options.rpy */,
 				BF6BC6DF22C8503B002C96FB /* script.rpy */,
 				BF6BC6E022C8503B002C96FB /* cache */,
@@ -278,10 +274,7 @@
 				BF6BC6E922C8503B002C96FB /* screens.rpy */,
 				BF6BC6EA22C8503B002C96FB /* log.txt */,
 				BF6BC6EB22C8503B002C96FB /* saves */,
-				BF6BC6ED22C8503B002C96FB /* gui.rpyc */,
 				BF6BC6EE22C8503B002C96FB /* gui */,
-				BF6BC72622C8503B002C96FB /* script.rpyc */,
-				BF6BC72722C8503B002C96FB /* options.rpyc */,
 				BF6BC72822C8503B002C96FB /* gui.rpy */,
 			);
 			name = "Ren'Py Base";
@@ -309,6 +302,7 @@
 		BF86C19422C90E3500FD10E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF86C1AC22C91B2300FD10E4 /* AppKit.aosframework */,
 				BF86C19522C90E3500FD10E4 /* NotificationKit.aosframework */,
 			);
 			path = Frameworks;
@@ -352,6 +346,14 @@
 				BF86C1AA22C9164A00FD10E4 /* ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BF86C1AC22C91B2300FD10E4 /* AppKit.aosframework */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */,
+			);
+			path = AppKit.aosframework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
