@@ -71,12 +71,34 @@
 		BF6BC72622C8503B002C96FB /* script.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = script.rpyc; sourceTree = "<group>"; };
 		BF6BC72722C8503B002C96FB /* options.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = options.rpyc; sourceTree = "<group>"; };
 		BF6BC72822C8503B002C96FB /* gui.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gui.rpy; sourceTree = "<group>"; };
+		BF86C18E22C90D7300FD10E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF86C19622C90EDA00FD10E4 /* ASNotificationBanner.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationBanner.rpy; sourceTree = "<group>"; };
+		BF86C19822C910F100FD10E4 /* bannerBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bannerBackground.png; sourceTree = "<group>"; };
+		BF86C19922C9110900FD10E4 /* ASNotificationStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationStyles.rpy; sourceTree = "<group>"; };
+		BF86C19A22C9117D00FD10E4 /* ASDefinitions.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDefinitions.rpy; sourceTree = "<group>"; };
+		BF86C19C22C9164900FD10E4 /* LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LightItalic.ttf; sourceTree = "<group>"; };
+		BF86C19D22C9164900FD10E4 /* ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExtraBold.ttf; sourceTree = "<group>"; };
+		BF86C19E22C9164900FD10E4 /* Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Regular.ttf; sourceTree = "<group>"; };
+		BF86C19F22C9164900FD10E4 /* BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlackItalic.ttf; sourceTree = "<group>"; };
+		BF86C1A022C9164900FD10E4 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		BF86C1A122C9164900FD10E4 /* Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bold.ttf; sourceTree = "<group>"; };
+		BF86C1A222C9164900FD10E4 /* BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoldItalic.ttf; sourceTree = "<group>"; };
+		BF86C1A322C9164900FD10E4 /* ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExtraBoldItalic.ttf; sourceTree = "<group>"; };
+		BF86C1A422C9164900FD10E4 /* Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Black.ttf; sourceTree = "<group>"; };
+		BF86C1A522C9164A00FD10E4 /* Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Light.ttf; sourceTree = "<group>"; };
+		BF86C1A622C9164A00FD10E4 /* Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thin.ttf; sourceTree = "<group>"; };
+		BF86C1A722C9164A00FD10E4 /* Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Italic.ttf; sourceTree = "<group>"; };
+		BF86C1A822C9164A00FD10E4 /* Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Medium.ttf; sourceTree = "<group>"; };
+		BF86C1A922C9164A00FD10E4 /* MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MediumItalic.ttf; sourceTree = "<group>"; };
+		BF86C1AA22C9164A00FD10E4 /* ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThinItalic.ttf; sourceTree = "<group>"; };
+		BF86C1AB22C916BF00FD10E4 /* ASFonts.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASFonts.rpy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		BF48420322C84EBE00850E05 = {
 			isa = PBXGroup;
 			children = (
+				BF86C18E22C90D7300FD10E4 /* README.md */,
 				BF6BC6DC22C8503B002C96FB /* game */,
 				BF6BC6DB22C84F03002C96FB /* Config.xcconfig */,
 			);
@@ -85,6 +107,7 @@
 		BF6BC6DC22C8503B002C96FB /* game */ = {
 			isa = PBXGroup;
 			children = (
+				BF86C19022C90DD200FD10E4 /* AliceOS */,
 				BF6BC72922C8504D002C96FB /* Ren'Py Base */,
 			);
 			path = game;
@@ -262,6 +285,73 @@
 				BF6BC72822C8503B002C96FB /* gui.rpy */,
 			);
 			name = "Ren'Py Base";
+			sourceTree = "<group>";
+		};
+		BF86C19022C90DD200FD10E4 /* AliceOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C19322C90E3500FD10E4 /* System */,
+			);
+			name = AliceOS;
+			sourceTree = "<group>";
+		};
+		BF86C19322C90E3500FD10E4 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C19B22C915DC00FD10E4 /* Fonts */,
+				BF86C19422C90E3500FD10E4 /* Frameworks */,
+				BF86C19A22C9117D00FD10E4 /* ASDefinitions.rpy */,
+				BF86C1AB22C916BF00FD10E4 /* ASFonts.rpy */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		BF86C19422C90E3500FD10E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C19522C90E3500FD10E4 /* NotificationKit.aosframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF86C19522C90E3500FD10E4 /* NotificationKit.aosframework */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C19722C9108F00FD10E4 /* Resources */,
+				BF86C19622C90EDA00FD10E4 /* ASNotificationBanner.rpy */,
+				BF86C19922C9110900FD10E4 /* ASNotificationStyles.rpy */,
+			);
+			path = NotificationKit.aosframework;
+			sourceTree = "<group>";
+		};
+		BF86C19722C9108F00FD10E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C19822C910F100FD10E4 /* bannerBackground.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF86C19B22C915DC00FD10E4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BF86C1A422C9164900FD10E4 /* Black.ttf */,
+				BF86C19F22C9164900FD10E4 /* BlackItalic.ttf */,
+				BF86C1A122C9164900FD10E4 /* Bold.ttf */,
+				BF86C1A222C9164900FD10E4 /* BoldItalic.ttf */,
+				BF86C19D22C9164900FD10E4 /* ExtraBold.ttf */,
+				BF86C1A322C9164900FD10E4 /* ExtraBoldItalic.ttf */,
+				BF86C1A722C9164A00FD10E4 /* Italic.ttf */,
+				BF86C1A522C9164A00FD10E4 /* Light.ttf */,
+				BF86C19C22C9164900FD10E4 /* LightItalic.ttf */,
+				BF86C1A822C9164A00FD10E4 /* Medium.ttf */,
+				BF86C1A922C9164A00FD10E4 /* MediumItalic.ttf */,
+				BF86C1A022C9164900FD10E4 /* OFL.txt */,
+				BF86C19E22C9164900FD10E4 /* Regular.ttf */,
+				BF86C1A622C9164A00FD10E4 /* Thin.ttf */,
+				BF86C1AA22C9164A00FD10E4 /* ThinItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
