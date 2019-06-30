@@ -10,14 +10,9 @@
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
-		BF6BC6E122C8503B002C96FB /* screens.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = screens.rpyb; sourceTree = "<group>"; };
-		BF6BC6E222C8503B002C96FB /* bytecode.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = bytecode.rpyb; sourceTree = "<group>"; };
-		BF6BC6E322C8503B002C96FB /* pyanalysis.rpyb */ = {isa = PBXFileReference; lastKnownFileType = file; path = pyanalysis.rpyb; sourceTree = "<group>"; };
 		BF6BC6E722C8503B002C96FB /* common.rpymc */ = {isa = PBXFileReference; lastKnownFileType = file; path = common.rpymc; sourceTree = "<group>"; };
 		BF6BC6E822C8503B002C96FB /* common.rpym */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.rpym; sourceTree = "<group>"; };
 		BF6BC6E922C8503B002C96FB /* screens.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = screens.rpy; sourceTree = "<group>"; };
-		BF6BC6EA22C8503B002C96FB /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
-		BF6BC6EC22C8503B002C96FB /* persistent */ = {isa = PBXFileReference; lastKnownFileType = file; path = persistent; sourceTree = "<group>"; };
 		BF6BC6EF22C8503B002C96FB /* textbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox.png; sourceTree = "<group>"; };
 		BF6BC6F022C8503B002C96FB /* nvl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nvl.png; sourceTree = "<group>"; };
 		BF6BC6F122C8503B002C96FB /* window_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window_icon.png; sourceTree = "<group>"; };
@@ -110,16 +105,6 @@
 			path = game;
 			sourceTree = "<group>";
 		};
-		BF6BC6E022C8503B002C96FB /* cache */ = {
-			isa = PBXGroup;
-			children = (
-				BF6BC6E122C8503B002C96FB /* screens.rpyb */,
-				BF6BC6E222C8503B002C96FB /* bytecode.rpyb */,
-				BF6BC6E322C8503B002C96FB /* pyanalysis.rpyb */,
-			);
-			path = cache;
-			sourceTree = "<group>";
-		};
 		BF6BC6E422C8503B002C96FB /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,14 +127,6 @@
 				BF6BC6E822C8503B002C96FB /* common.rpym */,
 			);
 			path = None;
-			sourceTree = "<group>";
-		};
-		BF6BC6EB22C8503B002C96FB /* saves */ = {
-			isa = PBXGroup;
-			children = (
-				BF6BC6EC22C8503B002C96FB /* persistent */,
-			);
-			path = saves;
 			sourceTree = "<group>";
 		};
 		BF6BC6EE22C8503B002C96FB /* gui */ = {
@@ -268,12 +245,9 @@
 			children = (
 				BF6BC6DE22C8503B002C96FB /* options.rpy */,
 				BF6BC6DF22C8503B002C96FB /* script.rpy */,
-				BF6BC6E022C8503B002C96FB /* cache */,
 				BF6BC6E422C8503B002C96FB /* images */,
 				BF6BC6E522C8503B002C96FB /* tl */,
 				BF6BC6E922C8503B002C96FB /* screens.rpy */,
-				BF6BC6EA22C8503B002C96FB /* log.txt */,
-				BF6BC6EB22C8503B002C96FB /* saves */,
 				BF6BC6EE22C8503B002C96FB /* gui */,
 				BF6BC72822C8503B002C96FB /* gui.rpy */,
 			);
