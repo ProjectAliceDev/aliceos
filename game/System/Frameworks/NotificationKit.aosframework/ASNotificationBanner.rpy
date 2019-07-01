@@ -9,6 +9,7 @@
 init screen ASNotificationBanner(applet=None, message, withDetails, responseCallback=Return('didClickRespond')):
     tag ASNotificationBanner
     zorder 100
+    style_prefix "ASNotificationBanner"
     
     frame at ASNotificationBannerTransition:
         style "ASNotificationBannerFrame"

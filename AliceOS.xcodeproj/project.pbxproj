@@ -84,6 +84,8 @@
 		BF86C1AA22C9164A00FD10E4 /* ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThinItalic.ttf; sourceTree = "<group>"; };
 		BF86C1AB22C916BF00FD10E4 /* ASFonts.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASFonts.rpy; sourceTree = "<group>"; };
 		BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASAppRepresentative.rpy; sourceTree = "<group>"; };
+		BFF52C8A22C97062005F37B0 /* ASPermissionRequest.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequest.rpy; sourceTree = "<group>"; };
+		BFF52C8C22C97C1F005F37B0 /* ASPermissionRequestStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequestStyles.rpy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -325,9 +327,19 @@
 		BF86C1AC22C91B2300FD10E4 /* AppKit.aosframework */ = {
 			isa = PBXGroup;
 			children = (
+				BFF52C8B22C97931005F37B0 /* Resources */,
 				BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */,
+				BFF52C8A22C97062005F37B0 /* ASPermissionRequest.rpy */,
+				BFF52C8C22C97C1F005F37B0 /* ASPermissionRequestStyles.rpy */,
 			);
 			path = AppKit.aosframework;
+			sourceTree = "<group>";
+		};
+		BFF52C8B22C97931005F37B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -42,6 +42,24 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       viewDebuggingEnabled = "No">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;find . -name &quot;*.rpyc&quot; -delete&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "BF48420822C84EBE00850E05"
+                     BuildableName = "AliceOS"
+                     BlueprintName = "AliceOS"
+                     ReferencedContainer = "container:AliceOS.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <PathRunnable
          runnableDebuggingMode = "0"
          FilePath = "/Users/marquiskurt/Applications/renpy-6.99.12.4-sdk/renpy.app">

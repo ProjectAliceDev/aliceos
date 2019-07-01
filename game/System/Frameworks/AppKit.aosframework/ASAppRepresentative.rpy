@@ -13,7 +13,7 @@ init python:
     class ASAppRepresentative(object):
         bundleName = "Bundle name"
         bundleId = "app.aliceos.bundle"
-        bundleDir = AS_APP_DIR + "Bundle"
+        bundleDir = AS_APPS_DIR + "Bundle"
         bundleAuthor = "Author"
         bundleVersion = "1.0.0"
         bundleDescription = """\
@@ -21,12 +21,12 @@ init python:
         """
 
         icons = {
-            16: self.bundleDir + "Resources/Iconset/16.png",
-            24: self.bundleDir + "Resources/Iconset/24.png",
-            32: self.bundleDir + "Resources/Iconset/32.png",
-            64: self.bundleDir + "Resources/Iconset/64.png",
-            128: self.bundleDir + "Resources/Iconset/128.png",
-            256: self.bundleDir + "Resources/Iconset/256.png"
+            16: bundleDir + "Resources/Iconset/16.png",
+            24: bundleDir + "Resources/Iconset/24.png",
+            32: bundleDir + "Resources/Iconset/32.png",
+            64: bundleDir + "Resources/Iconset/64.png",
+            128: bundleDir + "Resources/Iconset/128.png",
+            256: bundleDir + "Resources/Iconset/256.png"
         }
 
         requires = {
