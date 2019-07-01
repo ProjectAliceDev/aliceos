@@ -94,12 +94,14 @@
 		BFF52C9622C99584005F37B0 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
 		BFF52C9722C99584005F37B0 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
 		BFF52C9822C99584005F37B0 /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
+		BFF52C9A22CA61BC005F37B0 /* project_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_header.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		BF48420322C84EBE00850E05 = {
 			isa = PBXGroup;
 			children = (
+				BFF52C9922CA61BC005F37B0 /* repo_assets */,
 				BF86C18E22C90D7300FD10E4 /* README.md */,
 				BF6BC6DC22C8503B002C96FB /* game */,
 				BF6BC6DB22C84F03002C96FB /* Config.xcconfig */,
@@ -388,6 +390,14 @@
 				BFF52C9822C99584005F37B0 /* 256.png */,
 			);
 			path = Iconset;
+			sourceTree = "<group>";
+		};
+		BFF52C9922CA61BC005F37B0 /* repo_assets */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52C9A22CA61BC005F37B0 /* project_header.png */,
+			);
+			path = repo_assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

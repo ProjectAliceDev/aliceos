@@ -16,7 +16,7 @@ init screen ASNotificationBanner(applet=None, message, withDetails, responseCall
     frame at ASNotificationBannerTransition:
         style "ASNotificationBannerFrame"
         xpadding 24
-        ypadding 24
+        ypadding 16
         xalign 0.5
         yalign 0.025
         xsize 676
@@ -39,7 +39,7 @@ init screen ASNotificationBanner(applet=None, message, withDetails, responseCall
                 textbutton _("Respond") action responseCallback:
                     style "ASNotificationBannerButton"
                     xalign 1.0
-            null height 4
+            null height 2
             text message:
                 style "ASNotificationBannerTitle"
             text withDetails:
