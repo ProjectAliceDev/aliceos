@@ -69,6 +69,17 @@ init python:
             }
         
             pass
+                    
+        def requestPermission(self, forPermission):
+            if forPermission in self.requires:
+                store.tempPermission = False
+                renpy.call_screen("ASPermissionRequest", bundleName=self.bundleName, requestingFor=forPermission, onAcceptRequest=[SetVariable("tempPermission", True), Return(0)])
+            
+                persistent.AS_PERMISSIONS[self.bundleId][forPermission] = tempPermission
+                tempPermission = None
+            else:
+                print "The permission requested doesn't exist or isn't in the app's manifest."
+        
 
         # Requests all permissions associated with the app.
         def requestAllPermissions(self):
@@ -109,16 +120,19 @@ init python:
         
         # Determine whether the app can safely send a notification request.
         def applicationShouldRequestNotification(self):
-            if persistent.AS_PERMISSIONS[self.bundleId] == None:
-                return False
-            else:
-                return persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_NOTIFICATIONKIT]
+            if AS_REQUIRES_NOTIFICATIONKIT in self.requires:
+                if persistent.AS_PERMISSIONS[self.bundleId] == None:
+                    return False
+                else:
+                    return persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_NOTIFICATIONKIT]
+            else: return False
             return
 
         # Steps to take when the app is about to send a notification
         def applicationWillRequestNotification(self, message, withDetails, responseCallback=Return(0)):
             if self.applicationShouldRequestNotification():
                 renpy.call_screen("ASNotificationBanner", applet=self, message=message, withDetails=withDetails, responseCallback=responseCallback)
+                self.applicationDidRequestNotification()
             else:
                 print "This app is not authorized to send notifications."
             return

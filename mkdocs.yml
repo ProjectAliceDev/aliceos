@@ -1,0 +1,36 @@
+site_name: AliceOS Documentation
+site_author: Project Alice
+site_description: 'Documentation site for AliceOS framework'
+docs_dir: mkdocs/
+
+# Material Theme configuration
+theme:
+    name: material
+    logo:
+        icon: 'developer_board'
+    palette:
+        primary: 'white'
+        accent: 'yellow'
+    font:
+        text: 'Nunito'
+        code: 'Fira Mono'
+
+# Repository
+repo_name: 'ProjectAliceDev/aliceos'
+repo_url: 'https://github.com/ProjectAliceDev/aliceos'
+
+copyright: 'Copyright &copy; 2018 - 2019 Project Alice.'
+
+extra:
+    social:
+    - type: 'github'
+      link: 'https://github.com/projectalicedev'
+    - type: 'twitter'
+      link: 'https://twitter.com/justaliceproj'
+
+markdown_extensions:
+- admonition
+- codehilite:
+    guess_lang: true
+- toc:
+    permalink: true

@@ -20,6 +20,9 @@ init 10 python:
         requires = {
             AS_REQUIRES_NOTIFICATIONKIT
         }
+        
+        def receiveMessage(self, fromPerson, message):
+            self.applicationWillRequestNotification(message=fromPerson, withDetails=message)
 
         def applicationShouldRequestNotification(self):
             return True

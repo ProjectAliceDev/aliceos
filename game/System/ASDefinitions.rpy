@@ -13,7 +13,7 @@ define AS_SYSTEM_DIR = "System/"
 define AS_FRAMEWORKS_DIR = "System/Frameworks/"
 define AS_CORESERVICES_DIR = "System/CoreServices/"
 define AS_DEFAULT_APP_DIR = "System/Applications/"
-define AS_FONTS_DIR = "System/Fonts/"
+define AS_FONTS_DIR = "System/Library/Fonts/"
 define AS_APPS_DIR = "Applications/"
 
 init python:
