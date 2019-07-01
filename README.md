@@ -1,6 +1,6 @@
 ![AliceOS header](repo_assets/project_header.png)
 
-![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg)
+![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg) [![Build Status](https://travis-ci.com/alicerunsonfedora/CatalinaToriel.svg?token=d7YdxjzD7RWGCxysa2ip&branch=master)](https://travis-ci.com/alicerunsonfedora/CatalinaToriel)
 
 A modern rewrite of the AliceOS framework
 
