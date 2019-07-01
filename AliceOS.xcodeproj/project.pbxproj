@@ -95,12 +95,17 @@
 		BFF52C9722C99584005F37B0 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
 		BFF52C9822C99584005F37B0 /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
 		BFF52C9A22CA61BC005F37B0 /* project_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_header.png; sourceTree = "<group>"; };
+		BFF52C9C22CA6AE0005F37B0 /* setup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
+		BFF52C9D22CA6AE0005F37B0 /* inject_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = inject_version.sh; sourceTree = "<group>"; };
+		BFF52C9E22CA6AEB005F37B0 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		BF48420322C84EBE00850E05 = {
 			isa = PBXGroup;
 			children = (
+				BFF52C9E22CA6AEB005F37B0 /* .travis.yml */,
+				BFF52C9B22CA6AE0005F37B0 /* travis */,
 				BFF52C9922CA61BC005F37B0 /* repo_assets */,
 				BF86C18E22C90D7300FD10E4 /* README.md */,
 				BF6BC6DC22C8503B002C96FB /* game */,
@@ -398,6 +403,15 @@
 				BFF52C9A22CA61BC005F37B0 /* project_header.png */,
 			);
 			path = repo_assets;
+			sourceTree = "<group>";
+		};
+		BFF52C9B22CA6AE0005F37B0 /* travis */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52C9C22CA6AE0005F37B0 /* setup.sh */,
+				BFF52C9D22CA6AE0005F37B0 /* inject_version.sh */,
+			);
+			path = travis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
