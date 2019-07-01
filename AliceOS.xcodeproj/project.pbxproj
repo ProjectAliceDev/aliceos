@@ -86,6 +86,14 @@
 		BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASAppRepresentative.rpy; sourceTree = "<group>"; };
 		BFF52C8A22C97062005F37B0 /* ASPermissionRequest.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequest.rpy; sourceTree = "<group>"; };
 		BFF52C8C22C97C1F005F37B0 /* ASPermissionRequestStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequestStyles.rpy; sourceTree = "<group>"; };
+		BFF52C8F22C9931A005F37B0 /* Messages.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = Messages.rpy; sourceTree = "<group>"; };
+		BFF52C9222C99584005F37B0 /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
+		BFF52C9322C99584005F37B0 /* 64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64.png; sourceTree = "<group>"; };
+		BFF52C9422C99584005F37B0 /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48.png; sourceTree = "<group>"; };
+		BFF52C9522C99584005F37B0 /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		BFF52C9622C99584005F37B0 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		BFF52C9722C99584005F37B0 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		BFF52C9822C99584005F37B0 /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -267,6 +275,7 @@
 		BF86C19322C90E3500FD10E4 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				BFF52C8D22C991C5005F37B0 /* Applications */,
 				BF86C19B22C915DC00FD10E4 /* Fonts */,
 				BF86C19422C90E3500FD10E4 /* Frameworks */,
 				BF86C19A22C9117D00FD10E4 /* ASDefinitions.rpy */,
@@ -340,6 +349,45 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BFF52C8D22C991C5005F37B0 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52C8E22C992F9005F37B0 /* Messages.aosapp */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		BFF52C8E22C992F9005F37B0 /* Messages.aosapp */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52C9022C99474005F37B0 /* Resources */,
+				BFF52C8F22C9931A005F37B0 /* Messages.rpy */,
+			);
+			path = Messages.aosapp;
+			sourceTree = "<group>";
+		};
+		BFF52C9022C99474005F37B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52C9122C9947B005F37B0 /* Iconset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BFF52C9122C9947B005F37B0 /* Iconset */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52C9722C99584005F37B0 /* 16.png */,
+				BFF52C9522C99584005F37B0 /* 24.png */,
+				BFF52C9622C99584005F37B0 /* 32.png */,
+				BFF52C9422C99584005F37B0 /* 48.png */,
+				BFF52C9322C99584005F37B0 /* 64.png */,
+				BFF52C9222C99584005F37B0 /* 128.png */,
+				BFF52C9822C99584005F37B0 /* 256.png */,
+			);
+			path = Iconset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -11,6 +11,8 @@ init screen ASNotificationBanner(applet=None, message, withDetails, responseCall
     zorder 100
     style_prefix "ASNotificationBanner"
     
+    timer 5.0 action Return('notificationTimedOut')
+    
     frame at ASNotificationBannerTransition:
         style "ASNotificationBannerFrame"
         xpadding 24
@@ -21,12 +23,25 @@ init screen ASNotificationBanner(applet=None, message, withDetails, responseCall
     
         vbox:
             hbox:
+                xsize 628
+                
+                if not applet:
+                    hbox:
+                        add AS_FRAMEWORK_DIR("NotificationKit") + "Resources/appMissingIcon.png"
+                        text "Unknown Bundle":
+                            style "ASNotificationBannerSource"
+                else:
+                    hbox:
+                        add applet.icons[24]
+                        text applet.bundleName:
+                            style "ASNotificationBannerSource"
+
                 textbutton _("Respond") action responseCallback:
                     style "ASNotificationBannerButton"
                     xalign 1.0
-                    ypadding 0
-            null height 8
+            null height 4
             text message:
                 style "ASNotificationBannerTitle"
             text withDetails:
                 style "ASNotificationBannerDetail"
+

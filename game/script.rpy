@@ -14,7 +14,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bedroom
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -29,6 +29,10 @@ label start:
     e "You've created a new Ren'Py game."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
+    
+    call screen ASNotificationBanner(message="Just Logokas", withDetails="Just Logokas.")
+    
+    $ messages.applicationWillRequestNotification(message="Eileen", withDetails="This is so cool.")
 
     # This ends the game.
 

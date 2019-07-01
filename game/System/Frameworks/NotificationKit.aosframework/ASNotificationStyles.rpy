@@ -21,16 +21,24 @@ init:
             yalign 0.025 xalign 0.5
             linear 0.25 yalign -1.0
 
+    style ASNotificationBannerSource is ASSystemMediumFont:
+        size 20
+        color "#f4f4f4"
+        first_indent 10
+        text_align 0
+        layout "tex"
+        xalign 0
+
     style ASNotificationBannerTitle is ASSystemBoldFont:
         size 24
-        color "#000"
+        color "#f4f4f4"
 
     style ASNotificationBannerDetail is ASSystemRegularFont:
         size 20
-        color "#000"
+        color "#f4f4f4"
 
     style ASNotificationBannerButton is gui_button
         
     style ASNotificationBannerButton_text is ASSystemBoldFont:
         size 16
-        color "#000"
+        color "#f4f4f4"
