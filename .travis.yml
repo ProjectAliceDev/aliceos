@@ -4,12 +4,6 @@ python:
 
 sudo: required
 
-# Travis build script for RenPy
-# based on Monika-After-Story script.
-  
-# This is the install stage
-# All your dependencies go here. We have done the RenPy SDK part done for you.
-
 install:
     - cd ..
     - wget https://www.renpy.org/dl/6.99.12.4/renpy-6.99.12.4-sdk.tar.bz2
@@ -21,12 +15,12 @@ install:
     # we're copying over the template files into the renpy SDK
     # and CD into the renpy
     
-    - bash ./CatalinaToriel/travis/setup.sh
+    # - bash ./CatalinaToriel/travis/setup.sh
     
     # Remove README.html to prevent errors.
     - rm -rf CatalinaToriel/game/README.html && cp -vRf CatalinaToriel/game/* mod/
     
-    - bash quickstart-oss/travis/inject_version.sh
+    - bash CatalinaToriel/travis/inject_version.sh
     
     
     - cd renpy
