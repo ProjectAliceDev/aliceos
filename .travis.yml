@@ -16,6 +16,7 @@ install:
     # and CD into the renpy
     
     # - bash ./CatalinaToriel/travis/setup.sh
+    - mkdir mod
     
     # Remove README.html to prevent errors.
     - rm -rf CatalinaToriel/game/README.html && cp -vRf CatalinaToriel/game/* mod/
