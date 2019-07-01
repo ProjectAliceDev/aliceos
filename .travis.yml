@@ -17,9 +17,10 @@ install:
     
     # - bash ./CatalinaToriel/travis/setup.sh
     - mkdir mod
+    - mkdir "./mod/game"
     
     # Remove README.html to prevent errors.
-    - rm -rf CatalinaToriel/game/README.html && cp -vRf CatalinaToriel/game/* mod/
+    - rm -rf CatalinaToriel/game/README.html && cp -vRf CatalinaToriel/game/* mod/game/
     
     - bash CatalinaToriel/travis/inject_version.sh
     
