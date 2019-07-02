@@ -51,7 +51,7 @@ deploy:
   api_key:
     secure: $GITHUB_API_KEY
   file_glob: true
-  file: "*-dists/*-_ASBaseSystem.zip"
+  file: "*-dists/*-_ASBaseSystem*.zip"
   skip_cleanup: true
   on:
     tags: true
