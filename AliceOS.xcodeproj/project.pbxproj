@@ -117,6 +117,7 @@
 		BFF52CC822CAC422005F37B0 /* Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thin.ttf; sourceTree = "<group>"; };
 		BFF52CC922CAC614005F37B0 /* 10-ASAppRepresentative.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "10-ASAppRepresentative.md"; sourceTree = "<group>"; };
 		BFF52CCA22CAC9CB005F37B0 /* 02-default-apps.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "02-default-apps.md"; sourceTree = "<group>"; };
+		BFF52CCB22CAD52F005F37B0 /* inject_rp6.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = inject_rp6.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -407,6 +408,7 @@
 			children = (
 				BFF52C9C22CA6AE0005F37B0 /* setup.sh */,
 				BFF52C9D22CA6AE0005F37B0 /* inject_version.sh */,
+				BFF52CCB22CAD52F005F37B0 /* inject_rp6.sh */,
 			);
 			path = travis;
 			sourceTree = "<group>";
