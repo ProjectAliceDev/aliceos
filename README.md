@@ -19,3 +19,9 @@ To build this project, clone the repository and in Ren'Py Launcher, click "Distr
 
 ## Install instructions (to existing projects)
 To install AliceOS directly without grabbing the source, download the ZIP archive from the release and copy `AliceOSBaseSystem.rpa` to your `game` folder.
+
+## Documentation build instructions
+To generate the documentation site (requires MkDocs and Material for MkDocs):
+```bash
+mkdocs build -d docs
+```

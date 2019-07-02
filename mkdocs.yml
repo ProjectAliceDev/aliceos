@@ -5,6 +5,7 @@ docs_dir: mkdocs/
 
 # Material Theme configuration
 theme:
+    favicon: images/favicon.ico
     name: material
     logo:
         icon: 'developer_board'

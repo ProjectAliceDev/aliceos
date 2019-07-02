@@ -118,6 +118,13 @@
 		BFF52CC922CAC614005F37B0 /* 10-ASAppRepresentative.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "10-ASAppRepresentative.md"; sourceTree = "<group>"; };
 		BFF52CCA22CAC9CB005F37B0 /* 02-default-apps.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "02-default-apps.md"; sourceTree = "<group>"; };
 		BFF52CCB22CAD52F005F37B0 /* inject_rp6.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = inject_rp6.sh; sourceTree = "<group>"; };
+		BFF52CCD22CAE737005F37B0 /* favicon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = favicon.ico; sourceTree = "<group>"; };
+		BFF52CCE22CAE737005F37B0 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
+		BFF52CCF22CAE737005F37B0 /* logomark.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = logomark.svg; sourceTree = "<group>"; };
+		BFF52CD222CAE737005F37B0 /* messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messages.png; sourceTree = "<group>"; };
+		BFF52CD422CAE737005F37B0 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		BFF52CD522CAE737005F37B0 /* alerts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alerts.png; sourceTree = "<group>"; };
+		BFF52CD722CAE737005F37B0 /* apps-sn-hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apps-sn-hero.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -416,6 +423,7 @@
 		BFF52C9F22CA77B3005F37B0 /* mkdocs */ = {
 			isa = PBXGroup;
 			children = (
+				BFF52CCC22CAE737005F37B0 /* images */,
 				BFF52CA822CA85BD005F37B0 /* AppKit */,
 				BFF52CA722CA85B5005F37B0 /* NotificationKit */,
 				BFF52CA622CA8324005F37B0 /* System */,
@@ -524,6 +532,52 @@
 				BFF52CC822CAC422005F37B0 /* Thin.ttf */,
 			);
 			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		BFF52CCC22CAE737005F37B0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52CCD22CAE737005F37B0 /* favicon.ico */,
+				BFF52CCE22CAE737005F37B0 /* hero.png */,
+				BFF52CCF22CAE737005F37B0 /* logomark.svg */,
+				BFF52CD022CAE737005F37B0 /* system */,
+				BFF52CD322CAE737005F37B0 /* nk */,
+				BFF52CD622CAE737005F37B0 /* apps */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		BFF52CD022CAE737005F37B0 /* system */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52CD122CAE737005F37B0 /* defapps */,
+			);
+			path = system;
+			sourceTree = "<group>";
+		};
+		BFF52CD122CAE737005F37B0 /* defapps */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52CD222CAE737005F37B0 /* messages.png */,
+			);
+			path = defapps;
+			sourceTree = "<group>";
+		};
+		BFF52CD322CAE737005F37B0 /* nk */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52CD422CAE737005F37B0 /* banner.png */,
+				BFF52CD522CAE737005F37B0 /* alerts.png */,
+			);
+			path = nk;
+			sourceTree = "<group>";
+		};
+		BFF52CD622CAE737005F37B0 /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				BFF52CD722CAE737005F37B0 /* apps-sn-hero.png */,
+			);
+			path = apps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
