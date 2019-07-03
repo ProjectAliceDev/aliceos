@@ -27,3 +27,4 @@ To generate the documentation site (requires MkDocs and Material for MkDocs):
 ```bash
 mkdocs build -d docs
 ```
+ 

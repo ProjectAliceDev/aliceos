@@ -5,6 +5,5 @@ game/script.rpy
 game/gui.rpy
 game/screens.rpy
 game/traceback.txt
-game/error.txt
+game/errors.txt
 game/log.txt
-

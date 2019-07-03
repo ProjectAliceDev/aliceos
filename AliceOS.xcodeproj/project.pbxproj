@@ -10,6 +10,7 @@
 		BF0B0CBC22CD0B8E009F4F5B /* ASDesktopCoreService.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopCoreService.rpy; sourceTree = "<group>"; };
 		BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "03-core-services.md"; sourceTree = "<group>"; };
 		BF0B0CBF22CD1451009F4F5B /* ASDesktopTopBar.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopTopBar.rpy; sourceTree = "<group>"; };
+		BF0B0CC222CD1AA7009F4F5B /* ASDesktopTopBarStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopTopBarStyles.rpy; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		BF0B0CB922CD0A7D009F4F5B /* Desktop.aoscservice */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CC122CD1A96009F4F5B /* Styles */,
 				BF0B0CBE22CD1428009F4F5B /* Views */,
 				BF0B0CBA22CD0B57009F4F5B /* Resources */,
 				BF0B0CBC22CD0B8E009F4F5B /* ASDesktopCoreService.rpy */,
@@ -178,6 +180,14 @@
 			children = (
 			);
 			path = Elements;
+			sourceTree = "<group>";
+		};
+		BF0B0CC122CD1A96009F4F5B /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CC222CD1AA7009F4F5B /* ASDesktopTopBarStyles.rpy */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		BF48420322C84EBE00850E05 = {

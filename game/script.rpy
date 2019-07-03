@@ -23,15 +23,17 @@ label start:
     
     window hide
     
-    pause 1.0
+    $ ASDesktop.showTopBar()
     
-    $ messages.requestPermission(forPermission=AS_REQUIRES_NOTIFICATIONKIT)
-
-    "Hello, world."
-    
-    call screen ASNotificationBanner(message="Just Logokas", withDetails="Just Logokas.")
-    
-    $ messages.receiveMessage("Eileen", "This is so cool.")
+#    pause 1.0
+#
+#    $ messages.requestPermission(forPermission=AS_REQUIRES_NOTIFICATIONKIT)
+#
+#    "Hello, world."
+#
+#    call screen ASNotificationBanner(message="Just Logokas", withDetails="Just Logokas.")
+#
+#    $ messages.receiveMessage("Eileen", "This is so cool.")
 
     # This ends the game.
 
