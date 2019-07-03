@@ -48,13 +48,13 @@ init python:
                     AS_REQUIRES_SYSTEM_EVENTS: False
                 }
             else:
-                if persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_NOTIFICATIONKIT] == None:
+                if AS_REQUIRES_NOTIFICATIONKIT not in persistent.AS_PERMISSIONS[self.bundleId]:
                     persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_NOTIFICATIONKIT] = False
 
-                if persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_FULL_DISK_ACCESS] == None:
+                if AS_REQUIRES_FULL_DISK_ACCESS not in persistent.AS_PERMISSIONS[self.bundleId]:
                     persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_FULL_DISK_ACCESS] = False
 
-                if persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_SYSTEM_EVENTS] == None:
+                if AS_REQUIRES_SYSTEM_EVENTS not in persistent.AS_PERMISSIONS[self.bundleId]:
                     persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_SYSTEM_EVENTS] = False
         
             self.bundleDir = appDirectory
@@ -75,8 +75,8 @@ init python:
                 store.tempPermission = False
                 renpy.call_screen("ASPermissionRequest", bundleName=self.bundleName, requestingFor=forPermission, onAcceptRequest=[SetVariable("tempPermission", True), Return(0)])
             
-                persistent.AS_PERMISSIONS[self.bundleId][forPermission] = tempPermission
-                tempPermission = None
+                persistent.AS_PERMISSIONS[self.bundleId][forPermission] = store.tempPermission
+                store.tempPermission = None
             else:
                 print "The permission requested doesn't exist or isn't in the app's manifest."
         
@@ -97,9 +97,9 @@ init python:
                 renpy.call_screen("ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_SYSTEM_EVENTS, onAcceptRequest=[SetVariable("AS_REQUIRES_SYSTEM_EVENTS", True), Return(0)])
             
             persistent.AS_PERMISSIONS[self.bundleId] = {
-                AS_REQUIRES_SYSTEM_EVENTS: AS_REQUIRES_SYSTEM_EVENTS,
-                AS_REQUIRES_FULL_DISK_ACCESS: AS_REQUIRES_FULL_DISK_ACCESS,
-                AS_REQUIRES_NOTIFICATIONKIT: AS_REQUIRES_NOTIFICATIONKIT
+                AS_REQUIRES_SYSTEM_EVENTS: store.AS_REQUIRES_SYSTEM_EVENTS,
+                AS_REQUIRES_FULL_DISK_ACCESS: store.AS_REQUIRES_FULL_DISK_ACCESS,
+                AS_REQUIRES_NOTIFICATIONKIT: store.AS_REQUIRES_NOTIFICATIONKIT
             }
 
         # Steps to take when starting the app.
