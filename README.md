@@ -1,4 +1,4 @@
-![AliceOS header](repo_assets/project_header.png)
+![AliceOS header](repo_assets/project_header_relname.png)
 
 ![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg) [![Build Status](https://travis-ci.com/alicerunsonfedora/CatalinaToriel.svg?token=d7YdxjzD7RWGCxysa2ip&branch=master)](https://travis-ci.com/alicerunsonfedora/CatalinaToriel)
 
@@ -19,6 +19,8 @@ To build this project, clone the repository and in Ren'Py Launcher, click "Distr
 
 ## Install instructions (to existing projects)
 To install AliceOS directly without grabbing the source, download the ZIP archive from the release and copy `AliceOSBaseSystem.rpa` to your `game` folder.
+
+Additional instructions can be found in the [documentation](https://nextdocs.aliceos.app/01-install/).
 
 ## Documentation build instructions
 To generate the documentation site (requires MkDocs and Material for MkDocs):

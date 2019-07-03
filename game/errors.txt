@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "System/Frameworks/NotificationKit.aosframework/ASNotificationBanner.rpy", line 37: textbutton expects a non-empty block.
-    textbutton _("Respond") action responseCallback:
-                                                    ^
+File "script.rpy", line 24: invalid syntax
+    messages.requestPermission(forPermission: AS_REQUIRES_NOTIFICATIONKIT)
+                                             ^
+    
 
 Ren'Py Version: Ren'Py 6.99.12.4.2187

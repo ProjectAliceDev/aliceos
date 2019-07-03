@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		BF0B0CBC22CD0B8E009F4F5B /* ASDesktopCoreService.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopCoreService.rpy; sourceTree = "<group>"; };
+		BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "03-core-services.md"; sourceTree = "<group>"; };
+		BF0B0CBF22CD1451009F4F5B /* ASDesktopTopBar.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopTopBar.rpy; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -128,6 +131,55 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		BF0B0CB822CD0A71009F4F5B /* CoreServices */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CB922CD0A7D009F4F5B /* Desktop.aoscservice */,
+			);
+			path = CoreServices;
+			sourceTree = "<group>";
+		};
+		BF0B0CB922CD0A7D009F4F5B /* Desktop.aoscservice */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CBE22CD1428009F4F5B /* Views */,
+				BF0B0CBA22CD0B57009F4F5B /* Resources */,
+				BF0B0CBC22CD0B8E009F4F5B /* ASDesktopCoreService.rpy */,
+			);
+			path = Desktop.aoscservice;
+			sourceTree = "<group>";
+		};
+		BF0B0CBA22CD0B57009F4F5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CC022CD1468009F4F5B /* Elements */,
+				BF0B0CBB22CD0B6C009F4F5B /* Iconset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF0B0CBB22CD0B6C009F4F5B /* Iconset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Iconset;
+			sourceTree = "<group>";
+		};
+		BF0B0CBE22CD1428009F4F5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CBF22CD1451009F4F5B /* ASDesktopTopBar.rpy */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF0B0CC022CD1468009F4F5B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
 		BF48420322C84EBE00850E05 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +361,7 @@
 		BF86C19322C90E3500FD10E4 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CB822CD0A71009F4F5B /* CoreServices */,
 				BFF52CAF22CAC422005F37B0 /* Library */,
 				BFF52C8D22C991C5005F37B0 /* Applications */,
 				BF86C19422C90E3500FD10E4 /* Frameworks */,
@@ -457,6 +510,7 @@
 			children = (
 				BFF52CA522CA82FD005F37B0 /* 01-definitions.md */,
 				BFF52CCA22CAC9CB005F37B0 /* 02-default-apps.md */,
+				BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */,
 			);
 			path = System;
 			sourceTree = "<group>";

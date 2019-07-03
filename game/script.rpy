@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-image ddesktop = "System/Library/Desktop Pictures/Chuttersnap.png"
+image ddesktop = "System/Library/Desktop Pictures/Prospect Park.jpg"
 
 # The game starts here.
 
@@ -20,6 +20,12 @@ label start:
     # directory.
 
     # These display lines of dialogue.
+    
+    window hide
+    
+    pause 1.0
+    
+    $ messages.requestPermission(forPermission=AS_REQUIRES_NOTIFICATIONKIT)
 
     "Hello, world."
     
