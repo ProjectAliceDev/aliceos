@@ -462,6 +462,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#removing-a-service" title="Removing a service" class="md-nav__link">
+    Removing a service
+  </a>
+  
+</li>
+      
       
       
       
@@ -505,6 +512,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#removing-a-service" title="Removing a service" class="md-nav__link">
+    Removing a service
+  </a>
+  
+</li>
+      
       
       
       
@@ -525,14 +539,20 @@
                 
                 
                 <h1 id="core-services">Core Services<a class="headerlink" href="#core-services" title="Permanent link">&para;</a></h1>
-<p>AliceOS comes with several bundled Core Services that you should be aware of. These Core Services are crucial to AliceOS's core and are included in every AliceOS installation. Core Services are given the <code>.aoscservice</code> file extension and exist under <code>System/CoreServices</code>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If you plan to remove a Core Service, do so with caution. Other parts of AliceOS may make system calls that heavily rely on them.</p>
+<p>AliceOS comes with several bundled Core Services that you should be aware of. These Core Services are crucial to AliceOS's core and are included in every AliceOS installation. Core Services are given the <code>.aoscservice</code> file extension and exist under <code>System/CoreServices</code>. Core services also make use of ServiceKit, an in-house framework for defining core services.</p>
+<div class="admonition danger">
+<p class="admonition-title">About ServiceKit</p>
+<p>At all costs, do not remove <strong>ServiceKit.aosframework</strong> or attempt to write your own applications using ServiceKit. ServiceKit is a service-only API set that should be used for system-level utilities, not for third-party applications. Use <a href="../../AppKit/">AppKit</a> instead.</p>
 </div>
 <h2 id="desktop">Desktop<a class="headerlink" href="#desktop" title="Permanent link">&para;</a></h2>
 <p><img alt="Desktop icon" src="../../images/system/cservices/desktop.png" /></p>
 <p>The Desktop Core Service is responsible for displaying current applications installed on the system as well as providing a desktop shell if necessary.</p>
+<h2 id="removing-a-service">Removing a service<a class="headerlink" href="#removing-a-service" title="Permanent link">&para;</a></h2>
+<p>If you find that you don't need a particular core service, you can delete it from the <code>CoreServices</code> directory and rebuild AliceOS.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you plan to remove a Core Service, do so with caution. Other parts of AliceOS may make system calls that heavily rely on them.</p>
+</div>
                 
                   
                 

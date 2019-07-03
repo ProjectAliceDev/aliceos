@@ -1,12 +1,20 @@
 #  Core Services
 
-AliceOS comes with several bundled Core Services that you should be aware of. These Core Services are crucial to AliceOS's core and are included in every AliceOS installation. Core Services are given the `.aoscservice` file extension and exist under `System/CoreServices`.
+AliceOS comes with several bundled Core Services that you should be aware of. These Core Services are crucial to AliceOS's core and are included in every AliceOS installation. Core Services are given the `.aoscservice` file extension and exist under `System/CoreServices`. Core services also make use of ServiceKit, an in-house framework for defining core services.
 
-!!! warning
-    If you plan to remove a Core Service, do so with caution. Other parts of AliceOS may make system calls that heavily rely on them.
+!!! danger "About ServiceKit"
+    At all costs, do not remove **ServiceKit.aosframework** or attempt to write your own applications using ServiceKit. ServiceKit is a service-only API set that should be used for system-level utilities, not for third-party applications. Use [AppKit](../AppKit/index.md) instead.
 
 ## Desktop
 
 ![Desktop icon](../images/system/cservices/desktop.png)
 
 The Desktop Core Service is responsible for displaying current applications installed on the system as well as providing a desktop shell if necessary.
+
+
+## Removing a service
+
+If you find that you don't need a particular core service, you can delete it from the `CoreServices` directory and rebuild AliceOS.
+
+!!! warning
+    If you plan to remove a Core Service, do so with caution. Other parts of AliceOS may make system calls that heavily rely on them.
