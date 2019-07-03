@@ -27,13 +27,13 @@ jobs:
         - SDL_AUDIODRIVER=dummy SDL_VIDEODRIVER=dummy
       script: ./renpy.sh "../mod/" lint && ./renpy.sh launcher distribute "../mod/" && cd ..
     - stage: "Build"
-      name: "Ren'Py 7.3.1 SDK"
+      name: "Ren'Py Latest SDK"
       install:
         - cd ..
-        - wget https://www.renpy.org/dl/7.3.1/renpy-7.3.1-sdk.tar.bz2
-        - tar xf renpy-7.3.1-sdk.tar.bz2
-        - rm renpy-7.3.1-sdk.tar.bz2
-        - mv renpy-7.3.1-sdk renpy
+        - wget https://www.renpy.org/dl/7.3.2/renpy-7.3.2-sdk.tar.bz2
+        - tar xf renpy-7.3.2-sdk.tar.bz2
+        - rm renpy-7.3.2-sdk.tar.bz2
+        - mv renpy-7.3.2-sdk renpy
 
         - mkdir mod
         - mkdir "./mod/game"
