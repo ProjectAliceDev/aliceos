@@ -13,8 +13,11 @@ theme:
         primary: 'white'
         accent: 'yellow'
     font:
-        text: 'Nunito'
+        text: 'Inter'
         code: 'Fira Mono'
+
+extra_css:
+  - 'https://rsms.me/inter/inter.css'
 
 # Repository
 repo_name: 'ProjectAliceDev/aliceos'
