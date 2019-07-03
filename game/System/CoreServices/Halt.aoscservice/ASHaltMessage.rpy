@@ -28,7 +28,7 @@ init screen ASHaltMessage(error=""):
         vbox:
             xalign 0.5
             yalign 0.5
-            xsize 676
+            xsize 700
             
             add ASHalt.bundleDir + "Resources/Elements/HaltSymbol.png":
                 xalign 0.5
@@ -36,12 +36,13 @@ init screen ASHaltMessage(error=""):
             null height 8
             
             vbox:
+                xfill True
                 spacing 10
             
                 text "AliceOS needs to restart because a critical error has occured.":
                     style "ASHaltMessageTitle"
                     xalign 0.5
-                text "You can search the Error Database for more information by going to https://errordb.aliceos.app or by scanning the QR code below.":
+                text "You can search the Error Database for more information by going to https://errordb.aliceos.app or by scanning the QR code below. The system will automatically restart in 10 seconds.":
                     style "ASHaltMessageDetails"
                     xalign 0.5
             
