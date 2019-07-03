@@ -30,3 +30,7 @@ init:
     style ASSystemThinFont is default:
         font AS_FONTS_DIR + "Thin.ttf"
         outlines []
+
+    style ASSystemMonoFont is default:
+        font AS_FONTS_DIR + "Mono.ttf"
+        outlines []

@@ -11,6 +11,13 @@ AliceOS comes with several bundled Core Services that you should be aware of. Th
 
 The Desktop Core Service is responsible for displaying current applications installed on the system as well as providing a desktop shell if necessary.
 
+## Error Halt System
+
+![Halt icon](../images/system/cservices/halt.png)
+
+The Error Halt System (Halt) Core Service is responsible for displaying any critical errors that cause AliceOS to restart. It provides helpful information such as the error code and where to go for more information.
+
+More information on how this Core Service works can be found on the article about [Critical Errors](./04-critical-errors.md).
 
 ## Removing a service
 

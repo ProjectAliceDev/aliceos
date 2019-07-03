@@ -18,6 +18,20 @@
 		BF0B0CC822CD3D7C009F4F5B /* ASDesktopLaunchpadView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopLaunchpadView.rpy; sourceTree = "<group>"; };
 		BF0B0CC922CD4186009F4F5B /* ASDesktopLaunchpadViewStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopLaunchpadViewStyles.rpy; sourceTree = "<group>"; };
 		BF0B0CCB22CD47DA009F4F5B /* ASCoreServiceRepresentative.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASCoreServiceRepresentative.rpy; sourceTree = "<group>"; };
+		BF0B0CCF22CD4DDA009F4F5B /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48.png; sourceTree = "<group>"; };
+		BF0B0CD022CD4DDA009F4F5B /* 64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64.png; sourceTree = "<group>"; };
+		BF0B0CD122CD4DDA009F4F5B /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
+		BF0B0CD222CD4DDA009F4F5B /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		BF0B0CD322CD4DDA009F4F5B /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
+		BF0B0CD422CD4DDA009F4F5B /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		BF0B0CD522CD4DDA009F4F5B /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		BF0B0CD622CD4DDA009F4F5B /* ASHaltCoreService.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASHaltCoreService.rpy; sourceTree = "<group>"; };
+		BF0B0CD722CD4E98009F4F5B /* ASHaltMessage.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASHaltMessage.rpy; sourceTree = "<group>"; };
+		BF0B0CDB22CD5D77009F4F5B /* ASDyanmicBlur.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASDyanmicBlur.rpy; sourceTree = "<group>"; };
+		BF0B0CDC22CD5D77009F4F5B /* ASDynamicBlurBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASDynamicBlurBackground.png; sourceTree = "<group>"; };
+		BF0B0CDD22CD5D77009F4F5B /* ASDyanmicBlur.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ASDyanmicBlur.rpyc; sourceTree = "<group>"; };
+		BF0B0CDE22CD601B009F4F5B /* ASHaltMessageStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASHaltMessageStyles.rpy; sourceTree = "<group>"; };
+		BF0B0CDF22CD65A8009F4F5B /* 04-critical-errors.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "04-critical-errors.md"; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -141,6 +155,7 @@
 		BF0B0CB822CD0A71009F4F5B /* CoreServices */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CCC22CD4DDA009F4F5B /* Halt.aoscservice */,
 				BF0B0CB922CD0A7D009F4F5B /* Desktop.aoscservice */,
 			);
 			path = CoreServices;
@@ -217,6 +232,57 @@
 				BF0B0CCB22CD47DA009F4F5B /* ASCoreServiceRepresentative.rpy */,
 			);
 			path = ServiceKit.aosframework;
+			sourceTree = "<group>";
+		};
+		BF0B0CCC22CD4DDA009F4F5B /* Halt.aoscservice */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CCD22CD4DDA009F4F5B /* Resources */,
+				BF0B0CD622CD4DDA009F4F5B /* ASHaltCoreService.rpy */,
+				BF0B0CD722CD4E98009F4F5B /* ASHaltMessage.rpy */,
+				BF0B0CDE22CD601B009F4F5B /* ASHaltMessageStyles.rpy */,
+			);
+			path = Halt.aoscservice;
+			sourceTree = "<group>";
+		};
+		BF0B0CCD22CD4DDA009F4F5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CCE22CD4DDA009F4F5B /* Iconset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF0B0CCE22CD4DDA009F4F5B /* Iconset */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CCF22CD4DDA009F4F5B /* 48.png */,
+				BF0B0CD022CD4DDA009F4F5B /* 64.png */,
+				BF0B0CD122CD4DDA009F4F5B /* 128.png */,
+				BF0B0CD222CD4DDA009F4F5B /* 16.png */,
+				BF0B0CD322CD4DDA009F4F5B /* 256.png */,
+				BF0B0CD422CD4DDA009F4F5B /* 32.png */,
+				BF0B0CD522CD4DDA009F4F5B /* 24.png */,
+			);
+			path = Iconset;
+			sourceTree = "<group>";
+		};
+		BF0B0CD822CD5025009F4F5B /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CDA22CD5D77009F4F5B /* ASDynamicBlur */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		BF0B0CDA22CD5D77009F4F5B /* ASDynamicBlur */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CDB22CD5D77009F4F5B /* ASDyanmicBlur.rpy */,
+				BF0B0CDC22CD5D77009F4F5B /* ASDynamicBlurBackground.png */,
+				BF0B0CDD22CD5D77009F4F5B /* ASDyanmicBlur.rpyc */,
+			);
+			path = ASDynamicBlur;
 			sourceTree = "<group>";
 		};
 		BF48420322C84EBE00850E05 = {
@@ -535,6 +601,7 @@
 				BFF52CA522CA82FD005F37B0 /* 01-definitions.md */,
 				BFF52CCA22CAC9CB005F37B0 /* 02-default-apps.md */,
 				BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */,
+				BF0B0CDF22CD65A8009F4F5B /* 04-critical-errors.md */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -562,6 +629,7 @@
 		BFF52CAF22CAC422005F37B0 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CD822CD5025009F4F5B /* Effects */,
 				BFF52CB022CAC422005F37B0 /* Desktop Pictures */,
 				BFF52CB222CAC422005F37B0 /* Fonts */,
 			);

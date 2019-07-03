@@ -18,9 +18,6 @@ init 5 python:
             Desktop provides quick access to applications in AliceOS.
         """
 
-        # The desktop is a core service, but it doesn't require any explicit permissions.
-        requires = { }
-
         # Looks for all apps using AppKit and returns a list of them.
         def gatherAllApplications(self):
             import gc

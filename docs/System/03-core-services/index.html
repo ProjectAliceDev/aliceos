@@ -159,7 +159,7 @@
 
   
 
-<a href="https://github.com/ProjectAliceDev/aliceos/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/ProjectAliceDev/aliceos" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -206,7 +206,7 @@
 
   
 
-<a href="https://github.com/ProjectAliceDev/aliceos/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/ProjectAliceDev/aliceos" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -463,6 +463,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#error-halt-system" title="Error Halt System" class="md-nav__link">
+    Error Halt System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#removing-a-service" title="Removing a service" class="md-nav__link">
     Removing a service
   </a>
@@ -477,6 +484,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-critical-errors/" title="Critical Errors" class="md-nav__link">
+      Critical Errors
+    </a>
   </li>
 
         
@@ -513,6 +532,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#error-halt-system" title="Error Halt System" class="md-nav__link">
+    Error Halt System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#removing-a-service" title="Removing a service" class="md-nav__link">
     Removing a service
   </a>
@@ -535,8 +561,6 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ProjectAliceDev/aliceos/edit/master/docs/System/03-core-services.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
-                
                 
                 <h1 id="core-services">Core Services<a class="headerlink" href="#core-services" title="Permanent link">&para;</a></h1>
 <p>AliceOS comes with several bundled Core Services that you should be aware of. These Core Services are crucial to AliceOS's core and are included in every AliceOS installation. Core Services are given the <code>.aoscservice</code> file extension and exist under <code>System/CoreServices</code>. Core services also make use of ServiceKit, an in-house framework for defining core services.</p>
@@ -547,6 +571,10 @@
 <h2 id="desktop">Desktop<a class="headerlink" href="#desktop" title="Permanent link">&para;</a></h2>
 <p><img alt="Desktop icon" src="../../images/system/cservices/desktop.png" /></p>
 <p>The Desktop Core Service is responsible for displaying current applications installed on the system as well as providing a desktop shell if necessary.</p>
+<h2 id="error-halt-system">Error Halt System<a class="headerlink" href="#error-halt-system" title="Permanent link">&para;</a></h2>
+<p><img alt="Halt icon" src="../../images/system/cservices/halt.png" /></p>
+<p>The Error Halt System (Halt) Core Service is responsible for displaying any critical errors that cause AliceOS to restart. It provides helpful information such as the error code and where to go for more information.</p>
+<p>More information on how this Core Service works can be found on the article about <a href="../04-critical-errors/">Critical Errors</a>.</p>
 <h2 id="removing-a-service">Removing a service<a class="headerlink" href="#removing-a-service" title="Permanent link">&para;</a></h2>
 <p>If you find that you don't need a particular core service, you can delete it from the <code>CoreServices</code> directory and rebuild AliceOS.</p>
 <div class="admonition warning">
@@ -587,6 +615,20 @@
             </div>
           </a>
         
+        
+          <a href="../04-critical-errors/" title="Critical Errors" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Critical Errors
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

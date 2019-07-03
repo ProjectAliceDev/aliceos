@@ -2,7 +2,7 @@
 
 **NotificationKit** is the official API set for sending notifications in AliceOS. Notifications include the following:
 
-- [Banners](./banner.md): Temporary popups from the top of the screen that can be acted upon or dismissed.
+- [Banners](./01-banner.md): Temporary popups from the top of the screen that can be acted upon or dismissed.
 - Alerts: Full-screen dialog boxes that require user input immediately.
 - Sounds: Sounds that play to incidate something has occured.
 

@@ -24,8 +24,8 @@ init screen ASPermissionRequest(bundleName="AS_APP_BUNDLE", requestingFor, onDec
     add AS_FRAMEWORK_DIR("AppKit") + "/Resources/ASPermissionRequestBackground.png"
 
 
-    frame:
-        style "ASPermissionRequestFrame"
+    frame at ASDyanmicBlurTransition:
+        style "ASDyanmicBlurFrame"
         xalign 0.5
         yalign 0.5
 

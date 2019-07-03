@@ -25,7 +25,7 @@ Typically, apps request for notification access before sending notification requ
 
 ## Sending a temporary notification request
 
-Apps using AppKit have an official means of handling temporary notifications as banners via several methods. More details are provided on the [Banners page](../NotificationKit/banner.md).
+Apps using AppKit have an official means of handling temporary notifications as banners via several methods. More details are provided on the [Banners page](../NotificationKit/01-banner.md).
 
 ### `applicationShouldRequestNotification()`
 

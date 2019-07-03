@@ -39,31 +39,3 @@ init -1:
         color "#fff"
         size 24
         xalign 0.5
-
-
-    # MARK: Dynamic Blur Effects
-    python:
-        def SetThumbnailFull():
-            config.thumbnail_width = config.screen_width
-            config.thumbnail_height = config.screen_height
-
-        def SetThumbnailOriginal():
-            config.thumbnail_width = 256
-            config.thumbnail_height = 144
-
-    transform blur(child):
-        contains:
-            child
-            alpha 1.0
-        contains:
-            child
-            alpha 0.2 xoffset -3
-        contains:
-            child
-            alpha 0.2 xoffset 3
-        contains:
-            child
-            alpha 0.2 yoffset -3
-        contains:
-            child
-            alpha 0.2 yoffset 3

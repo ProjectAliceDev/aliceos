@@ -3,6 +3,8 @@ site_author: Project Alice
 site_description: 'Documentation site for AliceOS framework'
 docs_dir: mkdocs/
 
+edit_uri: ""
+
 # Material Theme configuration
 theme:
     favicon: images/favicon.ico
