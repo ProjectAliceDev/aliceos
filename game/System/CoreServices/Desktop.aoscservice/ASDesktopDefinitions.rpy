@@ -6,4 +6,4 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 # 
 
-image AS_DESKTOP_IMG = AS_LIBRARY_DIR + "Desktop Pictures/Prospect Park.png"
+define AS_DESKTOP_IMG = AS_LIBRARY_DIR + "Desktop Pictures/Prospect Park.png"

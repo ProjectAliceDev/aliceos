@@ -14,6 +14,9 @@
 		BF0B0CC422CD3322009F4F5B /* project_header_relname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = project_header_relname.png; path = repo_assets/project_header_relname.png; sourceTree = "<group>"; };
 		BF0B0CC522CD3322009F4F5B /* project_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = project_header.png; path = repo_assets/project_header.png; sourceTree = "<group>"; };
 		BF0B0CC622CD3341009F4F5B /* ASDesktopDefinitions.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopDefinitions.rpy; sourceTree = "<group>"; };
+		BF0B0CC722CD3834009F4F5B /* ASDesktopShellView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopShellView.rpy; sourceTree = "<group>"; };
+		BF0B0CC822CD3D7C009F4F5B /* ASDesktopLaunchpadView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopLaunchpadView.rpy; sourceTree = "<group>"; };
+		BF0B0CC922CD4186009F4F5B /* ASDesktopLaunchpadViewStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopLaunchpadViewStyles.rpy; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				BF0B0CBF22CD1451009F4F5B /* ASDesktopTopBar.rpy */,
+				BF0B0CC722CD3834009F4F5B /* ASDesktopShellView.rpy */,
+				BF0B0CC822CD3D7C009F4F5B /* ASDesktopLaunchpadView.rpy */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				BF0B0CC222CD1AA7009F4F5B /* ASDesktopTopBarStyles.rpy */,
+				BF0B0CC922CD4186009F4F5B /* ASDesktopLaunchpadViewStyles.rpy */,
 			);
 			path = Styles;
 			sourceTree = "<group>";

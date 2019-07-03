@@ -35,7 +35,7 @@ init 5 python:
             return strftime("%a. %I:%M %p")
 
         def showDesktop(self):
-            renpy.call_screen("ASDesktopEnv")
+            renpy.call_screen("ASDesktopShellView")
 
         def showTopBar(self):
             renpy.call_screen("ASDesktopTopBar")

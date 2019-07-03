@@ -3,8 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-image ddesktop = "System/Library/Desktop Pictures/Prospect Park.jpg"
-
 # The game starts here.
 
 label start:
@@ -13,7 +11,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene ddesktop
+    scene AS_DESKTOP_IMG
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -23,7 +21,9 @@ label start:
     
     window hide
     
-    $ ASDesktop.showTopBar()
+    $ ASDesktop.showDesktop()
+    
+    "At any rate, I wasn't sure about what was going to happen."
     
 #    pause 1.0
 #

@@ -15,7 +15,7 @@ define AS_CORESERVICES_DIR = "System/CoreServices/"
 define AS_DEFAULT_APP_DIR = "System/Applications/"
 define AS_FONTS_DIR = "System/Library/Fonts/"
 define AS_APPS_DIR = "Applications/"
-define AS_LIBRARY_DIR = "Library/"
+define AS_LIBRARY_DIR = "System/Library/"
 
 init python:
     

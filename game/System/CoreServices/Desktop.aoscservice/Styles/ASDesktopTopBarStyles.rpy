@@ -9,9 +9,10 @@
 init -1:
 
     style ASDesktopTopBarButton is gui_button
-
+    
     style ASDesktopTopBarButton_text is ASSystemBoldFont:
         color "#ffffff"
+        hover_color "#ffcc22"
         size 16
         yalign 0.0
 
