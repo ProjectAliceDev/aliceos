@@ -17,6 +17,7 @@
 		BF0B0CC722CD3834009F4F5B /* ASDesktopShellView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopShellView.rpy; sourceTree = "<group>"; };
 		BF0B0CC822CD3D7C009F4F5B /* ASDesktopLaunchpadView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopLaunchpadView.rpy; sourceTree = "<group>"; };
 		BF0B0CC922CD4186009F4F5B /* ASDesktopLaunchpadViewStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopLaunchpadViewStyles.rpy; sourceTree = "<group>"; };
+		BF0B0CCB22CD47DA009F4F5B /* ASCoreServiceRepresentative.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ASCoreServiceRepresentative.rpy; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -210,6 +211,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		BF0B0CCA22CD479C009F4F5B /* ServiceKit.aosframework */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CCB22CD47DA009F4F5B /* ASCoreServiceRepresentative.rpy */,
+			);
+			path = ServiceKit.aosframework;
+			sourceTree = "<group>";
+		};
 		BF48420322C84EBE00850E05 = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +405,7 @@
 		BF86C19422C90E3500FD10E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CCA22CD479C009F4F5B /* ServiceKit.aosframework */,
 				BF86C1AC22C91B2300FD10E4 /* AppKit.aosframework */,
 				BF86C19522C90E3500FD10E4 /* NotificationKit.aosframework */,
 			);

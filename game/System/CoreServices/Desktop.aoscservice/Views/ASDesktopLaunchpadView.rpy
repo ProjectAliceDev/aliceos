@@ -34,7 +34,7 @@ init screen ASDesktopLaunchpadView:
                             xalign 0.5
                             yalign 0.0
 
-                            if apps[1] == None:
+                            if apps[i] == None:
                                 pass
                             else:
                                 add apps[i].icons[128] xalign 0.5

@@ -8,7 +8,7 @@
 
 init 5 python:
 
-    class ASDesktopCoreService(ASAppRepresentative):
+    class ASDesktopCoreService(ASCoreServiceRepresentative):
         bundleName = "Desktop"
         bundleId = "app.aliceos.core-services.desktop"
         bundleDir = AS_CORESERVICES_DIR + "Desktop.aoscservice/"
@@ -41,6 +41,6 @@ init 5 python:
             renpy.call_screen("ASDesktopTopBar")
 
         def __init__(self):
-            ASAppRepresentative.__init__(self, AS_CORESERVICES_DIR + "Desktop.aoscservice/")
+            ASCoreServiceRepresentative.__init__(self, AS_CORESERVICES_DIR + "Desktop.aoscservice/")
 
     ASDesktop = ASDesktopCoreService()
