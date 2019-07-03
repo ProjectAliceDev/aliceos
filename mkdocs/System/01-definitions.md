@@ -11,6 +11,7 @@ To make referencing common AliceOS build settings and structures easier, AliceOS
 | `AS_DEFAULT_APP_DIR` | `System/Applications/` | The default System applications directory. This isn't necessary for developer use. |
 | `AS_FONTS_DIR` | `System/Fonts/` | The default Fonts directory. |
 | `AS_APPS_DIR` | `Applications/` | The default Applications directory. |
+| `AS_LIBRARY_DIR` | `System/Library/` | The default Library directory. |
 
 ## Framework directory definitions
 

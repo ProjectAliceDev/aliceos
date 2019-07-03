@@ -11,6 +11,9 @@
 		BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "03-core-services.md"; sourceTree = "<group>"; };
 		BF0B0CBF22CD1451009F4F5B /* ASDesktopTopBar.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopTopBar.rpy; sourceTree = "<group>"; };
 		BF0B0CC222CD1AA7009F4F5B /* ASDesktopTopBarStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopTopBarStyles.rpy; sourceTree = "<group>"; };
+		BF0B0CC422CD3322009F4F5B /* project_header_relname.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = project_header_relname.png; path = repo_assets/project_header_relname.png; sourceTree = "<group>"; };
+		BF0B0CC522CD3322009F4F5B /* project_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = project_header.png; path = repo_assets/project_header.png; sourceTree = "<group>"; };
+		BF0B0CC622CD3341009F4F5B /* ASDesktopDefinitions.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDesktopDefinitions.rpy; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		BFF52C9622C99584005F37B0 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
 		BFF52C9722C99584005F37B0 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
 		BFF52C9822C99584005F37B0 /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
-		BFF52C9A22CA61BC005F37B0 /* project_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_header.png; sourceTree = "<group>"; };
 		BFF52C9C22CA6AE0005F37B0 /* setup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = setup.sh; sourceTree = "<group>"; };
 		BFF52C9D22CA6AE0005F37B0 /* inject_version.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = inject_version.sh; sourceTree = "<group>"; };
 		BFF52C9E22CA6AEB005F37B0 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				BF0B0CBE22CD1428009F4F5B /* Views */,
 				BF0B0CBA22CD0B57009F4F5B /* Resources */,
 				BF0B0CBC22CD0B8E009F4F5B /* ASDesktopCoreService.rpy */,
+				BF0B0CC622CD3341009F4F5B /* ASDesktopDefinitions.rpy */,
 			);
 			path = Desktop.aoscservice;
 			sourceTree = "<group>";
@@ -190,25 +193,26 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		BF48420322C84EBE00850E05 = {
+		BF0B0CC322CD32FD009F4F5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				BFF52CA322CA77C5005F37B0 /* Travis CI */,
-				BFF52CA222CA77BB005F37B0 /* Documentation */,
-				BFF52C9922CA61BC005F37B0 /* repo_assets */,
-				BF6BC6DC22C8503B002C96FB /* game */,
+				BF0B0CC422CD3322009F4F5B /* project_header_relname.png */,
+				BF0B0CC522CD3322009F4F5B /* project_header.png */,
 				BF6BC6DB22C84F03002C96FB /* Config.xcconfig */,
 				BF86C18E22C90D7300FD10E4 /* README.md */,
 			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
-		BF6BC6DC22C8503B002C96FB /* game */ = {
+		BF48420322C84EBE00850E05 = {
 			isa = PBXGroup;
 			children = (
 				BF86C19022C90DD200FD10E4 /* AliceOS */,
+				BFF52CA322CA77C5005F37B0 /* Travis CI */,
+				BFF52CA222CA77BB005F37B0 /* Documentation */,
 				BF6BC72922C8504D002C96FB /* Ren'Py Base */,
+				BF0B0CC322CD32FD009F4F5B /* Assets */,
 			);
-			path = game;
 			sourceTree = "<group>";
 		};
 		BF6BC6E422C8503B002C96FB /* images */ = {
@@ -358,6 +362,7 @@
 				BF6BC72822C8503B002C96FB /* gui.rpy */,
 			);
 			name = "Ren'Py Base";
+			path = game;
 			sourceTree = "<group>";
 		};
 		BF86C19022C90DD200FD10E4 /* AliceOS */ = {
@@ -366,6 +371,7 @@
 				BF86C19322C90E3500FD10E4 /* System */,
 			);
 			name = AliceOS;
+			path = game;
 			sourceTree = "<group>";
 		};
 		BF86C19322C90E3500FD10E4 /* System */ = {
@@ -463,14 +469,6 @@
 				BFF52C9822C99584005F37B0 /* 256.png */,
 			);
 			path = Iconset;
-			sourceTree = "<group>";
-		};
-		BFF52C9922CA61BC005F37B0 /* repo_assets */ = {
-			isa = PBXGroup;
-			children = (
-				BFF52C9A22CA61BC005F37B0 /* project_header.png */,
-			);
-			path = repo_assets;
 			sourceTree = "<group>";
 		};
 		BFF52C9B22CA6AE0005F37B0 /* travis */ = {
