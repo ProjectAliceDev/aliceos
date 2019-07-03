@@ -1,6 +1,6 @@
 #  Welcome to AliceOS
 
-![AliceOS Screenshot](images/hero.png)
+![AliceOS Screenshot](images/hero.jpg)
 
 AliceOS is a robust and evolving framework for developing interactive visual novel experiences with operating system-like features such as notifications and setup assistants.
 

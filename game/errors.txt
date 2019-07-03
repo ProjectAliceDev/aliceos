@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "System/Frameworks/NotificationKit.aosframework/ASNotificationBanner.rpy", line 37: textbutton expects a non-empty block.
+    textbutton _("Respond") action responseCallback:
+                                                    ^
+
+Ren'Py Version: Ren'Py 6.99.12.4.2187
