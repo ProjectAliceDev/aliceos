@@ -19,6 +19,12 @@ The Error Halt System (Halt) Core Service is responsible for displaying any crit
 
 More information on how this Core Service works can be found on the article about [Critical Errors](./04-critical-errors.md).
 
+## Bootloader
+
+![Bootloader icon](../images/system/cservices/boot.png)
+
+The Bootloader is responsible for displaying a boot screen while important components are loading. The bootloader is cusomizable with a certain timeout, depending on how fast you want the OS to "load".
+
 ## Removing a service
 
 If you find that you don't need a particular core service, you can delete it from the `CoreServices` directory and rebuild AliceOS.

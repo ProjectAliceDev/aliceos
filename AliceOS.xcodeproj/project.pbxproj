@@ -37,6 +37,10 @@
 		BF0B0CE322CD7037009F4F5B /* HaltSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaltSymbol.png; sourceTree = "<group>"; };
 		BF0B0CE422CD717A009F4F5B /* ASNotificationExtendedAlert.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationExtendedAlert.rpy; sourceTree = "<group>"; };
 		BF0B0CE522CD7897009F4F5B /* 02-alerts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "02-alerts.md"; sourceTree = "<group>"; };
+		BF0B0CE922CD7EB1009F4F5B /* ASBootloaderCoreService.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASBootloaderCoreService.rpy; sourceTree = "<group>"; };
+		BF0B0CEA22CD7F4D009F4F5B /* ASBootloaderView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASBootloaderView.rpy; sourceTree = "<group>"; };
+		BF0B0CEC22CD800E009F4F5B /* PureBlackBoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PureBlackBoot.png; sourceTree = "<group>"; };
+		BF0B0CED22CD812F009F4F5B /* 05-bootloader.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "05-bootloader.md"; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 		BF0B0CB822CD0A71009F4F5B /* CoreServices */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CE622CD7D29009F4F5B /* Boot.aoscservice */,
 				BF0B0CCC22CD4DDA009F4F5B /* Halt.aoscservice */,
 				BF0B0CB922CD0A7D009F4F5B /* Desktop.aoscservice */,
 			);
@@ -299,6 +304,40 @@
 			);
 			name = Elements;
 			path = Resources/Elements;
+			sourceTree = "<group>";
+		};
+		BF0B0CE622CD7D29009F4F5B /* Boot.aoscservice */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CE722CD7D3C009F4F5B /* Resources */,
+				BF0B0CE922CD7EB1009F4F5B /* ASBootloaderCoreService.rpy */,
+				BF0B0CEA22CD7F4D009F4F5B /* ASBootloaderView.rpy */,
+			);
+			path = Boot.aoscservice;
+			sourceTree = "<group>";
+		};
+		BF0B0CE722CD7D3C009F4F5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CEB22CD800E009F4F5B /* Elements */,
+				BF0B0CE822CD7D42009F4F5B /* Iconset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF0B0CE822CD7D42009F4F5B /* Iconset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Iconset;
+			sourceTree = "<group>";
+		};
+		BF0B0CEB22CD800E009F4F5B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CEC22CD800E009F4F5B /* PureBlackBoot.png */,
+			);
+			path = Elements;
 			sourceTree = "<group>";
 		};
 		BF48420322C84EBE00850E05 = {
@@ -620,6 +659,7 @@
 				BFF52CCA22CAC9CB005F37B0 /* 02-default-apps.md */,
 				BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */,
 				BF0B0CDF22CD65A8009F4F5B /* 04-critical-errors.md */,
+				BF0B0CED22CD812F009F4F5B /* 05-bootloader.md */,
 			);
 			path = System;
 			sourceTree = "<group>";
