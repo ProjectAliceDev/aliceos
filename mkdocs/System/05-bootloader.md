@@ -6,10 +6,12 @@ The bootloader is responsible for displaying a boot screen while important compo
 
 ## Available methods
 
-### `$ ASBootloader.boot(timeout=5)`
+### `$ ASBootloader.boot(timeout=5, expressSetup=True, disclaimer=None)`
 
 Show the bootloader for a certain amount of time.
 
 **Parameters**
 
-- `tiemout`: The amount of seconds to show the bootloader for.
+- `timeout`: The amount of seconds to show the bootloader for.
+- `expressSetup`: Whether the Setup Assistant should start in Express Mode.
+- `disclaimer`: Any license agreement or disclaimer that must be displayed during the Setup Assistant.

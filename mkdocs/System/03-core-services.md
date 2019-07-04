@@ -23,7 +23,13 @@ More information on how this Core Service works can be found on the article abou
 
 ![Bootloader icon](../images/system/cservices/boot.png)
 
-The Bootloader is responsible for displaying a boot screen while important components are loading. The bootloader is cusomizable with a certain timeout, depending on how fast you want the OS to "load".
+The Bootloader is responsible for displaying a boot screen while important components are loading. The bootloader is cusomizable with a certain timeout, depending on how fast you want the OS to "load". If the Setup Assistant hasn't fired or completed, the bootloader will also load the Setup Assistant.
+
+## Setup Assistant
+
+![Setup Assistant icon](../images/system/cservices/setup.png)
+
+The Setup Assistant is responsible for setting up any important configurations and settings for AliceOS, as well as creating a username stored in `persistent.playername` and letting users read any legal agreements before playing a visual novel project.
 
 ## Removing a service
 

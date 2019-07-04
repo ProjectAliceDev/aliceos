@@ -18,8 +18,10 @@ init 5 python:
             Show a loading screen for AliceOS.
         """
         
-        def boot(self, timeout=5):
+        def boot(self, timeout=5, expressSetup=True, disclaimer=None):
             renpy.call_screen("ASBootloaderView", timeout=timeout)
+            if not persistent.AS_SETUP_COMPLETE:
+                ASSetup.startSetup(express=expressSetup, disclaimer=disclaimer)
     
         def __init__(self):
             ASCoreServiceRepresentative.__init__(self, AS_CORESERVICES_DIR + "Boot.aoscservice/")

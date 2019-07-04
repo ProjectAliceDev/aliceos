@@ -40,7 +40,7 @@
     
     
       
-        <title>AliceOS Definitions - AliceOS Documentation</title>
+        <title>Setup Assistant - AliceOS Documentation</title>
       
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#aliceos-definitions" tabindex="1" class="md-skip">
+      <a href="#setup-assistant" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                AliceOS Definitions
+                Setup Assistant
               
             </span>
           
@@ -415,63 +415,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        AliceOS Definitions
-      </label>
-    
-    <a href="./" title="AliceOS Definitions" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../01-definitions/" title="AliceOS Definitions" class="md-nav__link">
       AliceOS Definitions
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#directory-definitions" title="Directory definitions" class="md-nav__link">
-    Directory definitions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#framework-directory-definitions" title="Framework directory definitions" class="md-nav__link">
-    Framework directory definitions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#permissions-definitions" title="Permissions definitions" class="md-nav__link">
-    Permissions definitions
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -527,11 +475,89 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../06-setup-assistant/" title="Setup Assistant" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Setup Assistant
+      </label>
+    
+    <a href="./" title="Setup Assistant" class="md-nav__link md-nav__link--active">
       Setup Assistant
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#automatic-setup" title="Automatic Setup" class="md-nav__link">
+    Automatic Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-setup" title="Manual Setup" class="md-nav__link">
+    Manual Setup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startsetupexpresstrue-disclaimernone" title="startSetup(express=True, disclaimer=None)" class="md-nav__link">
+    startSetup(express=True, disclaimer=None)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-steps-to-the-setup-assistant" title="Adding steps to the Setup Assistant" class="md-nav__link">
+    Adding steps to the Setup Assistant
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assetupassistantviewtitlesetup-assistant-instructions-useinputmethodfalse-completedfalse" title="ASSetupAssistantView(title="Setup Assistant", instructions, useInputMethod=False, completed=False)" class="md-nav__link">
+    ASSetupAssistantView(title="Setup Assistant", instructions, useInputMethod=False, completed=False)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -561,23 +587,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#directory-definitions" title="Directory definitions" class="md-nav__link">
-    Directory definitions
+  <a href="#automatic-setup" title="Automatic Setup" class="md-nav__link">
+    Automatic Setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#framework-directory-definitions" title="Framework directory definitions" class="md-nav__link">
-    Framework directory definitions
+  <a href="#manual-setup" title="Manual Setup" class="md-nav__link">
+    Manual Setup
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#startsetupexpresstrue-disclaimernone" title="startSetup(express=True, disclaimer=None)" class="md-nav__link">
+    startSetup(express=True, disclaimer=None)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#permissions-definitions" title="Permissions definitions" class="md-nav__link">
-    Permissions definitions
+  <a href="#adding-steps-to-the-setup-assistant" title="Adding steps to the Setup Assistant" class="md-nav__link">
+    Adding steps to the Setup Assistant
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assetupassistantviewtitlesetup-assistant-instructions-useinputmethodfalse-completedfalse" title="ASSetupAssistantView(title="Setup Assistant", instructions, useInputMethod=False, completed=False)" class="md-nav__link">
+    ASSetupAssistantView(title="Setup Assistant", instructions, useInputMethod=False, completed=False)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -598,69 +650,47 @@
               
                 
                 
-                <h1 id="aliceos-definitions">AliceOS Definitions<a class="headerlink" href="#aliceos-definitions" title="Permanent link">&para;</a></h1>
-<p>To make referencing common AliceOS build settings and structures easier, AliceOS provides the following definitions and dictionaries. These are located in <code>System/ASDefinitions.rpy</code> and can be modified if necessary.</p>
-<h2 id="directory-definitions">Directory definitions<a class="headerlink" href="#directory-definitions" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Definition name</th>
-<th>Points to</th>
-<th>Used for</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>AS_SYSTEM_DIR</code></td>
-<td><code>System/</code></td>
-<td>The default System directory.</td>
-</tr>
-<tr>
-<td><code>AS_FRAMEWORKS_DIR</code></td>
-<td><code>System/Frameworks/</code></td>
-<td>The default Frameworks directory.</td>
-</tr>
-<tr>
-<td><code>AS_CORESERVICES_DIR</code></td>
-<td><code>System/CoreServices/</code></td>
-<td>The default Core Services directory.</td>
-</tr>
-<tr>
-<td><code>AS_DEFAULT_APP_DIR</code></td>
-<td><code>System/Applications/</code></td>
-<td>The default System applications directory. This isn't necessary for developer use.</td>
-</tr>
-<tr>
-<td><code>AS_FONTS_DIR</code></td>
-<td><code>System/Fonts/</code></td>
-<td>The default Fonts directory.</td>
-</tr>
-<tr>
-<td><code>AS_APPS_DIR</code></td>
-<td><code>Applications/</code></td>
-<td>The default Applications directory.</td>
-</tr>
-<tr>
-<td><code>AS_LIBRARY_DIR</code></td>
-<td><code>System/Library/</code></td>
-<td>The default Library directory.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="framework-directory-definitions">Framework directory definitions<a class="headerlink" href="#framework-directory-definitions" title="Permanent link">&para;</a></h2>
-<p><code>AS_FRAMEWORK_DIR(FRAMEWORK_NAME="Default")</code></p>
-<p>The directory where a particular Framework is located. Makes use of <code>AS_FRAMEWORKS_DIR</code>.</p>
+                <h1 id="setup-assistant">Setup Assistant<a class="headerlink" href="#setup-assistant" title="Permanent link">&para;</a></h1>
+<p><img alt="Setup assistant" src="../../images/system/setup-assistant.png" /></p>
+<p>The Setup Assistant is a first-run tool designed to set any initial settings and/or configurations for AliceOS before starting the visual novel. It also lets the user create a username as well as read over and legel agreements or disclaimers the game creator has provided.</p>
+<div class="admonition tip express mode">
+<p class="admonition-title">Tip</p>
+<p>Starting with AliceOS Prospect Park, the Setup Assistant is automatically configured to use Express Mode, which skips a lot of the onerous steps in the original process. However, for a more throrough experience, Express Mode can be turned off.</p>
+</div>
+<h2 id="automatic-setup">Automatic Setup<a class="headerlink" href="#automatic-setup" title="Permanent link">&para;</a></h2>
+<p>In the Bootloader, the Setup Assistant will run if it doesn't detect that any setup was done. This check is done via <code>persistent.AS_SETUP_COMPLETE</code>. The boot loader's <code>boot()</code> method contains parameters to customize the Assistant's modes and any additional disclaimers, if necessary.</p>
+<h2 id="manual-setup">Manual Setup<a class="headerlink" href="#manual-setup" title="Permanent link">&para;</a></h2>
+<p>If you want to call the Setup Assistant manually, you can use <code>ASSetup.startSetup()</code> to call the Assistant at any time.</p>
+<h3 id="startsetupexpresstrue-disclaimernone"><code>startSetup(express=True, disclaimer=None)</code><a class="headerlink" href="#startsetupexpresstrue-disclaimernone" title="Permanent link">&para;</a></h3>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><code>FRAMEWORK_NAME</code>: The name of the framework to reference. Example: <code>NotificationKit</code></li>
+<li><code>express</code>: Whether Express Mode is enabled. The default is set to True.</li>
+<li><code>disclaimer</code>: A string containing any disclaimers or legal agreements. If set to None, the Setup Assistant will skip this step.</li>
 </ul>
 <p><strong>Returns</strong></p>
-<p>The path to the framework. Example: <code>System/Frameworks/NotificationKit.aosframework/</code></p>
-<h2 id="permissions-definitions">Permissions definitions<a class="headerlink" href="#permissions-definitions" title="Permanent link">&para;</a></h2>
-<p>These definitions are used to specify important strings when asking the user permission for a particular item. These are dictionaries that include the values for a particular permission.</p>
+<p>The Setup Assistant will return <code>persistent.playername</code> if it is deemed necessary for use.</p>
+<h2 id="adding-steps-to-the-setup-assistant">Adding steps to the Setup Assistant<a class="headerlink" href="#adding-steps-to-the-setup-assistant" title="Permanent link">&para;</a></h2>
+<p>The Setup Assistant can be further customized by editing <code>startSetup()</code> in the core service file. The function calls the <code>ASSetupAssistantView</code> to display the step as a slide and collect any information if necessary. For example:</p>
+<div class="codehilite"><pre><span></span><span class="n">renpy</span><span class="o">.</span><span class="n">call_screen</span><span class="p">(</span><span class="s2">&quot;ASSetupAssistantView&quot;</span><span class="p">,</span> 
+                    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Create Your Username&quot;</span><span class="p">,</span> 
+                    <span class="n">instructions</span><span class="o">=</span><span class="s2">&quot;Type in a username that you want to use while using AliceOS. This name will also appear as your character name if applicable.&quot;</span><span class="p">,</span> 
+                    <span class="n">useInputMethod</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<h3 id="assetupassistantviewtitlesetup-assistant-instructions-useinputmethodfalse-completedfalse"><code>ASSetupAssistantView(title="Setup Assistant", instructions, useInputMethod=False, completed=False)</code><a class="headerlink" href="#assetupassistantviewtitlesetup-assistant-instructions-useinputmethodfalse-completedfalse" title="Permanent link">&para;</a></h3>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><code>AS_REQUIRE_PERMS_NAME</code>: The dictionary containing the name of the permission name. Example: "Send Notifications"</li>
-<li><code>AS_REQUIRE_PERMS_DESC</code>: The dictionary containing the description of a permission. Example: "Notifications may include banners, alerts, and sounds. These can be configured in Settings."</li>
+<li><code>title</code>: The title of the step or slide.</li>
+<li><code>instructions</code>: A brief description or set of instructions of what needs to be done on the step.</li>
+<li><code>useInputMethod</code>: Whether to hide the 'Next' button and insert a text field instead.</li>
+<li><code>completed</code>: Whether to change the 'Next' button text to 'Finish'.</li>
+</ul>
+<p><strong>Returns</strong></p>
+<p>If the screen is called using <code>renpy.call_screen()</code>, the following is returned:</p>
+<ul>
+<li>For steps that do not use the input method, <code>'didCompleteStep'</code> is returned.</li>
+<li>For steps that use the input method, the input is returned as a string.</li>
 </ul>
                 
                   
@@ -682,7 +712,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../NotificationKit/02-alerts/" title="Alerts" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../05-bootloader/" title="Bootloader" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -691,25 +721,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Alerts
+                Bootloader
               </span>
             </div>
           </a>
         
-        
-          <a href="../02-default-apps/" title="Default Apps" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Default Apps
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>

@@ -489,6 +489,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#setup-assistant" title="Setup Assistant" class="md-nav__link">
+    Setup Assistant
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#removing-a-service" title="Removing a service" class="md-nav__link">
     Removing a service
   </a>
@@ -526,6 +533,18 @@
   <li class="md-nav__item">
     <a href="../05-bootloader/" title="Bootloader" class="md-nav__link">
       Bootloader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-setup-assistant/" title="Setup Assistant" class="md-nav__link">
+      Setup Assistant
     </a>
   </li>
 
@@ -577,6 +596,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#setup-assistant" title="Setup Assistant" class="md-nav__link">
+    Setup Assistant
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#removing-a-service" title="Removing a service" class="md-nav__link">
     Removing a service
   </a>
@@ -615,7 +641,10 @@
 <p>More information on how this Core Service works can be found on the article about <a href="../04-critical-errors/">Critical Errors</a>.</p>
 <h2 id="bootloader">Bootloader<a class="headerlink" href="#bootloader" title="Permanent link">&para;</a></h2>
 <p><img alt="Bootloader icon" src="../../images/system/cservices/boot.png" /></p>
-<p>The Bootloader is responsible for displaying a boot screen while important components are loading. The bootloader is cusomizable with a certain timeout, depending on how fast you want the OS to "load".</p>
+<p>The Bootloader is responsible for displaying a boot screen while important components are loading. The bootloader is cusomizable with a certain timeout, depending on how fast you want the OS to "load". If the Setup Assistant hasn't fired or completed, the bootloader will also load the Setup Assistant.</p>
+<h2 id="setup-assistant">Setup Assistant<a class="headerlink" href="#setup-assistant" title="Permanent link">&para;</a></h2>
+<p><img alt="Setup Assistant icon" src="../../images/system/cservices/setup.png" /></p>
+<p>The Setup Assistant is responsible for setting up any important configurations and settings for AliceOS, as well as creating a username stored in <code>persistent.playername</code> and letting users read any legal agreements before playing a visual novel project.</p>
 <h2 id="removing-a-service">Removing a service<a class="headerlink" href="#removing-a-service" title="Permanent link">&para;</a></h2>
 <p>If you find that you don't need a particular core service, you can delete it from the <code>CoreServices</code> directory and rebuild AliceOS.</p>
 <div class="admonition warning">

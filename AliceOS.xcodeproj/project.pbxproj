@@ -43,9 +43,19 @@
 		BF0B0CED22CD812F009F4F5B /* 05-bootloader.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "05-bootloader.md"; sourceTree = "<group>"; };
 		BF0B0CF222CD8411009F4F5B /* ASSetupAssistantCoreService.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantCoreService.rpy; sourceTree = "<group>"; };
 		BF0B0CF422CD8518009F4F5B /* AlicePlatformLicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlicePlatformLicense.txt; sourceTree = "<group>"; };
-		BF0B0CF622CD85F3009F4F5B /* ASSetupAssistantView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantView.rpy; sourceTree = "<group>"; };
 		BF0B0CF722CD8757009F4F5B /* ASSetupAssistantViewStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantViewStyles.rpy; sourceTree = "<group>"; };
 		BF0B0CF822CE29B4009F4F5B /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		BF0B0CF922CE9C43009F4F5B /* ASSetupAssistantView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantView.rpy; sourceTree = "<group>"; };
+		BF0B0CFA22CE9CB2009F4F5B /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		BF0B0CFB22CE9CB2009F4F5B /* Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Window.png; sourceTree = "<group>"; };
+		BF0B0CFC22CEA636009F4F5B /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		BF0B0CFD22CEA637009F4F5B /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		BF0B0CFE22CEA637009F4F5B /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
+		BF0B0CFF22CEA637009F4F5B /* 64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64.png; sourceTree = "<group>"; };
+		BF0B0D0022CEA637009F4F5B /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48.png; sourceTree = "<group>"; };
+		BF0B0D0122CEA637009F4F5B /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
+		BF0B0D0222CEA637009F4F5B /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
+		BF0B0D0322CEB1A9009F4F5B /* 06-setup-assistant.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "06-setup-assistant.md"; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -351,8 +361,8 @@
 			children = (
 				BF0B0CEF22CD83EC009F4F5B /* Resources */,
 				BF0B0CF222CD8411009F4F5B /* ASSetupAssistantCoreService.rpy */,
-				BF0B0CF622CD85F3009F4F5B /* ASSetupAssistantView.rpy */,
 				BF0B0CF722CD8757009F4F5B /* ASSetupAssistantViewStyles.rpy */,
+				BF0B0CF922CE9C43009F4F5B /* ASSetupAssistantView.rpy */,
 			);
 			path = Setup.aoscservice;
 			sourceTree = "<group>";
@@ -370,6 +380,13 @@
 		BF0B0CF022CD83F2009F4F5B /* Iconset */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CFC22CEA636009F4F5B /* 16.png */,
+				BF0B0D0222CEA637009F4F5B /* 24.png */,
+				BF0B0CFD22CEA637009F4F5B /* 32.png */,
+				BF0B0D0022CEA637009F4F5B /* 48.png */,
+				BF0B0CFF22CEA637009F4F5B /* 64.png */,
+				BF0B0CFE22CEA637009F4F5B /* 128.png */,
+				BF0B0D0122CEA637009F4F5B /* 256.png */,
 			);
 			path = Iconset;
 			sourceTree = "<group>";
@@ -377,6 +394,8 @@
 		BF0B0CF122CD83F7009F4F5B /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CFA22CE9CB2009F4F5B /* Background.png */,
+				BF0B0CFB22CE9CB2009F4F5B /* Window.png */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -702,6 +721,7 @@
 				BF0B0CBD22CD10F2009F4F5B /* 03-core-services.md */,
 				BF0B0CDF22CD65A8009F4F5B /* 04-critical-errors.md */,
 				BF0B0CED22CD812F009F4F5B /* 05-bootloader.md */,
+				BF0B0D0322CEB1A9009F4F5B /* 06-setup-assistant.md */,
 			);
 			path = System;
 			sourceTree = "<group>";
