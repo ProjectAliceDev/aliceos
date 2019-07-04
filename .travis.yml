@@ -9,11 +9,7 @@ jobs:
     - stage: "Build"
       name: "Ren'Py 6.99.12.4 SDK"
       install:
-        - cd ..
-        - wget https://www.renpy.org/dl/6.99.12.4/renpy-6.99.12.4-sdk.tar.bz2
-        - tar xf renpy-6.99.12.4-sdk.tar.bz2
-        - rm renpy-6.99.12.4-sdk.tar.bz2
-        - mv renpy-6.99.12.4-sdk renpy
+        - bash CatalinaToriel/travis/install.sh 6.99.12.4
 
         - mkdir mod
         - mkdir "./mod/game"
@@ -29,11 +25,7 @@ jobs:
     - stage: "Build"
       name: "Ren'Py Latest SDK"
       install:
-        - cd ..
-        - wget https://www.renpy.org/dl/7.3.2/renpy-7.3.2-sdk.tar.bz2
-        - tar xf renpy-7.3.2-sdk.tar.bz2
-        - rm renpy-7.3.2-sdk.tar.bz2
-        - mv renpy-7.3.2-sdk renpy
+        - bash CatalinaToriel/travis/install.sh 7.3.2
 
         - mkdir mod
         - mkdir "./mod/game"

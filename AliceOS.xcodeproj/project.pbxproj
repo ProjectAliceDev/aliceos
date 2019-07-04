@@ -41,6 +41,11 @@
 		BF0B0CEA22CD7F4D009F4F5B /* ASBootloaderView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASBootloaderView.rpy; sourceTree = "<group>"; };
 		BF0B0CEC22CD800E009F4F5B /* PureBlackBoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PureBlackBoot.png; sourceTree = "<group>"; };
 		BF0B0CED22CD812F009F4F5B /* 05-bootloader.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "05-bootloader.md"; sourceTree = "<group>"; };
+		BF0B0CF222CD8411009F4F5B /* ASSetupAssistantCoreService.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantCoreService.rpy; sourceTree = "<group>"; };
+		BF0B0CF422CD8518009F4F5B /* AlicePlatformLicense.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlicePlatformLicense.txt; sourceTree = "<group>"; };
+		BF0B0CF622CD85F3009F4F5B /* ASSetupAssistantView.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantView.rpy; sourceTree = "<group>"; };
+		BF0B0CF722CD8757009F4F5B /* ASSetupAssistantViewStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASSetupAssistantViewStyles.rpy; sourceTree = "<group>"; };
+		BF0B0CF822CE29B4009F4F5B /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -164,6 +169,7 @@
 		BF0B0CB822CD0A71009F4F5B /* CoreServices */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CEE22CD83D8009F4F5B /* Setup.aoscservice */,
 				BF0B0CE622CD7D29009F4F5B /* Boot.aoscservice */,
 				BF0B0CCC22CD4DDA009F4F5B /* Halt.aoscservice */,
 				BF0B0CB922CD0A7D009F4F5B /* Desktop.aoscservice */,
@@ -336,6 +342,41 @@
 			isa = PBXGroup;
 			children = (
 				BF0B0CEC22CD800E009F4F5B /* PureBlackBoot.png */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		BF0B0CEE22CD83D8009F4F5B /* Setup.aoscservice */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CEF22CD83EC009F4F5B /* Resources */,
+				BF0B0CF222CD8411009F4F5B /* ASSetupAssistantCoreService.rpy */,
+				BF0B0CF622CD85F3009F4F5B /* ASSetupAssistantView.rpy */,
+				BF0B0CF722CD8757009F4F5B /* ASSetupAssistantViewStyles.rpy */,
+			);
+			path = Setup.aoscservice;
+			sourceTree = "<group>";
+		};
+		BF0B0CEF22CD83EC009F4F5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CF122CD83F7009F4F5B /* Elements */,
+				BF0B0CF022CD83F2009F4F5B /* Iconset */,
+				BF0B0CF422CD8518009F4F5B /* AlicePlatformLicense.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF0B0CF022CD83F2009F4F5B /* Iconset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Iconset;
+			sourceTree = "<group>";
+		};
+		BF0B0CF122CD83F7009F4F5B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -616,6 +657,7 @@
 				BFF52C9C22CA6AE0005F37B0 /* setup.sh */,
 				BFF52C9D22CA6AE0005F37B0 /* inject_version.sh */,
 				BFF52CCB22CAD52F005F37B0 /* inject_rp6.sh */,
+				BF0B0CF822CE29B4009F4F5B /* install.sh */,
 			);
 			path = travis;
 			sourceTree = "<group>";
