@@ -15,6 +15,9 @@ init python:
     
     # Class representation of an app on AliceOS.
     class ASAppRepresentative(object):
+        
+        # MARK: Manifest
+        
         bundleName = "Bundle name"
         bundleId = "app.aliceos.bundle"
         bundleDir = AS_APPS_DIR + "Bundle/"
@@ -38,6 +41,8 @@ init python:
             AS_REQUIRES_FULL_DISK_ACCESS,
             AS_REQUIRES_SYSTEM_EVENTS
         }
+        
+        # MARK: Initialization
         
         # Initialize and create a blank template for permissions.
         def __init__(self, appDirectory):
@@ -69,7 +74,11 @@ init python:
             }
         
             pass
-                    
+        
+        
+        # MARK: Permissions
+        
+        
         def requestPermission(self, forPermission):
             if forPermission in self.requires:
                 store.tempPermission = False
@@ -102,6 +111,9 @@ init python:
                 AS_REQUIRES_NOTIFICATIONKIT: store.AS_REQUIRES_NOTIFICATIONKIT
             }
 
+        
+        # MARK: Launch
+        
         # Steps to take when starting the app.
         def applicationWillLaunch(self):
             return
@@ -117,6 +129,10 @@ init python:
         # Steps to take when the app is terminated.
         def applicationDidTerminate(self):
             return
+        
+        
+        # MARK: Notifications
+        
         
         # Determine whether the app can safely send a notification request.
         def applicationShouldRequestNotification(self):
@@ -139,4 +155,23 @@ init python:
         
         # Steps to take when the app is done sending a notification
         def applicationDidRequestNotification(self):
+            return
+
+        def applicationWillRequestBasicAlert(self, message, withDetails, onDismissCallback=Return(0)):
+            if self.applicationShouldRequestNotification():
+                renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, onDismissCallback=onDismissCallback)
+                self.applicationDidRequestAlert()
+            else:
+                print "This app is not authorized to send notifications."
+            return
+
+        def applicationWillRequestExtendedAlert(self, message, withDetails, primaryActionText, onPrimaryCallback=Return(0), secondaryActionText=None, onSecondaryCallback=Return(1)):
+            if self.applicationShouldRequestNotification():
+                renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, primaryActionText=primaryActionText, onPrimaryCallback=onPrimaryCallback, secondaryActionText=secondaryActionText, onSecondaryCallback=onSecondaryCallback)
+                self.applicationDidRequestAlert()
+            else:
+                print "This app is not authorized to send notifications."
+            return
+
+        def applicationDidRequestAlert(self):
             return

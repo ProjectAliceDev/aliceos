@@ -32,6 +32,11 @@
 		BF0B0CDD22CD5D77009F4F5B /* ASDyanmicBlur.rpyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ASDyanmicBlur.rpyc; sourceTree = "<group>"; };
 		BF0B0CDE22CD601B009F4F5B /* ASHaltMessageStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASHaltMessageStyles.rpy; sourceTree = "<group>"; };
 		BF0B0CDF22CD65A8009F4F5B /* 04-critical-errors.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "04-critical-errors.md"; sourceTree = "<group>"; };
+		BF0B0CE022CD6FF0009F4F5B /* ASNotificationAlert.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationAlert.rpy; sourceTree = "<group>"; };
+		BF0B0CE222CD7037009F4F5B /* QRCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCode.png; sourceTree = "<group>"; };
+		BF0B0CE322CD7037009F4F5B /* HaltSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HaltSymbol.png; sourceTree = "<group>"; };
+		BF0B0CE422CD717A009F4F5B /* ASNotificationExtendedAlert.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationExtendedAlert.rpy; sourceTree = "<group>"; };
+		BF0B0CE522CD7897009F4F5B /* 02-alerts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "02-alerts.md"; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -237,6 +242,7 @@
 		BF0B0CCC22CD4DDA009F4F5B /* Halt.aoscservice */ = {
 			isa = PBXGroup;
 			children = (
+				BF0B0CE122CD7037009F4F5B /* Elements */,
 				BF0B0CCD22CD4DDA009F4F5B /* Resources */,
 				BF0B0CD622CD4DDA009F4F5B /* ASHaltCoreService.rpy */,
 				BF0B0CD722CD4E98009F4F5B /* ASHaltMessage.rpy */,
@@ -283,6 +289,16 @@
 				BF0B0CDD22CD5D77009F4F5B /* ASDyanmicBlur.rpyc */,
 			);
 			path = ASDynamicBlur;
+			sourceTree = "<group>";
+		};
+		BF0B0CE122CD7037009F4F5B /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				BF0B0CE222CD7037009F4F5B /* QRCode.png */,
+				BF0B0CE322CD7037009F4F5B /* HaltSymbol.png */,
+			);
+			name = Elements;
+			path = Resources/Elements;
 			sourceTree = "<group>";
 		};
 		BF48420322C84EBE00850E05 = {
@@ -484,6 +500,8 @@
 				BF86C19722C9108F00FD10E4 /* Resources */,
 				BF86C19622C90EDA00FD10E4 /* ASNotificationBanner.rpy */,
 				BF86C19922C9110900FD10E4 /* ASNotificationStyles.rpy */,
+				BF0B0CE022CD6FF0009F4F5B /* ASNotificationAlert.rpy */,
+				BF0B0CE422CD717A009F4F5B /* ASNotificationExtendedAlert.rpy */,
 			);
 			path = NotificationKit.aosframework;
 			sourceTree = "<group>";
@@ -611,6 +629,7 @@
 			children = (
 				BFF52CA922CA85CD005F37B0 /* 01-banner.md */,
 				BFF52CAA22CA85F8005F37B0 /* index.md */,
+				BF0B0CE522CD7897009F4F5B /* 02-alerts.md */,
 			);
 			path = NotificationKit;
 			sourceTree = "<group>";

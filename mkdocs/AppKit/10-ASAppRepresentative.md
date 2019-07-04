@@ -72,3 +72,28 @@ Executes any pre-processing for a notification request and then sends a request.
 ### `applicationDidRequestNotification()`
 
 Executes any actions after sending a notification request.
+
+### `applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)`
+
+Executes any pre-processing for an alert and then sends an alert request.
+
+**Parameters**
+
+- `message`: The message or title of the alert.
+- `withDetails`: The details of the alert.
+- `onDismissCallback` (Optional) The action to perform when clicking 'OK'.
+
+### `applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)`
+
+Executes any pre-processing for an extended alert and then sends an alert request.
+
+- `message`: The message or title of the alert.
+- `withDetails`: The details of the alert.
+- `primaryActionText`: The text for the primary action button
+- `onPrimaryCallback` (Optional) The action to perform when clicking the primary button.
+- `secondaryActionText`: (Optional) The text for the secondary action button
+- `onSecondaryCallback` (Optional) The action to perform when clicking the secondary button.
+
+### `applicationDidRequestAlert()`
+
+Executes any actions after sending an alert.

@@ -432,6 +432,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#applicationwillrequestbasicalertmessage-withdetails-ondismisscallback" title="applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)" class="md-nav__link">
+    applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback" title="applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)" class="md-nav__link">
+    applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applicationdidrequestalert" title="applicationDidRequestAlert()" class="md-nav__link">
+    applicationDidRequestAlert()
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -492,6 +513,18 @@
   <li class="md-nav__item">
     <a href="../../NotificationKit/01-banner/" title="Banners" class="md-nav__link">
       Banners
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../NotificationKit/02-alerts/" title="Alerts" class="md-nav__link">
+      Alerts
     </a>
   </li>
 
@@ -678,6 +711,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#applicationwillrequestbasicalertmessage-withdetails-ondismisscallback" title="applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)" class="md-nav__link">
+    applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback" title="applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)" class="md-nav__link">
+    applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applicationdidrequestalert" title="applicationDidRequestAlert()" class="md-nav__link">
+    applicationDidRequestAlert()
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -750,6 +804,26 @@
 </ul>
 <h3 id="applicationdidrequestnotification"><code>applicationDidRequestNotification()</code><a class="headerlink" href="#applicationdidrequestnotification" title="Permanent link">&para;</a></h3>
 <p>Executes any actions after sending a notification request.</p>
+<h3 id="applicationwillrequestbasicalertmessage-withdetails-ondismisscallback"><code>applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)</code><a class="headerlink" href="#applicationwillrequestbasicalertmessage-withdetails-ondismisscallback" title="Permanent link">&para;</a></h3>
+<p>Executes any pre-processing for an alert and then sends an alert request.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>message</code>: The message or title of the alert.</li>
+<li><code>withDetails</code>: The details of the alert.</li>
+<li><code>onDismissCallback</code> (Optional) The action to perform when clicking 'OK'.</li>
+</ul>
+<h3 id="applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback"><code>applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)</code><a class="headerlink" href="#applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback" title="Permanent link">&para;</a></h3>
+<p>Executes any pre-processing for an extended alert and then sends an alert request.</p>
+<ul>
+<li><code>message</code>: The message or title of the alert.</li>
+<li><code>withDetails</code>: The details of the alert.</li>
+<li><code>primaryActionText</code>: The text for the primary action button</li>
+<li><code>onPrimaryCallback</code> (Optional) The action to perform when clicking the primary button.</li>
+<li><code>secondaryActionText</code>: (Optional) The text for the secondary action button</li>
+<li><code>onSecondaryCallback</code> (Optional) The action to perform when clicking the secondary button.</li>
+</ul>
+<h3 id="applicationdidrequestalert"><code>applicationDidRequestAlert()</code><a class="headerlink" href="#applicationdidrequestalert" title="Permanent link">&para;</a></h3>
+<p>Executes any actions after sending an alert.</p>
                 
                   
                 

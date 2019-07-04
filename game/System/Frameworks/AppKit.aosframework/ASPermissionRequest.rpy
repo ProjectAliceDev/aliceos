@@ -21,13 +21,12 @@ init screen ASPermissionRequest(bundleName="AS_APP_BUNDLE", requestingFor, onDec
     
     add FileCurrentScreenshot() at blur
 
-    add AS_FRAMEWORK_DIR("AppKit") + "/Resources/ASPermissionRequestBackground.png"
-
-
-    frame at ASDyanmicBlurTransition:
-        style "ASDyanmicBlurFrame"
+    frame at ASDynamicBlurTransition:
+        style "ASDynamicBlurFrame"
         xalign 0.5
         yalign 0.5
+        xfill True
+        yfill True
 
         has vbox:
             xalign 0.5

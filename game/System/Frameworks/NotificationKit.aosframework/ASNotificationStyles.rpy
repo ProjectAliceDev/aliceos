@@ -42,3 +42,31 @@ init:
     style ASNotificationBannerButton_text is ASSystemBoldFont:
         size 16
         color "#f4f4f4"
+
+    # MARK: ASNotificationAlert
+
+    style ASNotificationAlertTitle is ASSystemBoldFont:
+        color "#fff"
+        size 28
+        text_align 0.5
+        xalign 0.5
+    
+    style ASNotificationAlertDetail is ASSystemRegularFont:
+            color "#fff"
+            size 20
+            text_align 0.5
+            xalign 0.5
+    
+    style ASNotificationAlertDeclinedButton is gui_button
+    
+    style ASNotificationAlertDeclinedButton_text is ASSystemBoldFont:
+        color "#fff"
+        size 24
+        xalign 0.5
+
+    style ASNotificationAlertAcceptButton is gui_button
+    
+    style ASNotificationAlertAcceptButton_text is ASSystemRegularFont:
+        color "#fff"
+        size 24
+        xalign 0.5
