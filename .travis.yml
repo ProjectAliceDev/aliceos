@@ -9,6 +9,7 @@ jobs:
     - stage: "Build"
       name: "Ren'Py 6.99.12.4 SDK"
       install:
+        - ls CatalinaToriel/travis/
         - bash CatalinaToriel/travis/install.sh 6.99.12.4
 
         - mkdir mod
@@ -18,6 +19,7 @@ jobs:
 
         - bash CatalinaToriel/travis/inject_version.sh
         - bash CatalinaToriel/travis/inject_rp6.sh
+
         - cd renpy
       env:
         - SDL_AUDIODRIVER=dummy SDL_VIDEODRIVER=dummy
