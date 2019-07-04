@@ -9,7 +9,7 @@ jobs:
     - stage: "Build"
       name: "Ren'Py 6.99.12.4 SDK"
       install:
-        - ls CatalinaToriel/travis/
+        - cd ..
         - bash CatalinaToriel/travis/install.sh 6.99.12.4
 
         - mkdir mod
@@ -27,6 +27,7 @@ jobs:
     - stage: "Build"
       name: "Ren'Py Latest SDK"
       install:
+        - cd ..
         - bash CatalinaToriel/travis/install.sh 7.3.2
 
         - mkdir mod
