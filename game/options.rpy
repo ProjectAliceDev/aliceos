@@ -155,15 +155,16 @@ init python:
     build.package(build.directory_name + "_ASBaseSystem", 'zip', build.name, description="AliceOS Base System Distributable")
     
     build.archive("AliceOSBaseSystem", build.name)
-
+    
+    build.classify("game/System/**.**", "AliceOSBaseSystem")
+    build.classify("game/System/**.rpyc", "AliceOSBaseSystem")
+    
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('game/**.rpyc', None)
-    
-    build.classify("game/System/**", "AliceOSBaseSystem")
 
     build.documentation('*.html')
     build.documentation('*.txt')
