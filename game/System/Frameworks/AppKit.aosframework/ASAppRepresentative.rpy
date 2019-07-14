@@ -145,10 +145,11 @@ init python:
             return
 
         # Steps to take when the app is about to send a notification
-        def applicationWillRequestNotification(self, message, withDetails, responseCallback=Return(0)):
+        def applicationWillRequestNotification(self, message, withDetails, responseCallback=Return('didClickRespond')):
             if self.applicationShouldRequestNotification():
-                renpy.call_screen("ASNotificationBanner", applet=self, message=message, withDetails=withDetails, responseCallback=responseCallback)
+                notificationResponse = renpy.call_screen("ASNotificationBanner", applet=self, message=message, withDetails=withDetails, responseCallback=responseCallback)
                 self.applicationDidRequestNotification()
+                return notificationResponse
             else:
                 print "This app is not authorized to send notifications."
             return
@@ -157,15 +158,16 @@ init python:
         def applicationDidRequestNotification(self):
             return
 
-        def applicationWillRequestBasicAlert(self, message, withDetails, onDismissCallback=Return(0)):
+        def applicationWillRequestBasicAlert(self, message, withDetails, onDismissCallback=Return('didDismissAlert')):
             if self.applicationShouldRequestNotification():
-                renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, onDismissCallback=onDismissCallback)
+                notificationResponse = renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, onDismissCallback=onDismissCallback)
                 self.applicationDidRequestAlert()
+                return notificationResponse
             else:
                 print "This app is not authorized to send notifications."
             return
 
-        def applicationWillRequestExtendedAlert(self, message, withDetails, primaryActionText, onPrimaryCallback=Return(0), secondaryActionText=None, onSecondaryCallback=Return(1)):
+        def applicationWillRequestExtendedAlert(self, message, withDetails, primaryActionText, onPrimaryCallback=Return('didClickPrimary'), secondaryActionText=None, onSecondaryCallback=Return('didClickSecondary')):
             if self.applicationShouldRequestNotification():
                 renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, primaryActionText=primaryActionText, onPrimaryCallback=onPrimaryCallback, secondaryActionText=secondaryActionText, onSecondaryCallback=onSecondaryCallback)
                 self.applicationDidRequestAlert()

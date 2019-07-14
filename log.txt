@@ -1,19 +1,19 @@
-Sun Jul 14 11:55:27 2019
+Sun Jul 14 12:42:32 2019
 Darwin-19.0.0-x86_64-i386-64bit
 Ren'Py 7.3.2.320
  
 
 Bootstrap to the start of init.init took 0.06s
-Early init took 0.00s
+Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.12s
-Loading script took 1.50s
+Loading error handling took 0.13s
+Loading script took 1.54s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.13s
 Loading analysis data took 0.00s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to '/Users/marquiskurt/Library/RenPy/backups/CatalinaToriel':
 Dump and make backups. took 0.04s
@@ -26,8 +26,8 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.08s
+Analyze screens took 0.03s
+Save screen analysis took 0.06s
 Prepare screens took 0.14s
 Save pyanalysis. took 0.07s
-Save bytecode. took 0.05s
+Save bytecode. took 0.06s

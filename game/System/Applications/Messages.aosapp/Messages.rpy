@@ -22,7 +22,7 @@ init 10 python:
         }
         
         def receiveMessage(self, fromPerson, message):
-            self.applicationWillRequestNotification(message=fromPerson, withDetails=message)
+            return self.applicationWillRequestNotification(message=fromPerson, withDetails=message)
 
         def applicationShouldRequestNotification(self):
             return True
