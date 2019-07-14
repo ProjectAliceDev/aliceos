@@ -20,7 +20,7 @@ init 5 python:
         
         def boot(self, timeout=5, expressSetup=True, disclaimer=None):
             renpy.call_screen("ASBootloaderView", timeout=timeout)
-            if not persistent.AS_SETUP_COMPLETE:
+            if not persistent.AS_COMPLETED_SETUP:
                 ASSetup.startSetup(express=expressSetup, disclaimer=disclaimer)
     
         def __init__(self):

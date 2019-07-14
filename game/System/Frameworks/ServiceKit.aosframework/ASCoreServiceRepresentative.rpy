@@ -6,7 +6,7 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 #
 
-init python:
+init -20 python:
     
     class ASCoreServiceRepresentative(object):
         bundleName = "Bundle name"

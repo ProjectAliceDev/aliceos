@@ -13,13 +13,15 @@ init screen ASBootloaderView(timeout=5):
     modal True
     
     add ASBootloader.bundleDir + "Resources/Elements/PureBlackBoot.png"
+    add ASBootloader.bundleDir + "Resources/Elements/Background.png"
 
     frame at ASDynamicBlurTransition:
         style "ASDynamicBlurFrame"
-    
-        has vbox:
+
+        vbox:
             xalign 0.5
             yalign 0.5
+            spacing 32
 
             add ASBootloader.bundleDir + "Resources/Elements/BootLogo.png"
     

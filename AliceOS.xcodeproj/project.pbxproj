@@ -119,6 +119,7 @@
 		BF86C19A22C9117D00FD10E4 /* ASDefinitions.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASDefinitions.rpy; sourceTree = "<group>"; };
 		BF86C1AB22C916BF00FD10E4 /* ASFonts.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASFonts.rpy; sourceTree = "<group>"; };
 		BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASAppRepresentative.rpy; sourceTree = "<group>"; };
+		BF8CEEEB22D13DB000227C2F /* splashscreen.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = splashscreen.rpy; sourceTree = "<group>"; };
 		BFF52C8A22C97062005F37B0 /* ASPermissionRequest.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequest.rpy; sourceTree = "<group>"; };
 		BFF52C8C22C97C1F005F37B0 /* ASPermissionRequestStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequestStyles.rpy; sourceTree = "<group>"; };
 		BFF52C8F22C9931A005F37B0 /* Messages.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = Messages.rpy; sourceTree = "<group>"; };
@@ -556,6 +557,7 @@
 				BF6BC6E922C8503B002C96FB /* screens.rpy */,
 				BF6BC6EE22C8503B002C96FB /* gui */,
 				BF6BC72822C8503B002C96FB /* gui.rpy */,
+				BF8CEEEB22D13DB000227C2F /* splashscreen.rpy */,
 			);
 			name = "Ren'Py Base";
 			path = game;
