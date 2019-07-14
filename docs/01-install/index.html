@@ -271,6 +271,19 @@
     Downloading the base system
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage-with-ddlc-mods" title="Usage with DDLC Mods" class="md-nav__link">
+    Usage with DDLC Mods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -556,6 +569,19 @@
     Downloading the base system
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usage-with-ddlc-mods" title="Usage with DDLC Mods" class="md-nav__link">
+    Usage with DDLC Mods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -587,13 +613,16 @@
 <h2 id="downloading-the-base-system">Downloading the base system<a class="headerlink" href="#downloading-the-base-system" title="Permanent link">&para;</a></h2>
 <p>If you do not plan to customize AliceOS too much, you can add the base system archive and use AliceOS that way.</p>
 <p>Download the latest release from the Downloads page and extract the ZIP archive. Then, copy <code>AliceOSBaseSystem.rpa</code> over to your Ren'Py project's game folder.</p>
-<div class="admonition warning">
-<p class="admonition-title">About using AliceOS with DDLC</p>
-<p>If you plan to use AliceOS in a mod for Doki Doki Literature Club!, you must make sure that the base system version that you use is built against Ren'Py <strong>6.99.12.4</strong> to maintain compatibility.</p>
-<p>The release ZIP file is generally noted as 'AliceOS-x.x.x-_AliceOSBaseSystem-rp6.zip'.</p>
+<div class="admonition info">
+<p class="admonition-title">Ensure compatibility</p>
+<p>The latest version of AliceOS for download will always correspond to the latest version of the Ren'Py SDK made available at that time. At the time of writing, this means that AliceOS is building against Ren'Py SDK v<strong>7.3.2</strong>. If you are unsure of what version AliceOS is built with, check the <a href="https://travis-ci.com/alicerunsonfedora/CatalinaToriel">Travis results</a> and click on "Ren'Py Latest SDK".</p>
+<p>It is recommend that you make sure that your version of Ren'Py is up to date to ensure compatibility with AliceOS.</p>
 </div>
+<h3 id="usage-with-ddlc-mods">Usage with DDLC Mods<a class="headerlink" href="#usage-with-ddlc-mods" title="Permanent link">&para;</a></h3>
+<p>If you plan to use AliceOS in a mod for <em>Doki Doki Literature Club!</em>, you must make sure that the base system version that you use is built against Ren'Py <strong>6.99.12.4</strong> to maintain compatibility.</p>
+<p>The release ZIP file is generally noted as 'AliceOS-x.x.x-_AliceOSBaseSystem-rp6.zip'.</p>
 <h2 id="building-from-source-code">Building from source code<a class="headerlink" href="#building-from-source-code" title="Permanent link">&para;</a></h2>
-<p>Alternatively, you can build <code>AliceOSBaseSystem.rpa</code> yourself with the customization you need.</p>
+<p>Alternatively, you can build <code>AliceOSBaseSystem.rpa</code> yourself with the customization you need. This may also be helpful in building AliceOS for your specific Ren'Py version, if necessary.</p>
 <ol>
 <li>Download the source code for the particular release you'd like and open Ren'Py Launcher.</li>
 <li>Select the AliceOS source code and click "Build Distributions".</li>
@@ -601,10 +630,6 @@
 <li>Click "Build".</li>
 </ol>
 <p>Your resulting ZIP file will be located in <code>AliceOS-x.x.x-dists</code>, and you can follow the instructions from <strong>Downloading the base system</strong> to finalize installation.</p>
-<div class="admonition warning">
-<p class="admonition-title">About building AliceOS for DDLC use</p>
-<p>If you plan to build AliceOS for a Doki Doki Literature Club! mod, you must make sure that you use Ren'Py SDK v<strong>6.99.12.4</strong> to maintain compatibility.</p>
-</div>
                 
                   
                 

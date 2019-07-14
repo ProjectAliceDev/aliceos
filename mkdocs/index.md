@@ -2,6 +2,8 @@
 
 ![AliceOS Screenshot](images/hero.jpg)
 
+![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg) [![Build Status](https://travis-ci.com/alicerunsonfedora/CatalinaToriel.svg?token=d7YdxjzD7RWGCxysa2ip&branch=master)](https://travis-ci.com/alicerunsonfedora/CatalinaToriel)
+
 AliceOS is a robust and evolving framework for developing interactive visual novel experiences with operating system-like features such as notifications and setup assistants.
 
 ## Features and Principles

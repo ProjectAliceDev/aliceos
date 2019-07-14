@@ -2,6 +2,15 @@
 
 To make referencing common AliceOS build settings and structures easier, AliceOS provides the following definitions and dictionaries. These are located in `System/ASDefinitions.rpy` and can be modified if necessary.
 
+## AliceOS release definitions
+
+These definitions are used to specify important release information regarding AliceOS. These definitions might be referenced to specify OS version information to the user, in a help screen, for example.
+
+| Definition name | Used for |
+| -- | -- |
+| `AS_SYS_VERSION` | The release version. Typically `X.x.x`; this isn't the build number generated from the Git hash |
+| `AS_SYS_COMMON_NAME` | The common name for the release. (ex. "Prospect Park") |
+
 ## Directory definitions
 | Definition name | Points to | Used for |
 | -- | -- | -- |

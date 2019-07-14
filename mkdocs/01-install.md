@@ -8,14 +8,19 @@ If you do not plan to customize AliceOS too much, you can add the base system ar
 
 Download the latest release from the Downloads page and extract the ZIP archive. Then, copy `AliceOSBaseSystem.rpa` over to your Ren'Py project's game folder.
 
-!!! warning "About using AliceOS with DDLC"
-    If you plan to use AliceOS in a mod for Doki Doki Literature Club!, you must make sure that the base system version that you use is built against Ren'Py **6.99.12.4** to maintain compatibility.
+!!! info "Ensure compatibility"
+    The latest version of AliceOS for download will always correspond to the latest version of the Ren'Py SDK made available at that time. At the time of writing, this means that AliceOS is building against Ren'Py SDK v**7.3.2**. If you are unsure of what version AliceOS is built with, check the [Travis results](https://travis-ci.com/alicerunsonfedora/CatalinaToriel) and click on "Ren'Py Latest SDK".
     
-    The release ZIP file is generally noted as 'AliceOS-x.x.x-_AliceOSBaseSystem-rp6.zip'.
+    It is recommend that you make sure that your version of Ren'Py is up to date to ensure compatibility with AliceOS.
+    
+### Usage with DDLC Mods
+If you plan to use AliceOS in a mod for _Doki Doki Literature Club!_, you must make sure that the base system version that you use is built against Ren'Py **6.99.12.4** to maintain compatibility.
+
+The release ZIP file is generally noted as 'AliceOS-x.x.x-_AliceOSBaseSystem-rp6.zip'.
 
 ## Building from source code
 
-Alternatively, you can build `AliceOSBaseSystem.rpa` yourself with the customization you need.
+Alternatively, you can build `AliceOSBaseSystem.rpa` yourself with the customization you need. This may also be helpful in building AliceOS for your specific Ren'Py version, if necessary.
 
 1. Download the source code for the particular release you'd like and open Ren'Py Launcher.
 2. Select the AliceOS source code and click "Build Distributions".
@@ -23,6 +28,3 @@ Alternatively, you can build `AliceOSBaseSystem.rpa` yourself with the customiza
 4. Click "Build".
 
 Your resulting ZIP file will be located in `AliceOS-x.x.x-dists`, and you can follow the instructions from **Downloading the base system** to finalize installation.
-
-!!! warning "About building AliceOS for DDLC use"
-    If you plan to build AliceOS for a Doki Doki Literature Club! mod, you must make sure that you use Ren'Py SDK v**6.99.12.4** to maintain compatibility.
