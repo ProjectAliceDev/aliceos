@@ -63,10 +63,10 @@ init -20 python:
             return True
 
         # Steps to take when the app is about to send a notification
-        def applicationWillRequestNotification(self, message, withDetails, responseCallback=Return(0)):
-            if self.applicationShouldRequestNotification():
+        def serviceWillRequestNotification(self, message, withDetails, responseCallback=Return(0)):
+            if self.serviceShouldRequestNotification():
                 renpy.call_screen("ASNotificationBanner", applet=self, message=message, withDetails=withDetails, responseCallback=responseCallback)
-                self.applicationDidRequestNotification()
+                self.serviceDidRequestNotification()
             else:
                 print "This service is not authorized to send notifications."
             return
