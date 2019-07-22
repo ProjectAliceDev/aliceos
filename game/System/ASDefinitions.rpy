@@ -9,8 +9,13 @@
 init -1000:
 
     # MARK: OS release definitions
-    define AS_SYS_VERSION = "2.0.0"
-    define AS_SYS_COMMON_NAME = "Prospect Park"
+    # These definitions are used as a means of identifying the current
+    # version of AliceOS provided with a 
+    define AS_SYS_INFO = {
+        "VERSION": "2.0.0",
+        "COMMON_NAME": "Prospect Park",
+        "BUILD_ID": "GITHASH"
+    }
 
     # MARK: OS directory definitions
     # Define system-wide directories here. These definitions are used
