@@ -10,15 +10,15 @@ jobs:
       name: "Ren'Py 6.99.12.4 SDK"
       install:
         - cd ..
-        - bash CatalinaToriel/travis/install.sh 6.99.12.4
+        - bash aliceos/travis/install.sh 6.99.12.4
 
         - mkdir mod
         - mkdir "./mod/game"
 
-        - rm -rf CatalinaToriel/game/README.html && cp -vRf CatalinaToriel/game/* mod/game/
+        - rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
 
-        - bash CatalinaToriel/travis/inject_version.sh
-        - bash CatalinaToriel/travis/inject_rp6.sh
+        - bash aliceos/travis/inject_version.sh
+        - bash aliceos/travis/inject_rp6.sh
 
         - cd renpy
       env:
@@ -28,14 +28,14 @@ jobs:
       name: "Ren'Py Latest SDK"
       install:
         - cd ..
-        - bash CatalinaToriel/travis/install.sh 7.3.2
+        - bash aliceos/travis/install.sh 7.3.2
 
         - mkdir mod
         - mkdir "./mod/game"
 
-        - rm -rf CatalinaToriel/game/README.html && cp -vRf CatalinaToriel/game/* mod/game/
+        - rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
 
-        - bash CatalinaToriel/travis/inject_version.sh
+        - bash aliceos/travis/inject_version.sh
         - cd renpy
       env:
         - SDL_AUDIODRIVER=dummy SDL_VIDEODRIVER=dummy
