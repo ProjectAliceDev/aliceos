@@ -116,6 +116,9 @@
 		BF6BC72822C8503B002C96FB /* gui.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gui.rpy; sourceTree = "<group>"; };
 		BF71F30022E68A5F00241258 /* gitpod.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitpod.yml; sourceTree = "<group>"; };
 		BF71F30122E68A5F00241258 /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CODEOWNERS; sourceTree = "<group>"; };
+		BF71F30322E746B700241258 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../../../../../System/Volumes/Data/Users/marquiskurt/Developer/AliceOS/.github/CONTRIBUTING.md; sourceTree = "<group>"; };
+		BF71F30422E74C1B00241258 /* verify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = verify.png; path = ../../../../../System/Volumes/Data/Users/marquiskurt/Developer/AliceOS/.github/verify.png; sourceTree = "<group>"; };
+		BF71F30522E74CF400241258 /* 02-contributing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "02-contributing.md"; path = "../../../../../System/Volumes/Data/Users/marquiskurt/Developer/AliceOS/mkdocs/02-contributing.md"; sourceTree = "<group>"; };
 		BF76CAC622CC455D00A43F5C /* hero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hero.jpg; sourceTree = "<group>"; };
 		BF86C18E22C90D7300FD10E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF86C19622C90EDA00FD10E4 /* ASNotificationBanner.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationBanner.rpy; sourceTree = "<group>"; };
@@ -582,8 +585,10 @@
 		BF71F2FF22E68A5F00241258 /* .github */ = {
 			isa = PBXGroup;
 			children = (
+				BF71F30422E74C1B00241258 /* verify.png */,
 				BF71F30022E68A5F00241258 /* gitpod.yml */,
 				BF71F30122E68A5F00241258 /* CODEOWNERS */,
+				BF71F30322E746B700241258 /* CONTRIBUTING.md */,
 			);
 			path = .github;
 			sourceTree = "<group>";
@@ -718,6 +723,7 @@
 				BFF52CA622CA8324005F37B0 /* System */,
 				BFF52CA022CA77B3005F37B0 /* index.md */,
 				BFF52CA422CA7E35005F37B0 /* 01-install.md */,
+				BF71F30522E74CF400241258 /* 02-contributing.md */,
 			);
 			path = mkdocs;
 			sourceTree = "<group>";

@@ -40,7 +40,7 @@
     
     
       
-        <title>Getting Started - AliceOS Documentation</title>
+        <title>Contribution Guidelines - AliceOS Documentation</title>
       
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#getting-started" tabindex="1" class="md-skip">
+      <a href="#contribution-guidelines" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Getting Started
+                Contribution Guidelines
               
             </span>
           
@@ -238,6 +238,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../01-install/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -249,11 +261,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
+        Contribution Guidelines
       </label>
     
-    <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
-      Getting Started
+    <a href="./" title="Contribution Guidelines" class="md-nav__link md-nav__link--active">
+      Contribution Guidelines
     </a>
     
       
@@ -267,16 +279,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloading-the-base-system" title="Downloading the base system" class="md-nav__link">
-    Downloading the base system
+  <a href="#general-code-guidelines" title="General Code Guidelines" class="md-nav__link">
+    General Code Guidelines
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usage-with-ddlc-mods" title="Usage with DDLC Mods" class="md-nav__link">
-    Usage with DDLC Mods
+  <a href="#follow-the-aliceos-api-styling" title="Follow the AliceOS API Styling" class="md-nav__link">
+    Follow the AliceOS API Styling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-commit-conventions" title="Follow commit conventions" class="md-nav__link">
+    Follow commit conventions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-code-organized" title="Keep code organized" class="md-nav__link">
+    Keep code organized
   </a>
   
 </li>
@@ -287,9 +313,103 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-from-source-code" title="Building from source code" class="md-nav__link">
-    Building from source code
+  <a href="#issues" title="Issues" class="md-nav__link">
+    Issues
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#be-as-descriptive-and-concise-as-possible" title="Be as descriptive and concise as possible" class="md-nav__link">
+    Be as descriptive and concise as possible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-your-issue-during-creation" title="Label your issue during creation" class="md-nav__link">
+    Label your issue during creation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" title="Pull Requests" class="md-nav__link">
+    Pull Requests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#describe-all-of-your-changes" title="Describe all of your changes" class="md-nav__link">
+    Describe all of your changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-existing-issues-and-prs" title="Reference existing issues and PRs" class="md-nav__link">
+    Reference existing issues and PRs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" title="Screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#respect-the-post-authors-visibility" title="Respect the post author's visibility" class="md-nav__link">
+    Respect the post author's visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ensure-screenshots-are-clear" title="Ensure screenshots are clear" class="md-nav__link">
+    Ensure screenshots are clear
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-official-contributors" title="For Official Contributors" class="md-nav__link">
+    For Official Contributors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sign-off-your-code-and-enable-verified-commits" title="Sign off your code and enable verified commits" class="md-nav__link">
+    Sign off your code and enable verified commits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -301,18 +421,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../02-contributing/" title="Contribution Guidelines" class="md-nav__link">
-      Contribution Guidelines
-    </a>
   </li>
 
     
@@ -625,16 +733,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloading-the-base-system" title="Downloading the base system" class="md-nav__link">
-    Downloading the base system
+  <a href="#general-code-guidelines" title="General Code Guidelines" class="md-nav__link">
+    General Code Guidelines
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#usage-with-ddlc-mods" title="Usage with DDLC Mods" class="md-nav__link">
-    Usage with DDLC Mods
+  <a href="#follow-the-aliceos-api-styling" title="Follow the AliceOS API Styling" class="md-nav__link">
+    Follow the AliceOS API Styling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-commit-conventions" title="Follow commit conventions" class="md-nav__link">
+    Follow commit conventions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-code-organized" title="Keep code organized" class="md-nav__link">
+    Keep code organized
   </a>
   
 </li>
@@ -645,9 +767,103 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-from-source-code" title="Building from source code" class="md-nav__link">
-    Building from source code
+  <a href="#issues" title="Issues" class="md-nav__link">
+    Issues
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#be-as-descriptive-and-concise-as-possible" title="Be as descriptive and concise as possible" class="md-nav__link">
+    Be as descriptive and concise as possible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-your-issue-during-creation" title="Label your issue during creation" class="md-nav__link">
+    Label your issue during creation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-requests" title="Pull Requests" class="md-nav__link">
+    Pull Requests
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#describe-all-of-your-changes" title="Describe all of your changes" class="md-nav__link">
+    Describe all of your changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-existing-issues-and-prs" title="Reference existing issues and PRs" class="md-nav__link">
+    Reference existing issues and PRs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" title="Screenshots" class="md-nav__link">
+    Screenshots
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#respect-the-post-authors-visibility" title="Respect the post author's visibility" class="md-nav__link">
+    Respect the post author's visibility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ensure-screenshots-are-clear" title="Ensure screenshots are clear" class="md-nav__link">
+    Ensure screenshots are clear
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-official-contributors" title="For Official Contributors" class="md-nav__link">
+    For Official Contributors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sign-off-your-code-and-enable-verified-commits" title="Sign off your code and enable verified commits" class="md-nav__link">
+    Sign off your code and enable verified commits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -668,28 +884,88 @@
               
                 
                 
-                <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<p>This document will help you get started with installing AliceOS and attaching it to your Ren'Py project.</p>
-<h2 id="downloading-the-base-system">Downloading the base system<a class="headerlink" href="#downloading-the-base-system" title="Permanent link">&para;</a></h2>
-<p>If you do not plan to customize AliceOS too much, you can add the base system archive and use AliceOS that way.</p>
-<p>Download the latest release from the Downloads page and extract the ZIP archive. Then, copy <code>AliceOSBaseSystem.rpa</code> over to your Ren'Py project's game folder.</p>
-<div class="admonition info">
-<p class="admonition-title">Ensure compatibility</p>
-<p>The latest version of AliceOS for download will always correspond to the latest version of the Ren'Py SDK made available at that time. At the time of writing, this means that AliceOS is building against Ren'Py SDK v<strong>7.3.2</strong>. If you are unsure of what version AliceOS is built with, check the <a href="https://travis-ci.com/alicerunsonfedora/CatalinaToriel">Travis results</a> and click on "Ren'Py Latest SDK".</p>
-<p>It is recommend that you make sure that your version of Ren'Py is up to date to ensure compatibility with AliceOS.</p>
-</div>
-<h3 id="usage-with-ddlc-mods">Usage with DDLC Mods<a class="headerlink" href="#usage-with-ddlc-mods" title="Permanent link">&para;</a></h3>
-<p>If you plan to use AliceOS in a mod for <em>Doki Doki Literature Club!</em>, you must make sure that the base system version that you use is built against Ren'Py <strong>6.99.12.4</strong> to maintain compatibility.</p>
-<p>The release ZIP file is generally noted as 'AliceOS-x.x.x-_AliceOSBaseSystem-rp6.zip'.</p>
-<h2 id="building-from-source-code">Building from source code<a class="headerlink" href="#building-from-source-code" title="Permanent link">&para;</a></h2>
-<p>Alternatively, you can build <code>AliceOSBaseSystem.rpa</code> yourself with the customization you need. This may also be helpful in building AliceOS for your specific Ren'Py version, if necessary.</p>
-<ol>
-<li>Download the source code for the particular release you'd like and open Ren'Py Launcher.</li>
-<li>Select the AliceOS source code and click "Build Distributions".</li>
-<li>Uncheck the distribution options and check "Alice OS Base System Distributable".</li>
-<li>Click "Build".</li>
-</ol>
-<p>Your resulting ZIP file will be located in <code>AliceOS-x.x.x-dists</code>, and you can follow the instructions from <strong>Downloading the base system</strong> to finalize installation.</p>
+                <h1 id="contribution-guidelines">Contribution Guidelines<a class="headerlink" href="#contribution-guidelines" title="Permanent link">&para;</a></h1>
+<p>AliceOS is free and open-source software, hosted on GitHub, and accepts contributions from the community. To make the contribution process quick, smooth, easy, and fun, we've devised a set of guidelines to ensure code quality and security. Please consult these when making a pull request, issue, etc.</p>
+<p><img alt="GitHub page" src="../images/github.png" /></p>
+<h2 id="general-code-guidelines">General Code Guidelines<a class="headerlink" href="#general-code-guidelines" title="Permanent link">&para;</a></h2>
+<p>These guidelines apply to code that is written in AliceOS.</p>
+<h3 id="follow-the-aliceos-api-styling">Follow the AliceOS API Styling<a class="headerlink" href="#follow-the-aliceos-api-styling" title="Permanent link">&para;</a></h3>
+<p>Although AliceOS is a Python-based framework, our APIs are similarly written to those of the APIs used when creating macOS and iOS apps and are in camel case. This usually serves two purposes:</p>
+<ul>
+<li>To identify AliceOS code from the rest of a visual novel project</li>
+<li>To make it easy to understand when migrating from Apple platform development</li>
+</ul>
+<blockquote>
+<p>Example: <code>applicationWillRequestNotification</code> vs. <code>application_will_request_notification</code></p>
+</blockquote>
+<p>System-wide variables such as release names should be capitalized and use snake case as normal.</p>
+<blockquote>
+<p>Example: <code>AS_SYS_VERSION</code> vs. <code>asSysVersion</code></p>
+</blockquote>
+<h3 id="follow-commit-conventions">Follow commit conventions<a class="headerlink" href="#follow-commit-conventions" title="Permanent link">&para;</a></h3>
+<p>The AliceOS team has adopted the same <a href="https://github.com/ClarityMoe/Community/blob/master/CHAPTER3-COMMIT%20CONVENTIONS.md">commit conventions from Clarity Moe</a>, the parent organization running Sayonika. This commit style definitely explains where changes occured and what was changed in a succinct manner. However, there are some changes we have made to this commit style:</p>
+<ul>
+<li>Common directories such as System, Applications, and Library do <em>not</em> need to be fully typed out.</li>
+<li>File extensions for frameworks (<code>.aosframework</code>), core services (<code>.aoscservice</code>), and applications (<code>.aosapp</code>) do <em>not</em> need to be typed out.</li>
+</ul>
+<blockquote>
+<p>Example: <code>[S/F/ServiceKit] Resolve misnaming of serviceWillRequestNotification from applicationWillRequestNotification</code></p>
+</blockquote>
+<h3 id="keep-code-organized">Keep code organized<a class="headerlink" href="#keep-code-organized" title="Permanent link">&para;</a></h3>
+<p>The AliceOS structure is organized based on a simple macOS file structure to make everything easy to locate. Please try to keep this organization when contributing your code.</p>
+<h2 id="issues">Issues<a class="headerlink" href="#issues" title="Permanent link">&para;</a></h2>
+<p>These guidelines apply to issues on GitHub.</p>
+<h3 id="be-as-descriptive-and-concise-as-possible">Be as descriptive and concise as possible<a class="headerlink" href="#be-as-descriptive-and-concise-as-possible" title="Permanent link">&para;</a></h3>
+<p>So that AliceOS contributors and developers can better understand what the issue or request may be, issue descriptions should be concise but also descrptive. Refrain from writing an issue in a convoluted way that confuses others.</p>
+<p>Additionally, if you feel using a screenshot or video will better illustrate your description, add them in conjuction with (or to replace) the description. Remember to consult the <a href="#screenshots">Screenshot Guidelines</a>.</p>
+<h3 id="label-your-issue-during-creation">Label your issue during creation<a class="headerlink" href="#label-your-issue-during-creation" title="Permanent link">&para;</a></h3>
+<p>Issues are categorized by types such as <code>bug</code>, <code>enhancement</code>, <code>question</code>, etc. by contributors that can access labels. Since it isn't possible to tag an issue during creation, prepend the tag to your issue's title.</p>
+<blockquote>
+<p>Example: [Bug] applicationShouldRequestNotification always returns False</p>
+</blockquote>
+<h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">&para;</a></h2>
+<p>These guides apply to pull requests on GitHub.</p>
+<h3 id="describe-all-of-your-changes">Describe all of your changes<a class="headerlink" href="#describe-all-of-your-changes" title="Permanent link">&para;</a></h3>
+<p>Pull requests generally include many changes that address a particular problem or a set of problems. Explain all of the changes you made; you may also specify the directories by using the commit message style.</p>
+<blockquote>
+<p>Example:
+This PR makes the following changes:</p>
+<ul>
+<li>[S/F/ServiceKit] Renames <code>applicationWillRequestSync</code> to <code>serviceWillRequestSync</code></li>
+<li>[S/A/Messages] Adds new <code>MessagesView</code> to view conversation history</li>
+</ul>
+</blockquote>
+<h3 id="reference-existing-issues-and-prs">Reference existing issues and PRs<a class="headerlink" href="#reference-existing-issues-and-prs" title="Permanent link">&para;</a></h3>
+<p>If applicable, pull requests will reference the issues they are fixing in the description. This helps organize contributions in a few ways:</p>
+<ul>
+<li>Automates closing issues when they are fixed</li>
+<li>Verifies that the pull request fixes the issue(s) in question</li>
+<li>Makes a reference in the issue's thread for context</li>
+</ul>
+<p>If there are any documented issues that the pull request addresses, reference them in the description of the pull request.</p>
+<blockquote>
+<p>Example:</p>
+<ul>
+<li>[S/A/Logokas] Resolve <code>applicationShouldRequestLogokasPermission</code> to correct booleans (fixes #1)</li>
+</ul>
+</blockquote>
+<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
+<p>These guidelines apply to screenshots that are used for reference in issues and/or pull requests.</p>
+<h3 id="respect-the-post-authors-visibility">Respect the post author's visibility<a class="headerlink" href="#respect-the-post-authors-visibility" title="Permanent link">&para;</a></h3>
+<p>Mastodon supports posting to four different visibility levels. As a means of respecting privacy, please keep in mind the following:</p>
+<ul>
+<li>Do not post a status published as a direct message, followers-only, or unlisted status <em>unless</em> you have explicit permission from the status author.</li>
+<li>If you made a direct message to yourself to demo a feature or fix a bug present in a post, you do not need to worry.</li>
+<li>If you are unsure whether a public status should be included in a screenshot, consult the post author.</li>
+</ul>
+<h3 id="ensure-screenshots-are-clear">Ensure screenshots are clear<a class="headerlink" href="#ensure-screenshots-are-clear" title="Permanent link">&para;</a></h3>
+<p>Screenshots are often included to help illustrate or demonstrate a point with an issue or pull request. It may be difficult to understand the screenshot's purpose if the image is too small or distorted. Ensure that all screenshots are clear and visible.</p>
+<h2 id="for-official-contributors">For Official Contributors<a class="headerlink" href="#for-official-contributors" title="Permanent link">&para;</a></h2>
+<p>For official developers and Project Alice members, there are some additional guidelines to follow to ensure that code is signed and verified:</p>
+<h3 id="sign-off-your-code-and-enable-verified-commits">Sign off your code and enable verified commits<a class="headerlink" href="#sign-off-your-code-and-enable-verified-commits" title="Permanent link">&para;</a></h3>
+<p><img alt="Verified commits" src="../images/verify.png" /></p>
+<p>Verified commits let developers, contributors, and users know that the code they are working with is from a trusted source. These commits are signed using GPG or S/MIME and are verified on GitHub. We <em>highly</em> recommend that all AliceOS developers and Project Alice members set up verified commits on their device(s) and any tools to digitally sign their code when pushing to GitHub.</p>
+<p>More information can be found on <a href="https://help.github.com/en/articles/managing-commit-signature-verification">GitHub's support page</a>.</p>
                 
                   
                 
@@ -710,7 +986,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Welcome to AliceOS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../01-install/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -719,19 +995,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Welcome to AliceOS
+                Getting Started
               </span>
             </div>
           </a>
         
         
-          <a href="../02-contributing/" title="Contribution Guidelines" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../AliceOS-Release-Notes/" title="Prospect Park (2.0.0) Developer Beta 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Contribution Guidelines
+                Prospect Park (2.0.0) Developer Beta 1
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
