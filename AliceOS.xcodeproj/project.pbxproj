@@ -56,6 +56,9 @@
 		BF0B0D0122CEA637009F4F5B /* 256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256.png; sourceTree = "<group>"; };
 		BF0B0D0222CEA637009F4F5B /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 24.png; sourceTree = "<group>"; };
 		BF0B0D0322CEB1A9009F4F5B /* 06-setup-assistant.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "06-setup-assistant.md"; sourceTree = "<group>"; };
+		BF12A22C22E683D700E59EA9 /* 1tp1.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = 1tp1.md; sourceTree = "<group>"; };
+		BF12A22D22E683D700E59EA9 /* index.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = index.md; sourceTree = "<group>"; };
+		BF12A22F22E683D700E59EA9 /* 1tp2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = 1tp2.md; sourceTree = "<group>"; };
 		BF6BC6DB22C84F03002C96FB /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF6BC6DE22C8503B002C96FB /* options.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = options.rpy; sourceTree = "<group>"; };
 		BF6BC6DF22C8503B002C96FB /* script.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = script.rpy; sourceTree = "<group>"; };
@@ -142,7 +145,6 @@
 		BFF52CAB22CA9A0F005F37B0 /* index.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = index.md; sourceTree = "<group>"; };
 		BFF52CAC22CA9B4F005F37B0 /* 02-sending-notifications.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "02-sending-notifications.md"; sourceTree = "<group>"; };
 		BFF52CAD22CAAD73005F37B0 /* 01-manifest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "01-manifest.md"; sourceTree = "<group>"; };
-		BFF52CAE22CAAD9D005F37B0 /* 02-changelog.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "02-changelog.md"; sourceTree = "<group>"; };
 		BFF52CB122CAC422005F37B0 /* Chuttersnap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chuttersnap.png; sourceTree = "<group>"; };
 		BFF52CB322CAC422005F37B0 /* Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Italic.ttf; sourceTree = "<group>"; };
 		BFF52CB422CAC422005F37B0 /* Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Medium.ttf; sourceTree = "<group>"; };
@@ -399,6 +401,17 @@
 				BF0B0CFB22CE9CB2009F4F5B /* Window.png */,
 			);
 			path = Elements;
+			sourceTree = "<group>";
+		};
+		BF12A22B22E683D700E59EA9 /* AliceOS-Release-Notes */ = {
+			isa = PBXGroup;
+			children = (
+				BF12A22C22E683D700E59EA9 /* 1tp1.md */,
+				BF12A22D22E683D700E59EA9 /* index.md */,
+				BF12A22F22E683D700E59EA9 /* 1tp2.md */,
+			);
+			name = "AliceOS-Release-Notes";
+			path = "../../../../../System/Volumes/Data/Users/marquiskurt/Developer/CatalinaToriel/mkdocs/AliceOS-Release-Notes";
 			sourceTree = "<group>";
 		};
 		BF48420322C84EBE00850E05 = {
@@ -686,13 +699,13 @@
 		BFF52C9F22CA77B3005F37B0 /* mkdocs */ = {
 			isa = PBXGroup;
 			children = (
+				BF12A22B22E683D700E59EA9 /* AliceOS-Release-Notes */,
 				BFF52CCC22CAE737005F37B0 /* images */,
 				BFF52CA822CA85BD005F37B0 /* AppKit */,
 				BFF52CA722CA85B5005F37B0 /* NotificationKit */,
 				BFF52CA622CA8324005F37B0 /* System */,
 				BFF52CA022CA77B3005F37B0 /* index.md */,
 				BFF52CA422CA7E35005F37B0 /* 01-install.md */,
-				BFF52CAE22CAAD9D005F37B0 /* 02-changelog.md */,
 			);
 			path = mkdocs;
 			sourceTree = "<group>";
