@@ -114,6 +114,8 @@
 		BF6BC72422C8503B002C96FB /* horizontal_hover_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_hover_thumb.png; sourceTree = "<group>"; };
 		BF6BC72522C8503B002C96FB /* vertical_idle_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vertical_idle_bar.png; sourceTree = "<group>"; };
 		BF6BC72822C8503B002C96FB /* gui.rpy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gui.rpy; sourceTree = "<group>"; };
+		BF71F30022E68A5F00241258 /* gitpod.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = gitpod.yml; sourceTree = "<group>"; };
+		BF71F30122E68A5F00241258 /* CODEOWNERS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CODEOWNERS; sourceTree = "<group>"; };
 		BF76CAC622CC455D00A43F5C /* hero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hero.jpg; sourceTree = "<group>"; };
 		BF86C18E22C90D7300FD10E4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF86C19622C90EDA00FD10E4 /* ASNotificationBanner.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASNotificationBanner.rpy; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		BF0B0CC322CD32FD009F4F5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BF71F2FF22E68A5F00241258 /* .github */,
 				BF0B0CC422CD3322009F4F5B /* project_header_relname.png */,
 				BF0B0CC522CD3322009F4F5B /* project_header.png */,
 				BF6BC6DB22C84F03002C96FB /* Config.xcconfig */,
@@ -574,6 +577,15 @@
 			);
 			name = "Ren'Py Base";
 			path = game;
+			sourceTree = "<group>";
+		};
+		BF71F2FF22E68A5F00241258 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				BF71F30022E68A5F00241258 /* gitpod.yml */,
+				BF71F30122E68A5F00241258 /* CODEOWNERS */,
+			);
+			path = .github;
 			sourceTree = "<group>";
 		};
 		BF86C19022C90DD200FD10E4 /* AliceOS */ = {

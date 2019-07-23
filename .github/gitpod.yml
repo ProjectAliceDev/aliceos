@@ -1,0 +1,7 @@
+pulls:
+  perform: true
+
+issues:
+  perform: false
+  labels:
+    - help wanted
