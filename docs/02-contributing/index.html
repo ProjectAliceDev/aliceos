@@ -903,7 +903,7 @@
 <p>Example: <code>AS_SYS_VERSION</code> vs. <code>asSysVersion</code></p>
 </blockquote>
 <h3 id="follow-commit-conventions">Follow commit conventions<a class="headerlink" href="#follow-commit-conventions" title="Permanent link">&para;</a></h3>
-<p>The AliceOS team has adopted the same <a href="https://github.com/ClarityMoe/Community/blob/master/CHAPTER3-COMMIT%20CONVENTIONS.md">commit conventions from Clarity Moe</a>, the parent organization running Sayonika. This commit style definitely explains where changes occured and what was changed in a succinct manner. However, there are some changes we have made to this commit style:</p>
+<p>The AliceOS team has adopted the same <a href="https://github.com/ClarityMoe/Community/blob/master/CHAPTER3-COMMIT%20CONVENTIONS.md">commit conventions from Clarity</a>, the parent organization running Sayonika. This commit style definitely explains where changes occured and what was changed in a succinct manner. However, there are some changes we have made to this commit style:</p>
 <ul>
 <li>Common directories such as System, Applications, and Library do <em>not</em> need to be fully typed out.</li>
 <li>File extensions for frameworks (<code>.aosframework</code>), core services (<code>.aoscservice</code>), and applications (<code>.aosapp</code>) do <em>not</em> need to be typed out.</li>
@@ -926,7 +926,7 @@
 <h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">&para;</a></h2>
 <p>These guides apply to pull requests on GitHub.</p>
 <h3 id="describe-all-of-your-changes">Describe all of your changes<a class="headerlink" href="#describe-all-of-your-changes" title="Permanent link">&para;</a></h3>
-<p>Pull requests generally include many changes that address a particular problem or a set of problems. Explain all of the changes you made; you may also specify the directories by using the commit message style.</p>
+<p>Pull requests generally include many changes that address a particular problem or a set of problems. Explain all of the changes you made; you may also specify the subsystems (directories) by using the commit message style.</p>
 <blockquote>
 <p>Example:
 This PR makes the following changes:</p>
@@ -964,7 +964,7 @@ This PR makes the following changes:</p>
 <p>For official developers and Project Alice members, there are some additional guidelines to follow to ensure that code is signed and verified:</p>
 <h3 id="sign-off-your-code-and-enable-verified-commits">Sign off your code and enable verified commits<a class="headerlink" href="#sign-off-your-code-and-enable-verified-commits" title="Permanent link">&para;</a></h3>
 <p><img alt="Verified commits" src="../images/verify.png" /></p>
-<p>Verified commits let developers, contributors, and users know that the code they are working with is from a trusted source. These commits are signed using GPG or S/MIME and are verified on GitHub. We <em>highly</em> recommend that all AliceOS developers and Project Alice members set up verified commits on their device(s) and any tools to digitally sign their code when pushing to GitHub.</p>
+<p>Verified commits let developers, contributors, and users know that the code they are working with is from a trusted source. These commits are signed using GPG or S/MIME and are verified on GitHub.  It is <em><strong>mandatory</strong></em> that AliceOS developers and Project Alice members set up verified commits on their device(s) and any tools to digitally sign their code when pushing to GitHub.</p>
 <p>More information can be found on <a href="https://help.github.com/en/articles/managing-commit-signature-verification">GitHub's support page</a>.</p>
                 
                   

@@ -21,7 +21,7 @@ System-wide variables such as release names should be capitalized and use snake 
 
 ### Follow commit conventions
 
-The AliceOS team has adopted the same [commit conventions from Clarity Moe](https://github.com/ClarityMoe/Community/blob/master/CHAPTER3-COMMIT%20CONVENTIONS.md), the parent organization running Sayonika. This commit style definitely explains where changes occured and what was changed in a succinct manner. However, there are some changes we have made to this commit style:
+The AliceOS team has adopted the same [commit conventions from Clarity](https://github.com/ClarityMoe/Community/blob/master/CHAPTER3-COMMIT%20CONVENTIONS.md), the parent organization running Sayonika. This commit style definitely explains where changes occured and what was changed in a succinct manner. However, there are some changes we have made to this commit style:
 
 - Common directories such as System, Applications, and Library do _not_ need to be fully typed out.
 - File extensions for frameworks (`.aosframework`), core services (`.aoscservice`), and applications (`.aosapp`) do _not_ need to be typed out.
@@ -54,7 +54,7 @@ These guides apply to pull requests on GitHub.
 
 ### Describe all of your changes
 
-Pull requests generally include many changes that address a particular problem or a set of problems. Explain all of the changes you made; you may also specify the directories by using the commit message style.
+Pull requests generally include many changes that address a particular problem or a set of problems. Explain all of the changes you made; you may also specify the subsystems (directories) by using the commit message style.
 
 > Example:
 > This PR makes the following changes:
@@ -100,6 +100,6 @@ For official developers and Project Alice members, there are some additional gui
 
 ![Verified commits](verify.png)
 
-Verified commits let developers, contributors, and users know that the code they are working with is from a trusted source. These commits are signed using GPG or S/MIME and are verified on GitHub. We _highly_ recommend that all AliceOS developers and Project Alice members set up verified commits on their device(s) and any tools to digitally sign their code when pushing to GitHub.
+Verified commits let developers, contributors, and users know that the code they are working with is from a trusted source. These commits are signed using GPG or S/MIME and are verified on GitHub. It is _**mandatory**_ that AliceOS developers and Project Alice members set up verified commits on their device(s) and any tools to digitally sign their code when pushing to GitHub.
 
 More information can be found on [GitHub's support page](https://help.github.com/en/articles/managing-commit-signature-verification).
