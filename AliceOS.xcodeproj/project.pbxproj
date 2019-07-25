@@ -128,6 +128,7 @@
 		BF86C1AB22C916BF00FD10E4 /* ASFonts.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASFonts.rpy; sourceTree = "<group>"; };
 		BF86C1AD22C91B5A00FD10E4 /* ASAppRepresentative.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASAppRepresentative.rpy; sourceTree = "<group>"; };
 		BF8CEEEB22D13DB000227C2F /* splashscreen.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = splashscreen.rpy; sourceTree = "<group>"; };
+		BFA1D30922E9D3C50042A4A8 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BFF52C8A22C97062005F37B0 /* ASPermissionRequest.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequest.rpy; sourceTree = "<group>"; };
 		BFF52C8C22C97C1F005F37B0 /* ASPermissionRequestStyles.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = ASPermissionRequestStyles.rpy; sourceTree = "<group>"; };
 		BFF52C8F22C9931A005F37B0 /* Messages.rpy */ = {isa = PBXFileReference; lastKnownFileType = text; path = Messages.rpy; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 		BF0B0CC322CD32FD009F4F5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BFA1D30922E9D3C50042A4A8 /* LICENSE */,
 				BF71F2FF22E68A5F00241258 /* .github */,
 				BF0B0CC422CD3322009F4F5B /* project_header_relname.png */,
 				BF0B0CC522CD3322009F4F5B /* project_header.png */,
