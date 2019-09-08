@@ -9,7 +9,7 @@
 init 5 python:
 
     class ASSysInfoApp(ASAppRepresentative):
-        bundleName = "System Information"
+        bundleName = "About AliceOS"
         bundleId = "app.aliceos.sysinfo"
         bundleDir = AS_DEFAULT_APP_DIR + "SysInfo.aosapp/"
         bundleAuthor = "Project Alice"

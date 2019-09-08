@@ -1,3 +1,3 @@
 label start:
-    call screen ASDesktopShellView
+    $ ASDesktop.showDesktop()
     return
