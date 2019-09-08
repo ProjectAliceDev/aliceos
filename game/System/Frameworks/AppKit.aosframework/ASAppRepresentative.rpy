@@ -113,7 +113,21 @@ init python:
 
         
         # MARK: Launch
-        
+
+        # Determine whether the app has been given permission to launch during boot.
+        def applicationShouldLaunchAtLogin(self):
+            if AS_REQUIRES_SYSTEM_EVENTS in self.requires:
+                if persistent.AS_PERMISSIONS[self.bundleId] != None:
+                    return persistent.AS_PERMISSIONS[self.bundleId][AS_REQUIRES_SYSTEM_EVENTS]
+                else:
+                    return False
+            else:
+                return False
+
+        # Steps to take when running the app during the bootloader.
+        def applicationWillLaunchAtLogin(self):
+            return
+
         # Steps to take when starting the app.
         def applicationWillLaunch(self):
             return

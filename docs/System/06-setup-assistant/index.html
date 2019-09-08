@@ -715,10 +715,10 @@
 <p>The Setup Assistant is a first-run tool designed to set any initial settings and/or configurations for AliceOS before starting the visual novel. It also lets the user create a username as well as read over and legel agreements or disclaimers the game creator has provided.</p>
 <div class="admonition tip express mode">
 <p class="admonition-title">Tip</p>
-<p>Starting with AliceOS Prospect Park, the Setup Assistant is automatically configured to use Express Mode, which skips a lot of the onerous steps in the original process. However, for a more throrough experience, Express Mode can be turned off.</p>
+<p>Starting with AliceOS Prospect Park, the Setup Assistant is automatically configured to use Express Mode, which skips a lot of the onerous steps in the original process. However, for a more thorough experience, Express Mode can be turned off.</p>
 </div>
 <h2 id="automatic-setup">Automatic Setup<a class="headerlink" href="#automatic-setup" title="Permanent link">&para;</a></h2>
-<p>In the Bootloader, the Setup Assistant will run if it doesn't detect that any setup was done. This check is done via <code>persistent.AS_SETUP_COMPLETE</code>. The boot loader's <code>boot()</code> method contains parameters to customize the Assistant's modes and any additional disclaimers, if necessary.</p>
+<p>In the Bootloader, the Setup Assistant will run if it doesn't detect that any setup was done. This check is done via <code>persistent.AS_COMPLETED_SETUP</code>. The boot loader's <code>boot()</code> method contains parameters to customize the Assistant's modes and any additional disclaimers, if necessary.</p>
 <h2 id="manual-setup">Manual Setup<a class="headerlink" href="#manual-setup" title="Permanent link">&para;</a></h2>
 <p>If you want to call the Setup Assistant manually, you can use <code>ASSetup.startSetup()</code> to call the Assistant at any time.</p>
 <h3 id="startsetupexpresstrue-disclaimernone"><code>startSetup(express=True, disclaimer=None)</code><a class="headerlink" href="#startsetupexpresstrue-disclaimernone" title="Permanent link">&para;</a></h3>
