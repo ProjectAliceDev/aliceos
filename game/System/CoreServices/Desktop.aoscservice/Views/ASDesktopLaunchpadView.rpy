@@ -28,7 +28,7 @@ init screen ASDesktopLaunchpadView:
                 for i in range(len(appsForLauncher) * 1):
                     $ slot = i + 1
 
-                    button action [Function(appsForLauncher[i].applicationWillLaunch), Hide("ASDesktopLaunchpadView")]:
+                    button action [Hide("ASDesktopLaunchpadView"), Function(appsForLauncher[i].applicationWillLaunch)]:
                         maximum (128, 144)
                         sensitive True
 
