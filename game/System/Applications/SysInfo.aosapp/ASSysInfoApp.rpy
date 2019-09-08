@@ -18,6 +18,9 @@ init 5 python:
             View System Information about AliceOS.
         """
 
+        def applicationWillLaunch(self):
+            renpy.show_screen("ASSysInfoView")
+
         def __init__(self):
             ASAppRepresentative.__init__(self, AS_DEFAULT_APP_DIR + "SysInfo.aosapp/")
 
