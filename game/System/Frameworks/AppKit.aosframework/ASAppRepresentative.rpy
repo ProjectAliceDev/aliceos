@@ -116,7 +116,8 @@ init python:
         
         # Steps to take when starting the app.
         def applicationWillLaunch(self):
-            return
+            print("WARN: %s (%s) doesn't have the applicationWillLaunch method implemented." % (self.bundleName, self.bundleId, ))
+            pass
         
         # Steps to take when the app has finally finished launching.
         def applicationDidLaunch(self):

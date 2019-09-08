@@ -4,7 +4,7 @@
 #
 # Created by Marquis Kurt on 7/3/19.
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
-# 
+#
 
 init screen ASDesktopLaunchpadView:
     tag ASDesktopLaunchpadView
@@ -14,30 +14,32 @@ init screen ASDesktopLaunchpadView:
     
     use ASDesktopTopBar
 
+    $ appsForLauncher = ASDesktop.gatherAllApplications()
+
     vbox:
         yalign 0.45
         xalign 0.5
 
-        $ apps = ASDesktop.gatherAllApplications()
-
-        if apps == []:
+        if appsForLauncher == []:
             text _("No apps installed."):
                 style "ASDesktopLaunchpadViewCenteredText"
         else:
-            grid len(apps) 1:
-                for i in range(len(apps) * 1):
+            grid len(appsForLauncher) 1:
+                for i in range(len(appsForLauncher) * 1):
                     $ slot = i + 1
-                    button:
+
+                    button action [Function(appsForLauncher[i].applicationWillLaunch), Hide("ASDesktopLaunchpadView")]:
                         maximum (128, 144)
-                        action [apps[i].applicationWillLaunch(), Hide("ASDesktopLaunchpadView")]
+                        sensitive True
+
                         has vbox:
                             xalign 0.5
                             yalign 0.0
 
-                            if apps[i] == None:
+                            if appsForLauncher[i] == None:
                                 pass
                             else:
-                                add apps[i].icons[128] xalign 0.5
-                                text _(apps[i].bundleName):
+                                add appsForLauncher[i].icons[128] xalign 0.5
+                                text _(appsForLauncher[i].bundleName):
                                     style "ASDesktopLaunchpadViewAppText"
                                     xalign 0.5
