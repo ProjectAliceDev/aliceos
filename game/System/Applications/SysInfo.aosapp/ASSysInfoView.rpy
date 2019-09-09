@@ -17,7 +17,7 @@ screen ASSysInfoView():
             xalign 0.5
             yalign 0.5
 
-            use ASInterfaceTitlebar("About AliceOS")
+            use ASInterfaceTitlebar("About AliceOS", onClose=Hide("ASSysInfoView"))
 
             null height 32
 

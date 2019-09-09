@@ -13,6 +13,8 @@ style ASInterface_frame:
     padding (16, 16)
     xalign 0.5
     yalign 0.5
+    xmaximum 1248
+    ymaximum 688
 
 
 style ASInterface_vbox is vbox:
