@@ -13,7 +13,7 @@ screen ASInterfaceTitlebar(name="ASWindow", onClose=Return("didCloseView")):
 
         text name
 
-        imagebutton auto AS_FRAMEWORK_DIR("ScreenKit") + "Resources/wcClose_%s.png" action onClose:
+        imagebutton auto AS_FRAMEWORK_DIR("ScreenKit") + "Resources/WindowControls/wcClose_%s.png" action onClose:
             xalign 1.0
 
 style ASWindowTitleBar_hbox is hbox:
