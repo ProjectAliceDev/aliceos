@@ -1,5 +1,5 @@
 #
-# ASWindowTitleBar.rpy
+# ASInterfaceTitlebar.rpy
 # AliceOS
 #
 # Created by Marquis Kurt on 9/8/19.
