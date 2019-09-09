@@ -8,19 +8,19 @@
 
 init offset = 10
 
-style ASWindowFrame:
+style ASInterface_frame:
     background Frame([AS_FRAMEWORK_DIR("ScreenKit") + "Resources/FrameChrome.png"], Borders(8,12,8,8), tile=False)
     padding (16, 16)
     xalign 0.5
     yalign 0.5
 
 
-style ASVerticalBox is vbox:
+style ASInterface_vbox is vbox:
     spacing 8
 
-style ASVerticalBox_text:
+style ASInterface_text:
     font AS_FONTS_DIR + "Regular.ttf"
 
-style ASVerticalBox_button is gui_button
-style ASVerticalBox_button_text:
+style ASInterface_button is gui_button
+style ASInterface_button_text:
     font AS_FONTS_DIR + "Bold.ttf"

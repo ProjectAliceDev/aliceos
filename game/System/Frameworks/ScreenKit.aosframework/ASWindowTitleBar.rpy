@@ -6,7 +6,7 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 #
 
-screen ASWindowTitleBar(name="ASWindow"):
+screen ASInterfaceTitlebar(name="ASWindow"):
     hbox:
         style_prefix "ASWindowTitleBar"
         xfill True

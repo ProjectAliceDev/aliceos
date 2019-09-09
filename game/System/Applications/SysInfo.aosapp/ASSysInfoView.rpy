@@ -9,17 +9,15 @@
 init offset = 10
 
 screen ASSysInfoView():
-
+    style_prefix "ASInterface"
     frame:
-        style "ASWindowFrame"
         xmaximum 800
 
         has vbox:
-            style_prefix "ASVerticalBox"
             xalign 0.5
             yalign 0.5
 
-            use ASWindowTitleBar("About AliceOS")
+            use ASInterfaceTitlebar("About AliceOS")
 
             null height 32
 
