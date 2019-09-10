@@ -19,7 +19,7 @@ style ASInterface_frame:
 style ASInterface_vbox is vbox:
     spacing 8
 
-style ASInterface_hbox is vbox:
+style ASInterface_hbox is hbox:
     spacing 8
 
 style ASInterface_text:
