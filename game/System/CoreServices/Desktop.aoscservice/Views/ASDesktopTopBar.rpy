@@ -6,7 +6,7 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 # 
 
-init screen ASDesktopTopBar:
+init screen ASDesktopTopBar():
     tag ASDesktopTopBar
     zorder 500
     modal False
