@@ -14,7 +14,7 @@ init 10 python:
         bundleAuthor = "Project Alice"
         bundleVersion = "2.0.0"
         bundleDescription = """\
-            Receive and sned messages from your favorite characters.
+            Send and receive messages from your favorite characters in-game.
         """
 
         requires = {
