@@ -18,6 +18,8 @@ init 5 python:
             View System Information about AliceOS.
         """
 
+        requires = { }
+
         def applicationWillLaunch(self):
             renpy.show_screen("ASSysInfoView")
 

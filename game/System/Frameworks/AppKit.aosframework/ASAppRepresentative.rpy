@@ -98,13 +98,13 @@ init python:
             store.AS_REQUIRES_SYSTEM_EVENTS = False
         
             if AS_REQUIRES_NOTIFICATIONKIT in self.requires:
-                renpy.call_screen("ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_NOTIFICATIONKIT, onAcceptRequest=[SetVariable("AS_REQUIRES_NOTIFICATIONKIT", True), Return(0)])
+                renpy.call_in_new_context(renpy.call_screen, "ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_NOTIFICATIONKIT, onAcceptRequest=[SetVariable("AS_REQUIRES_NOTIFICATIONKIT", True), Return(0)])
             
             if AS_REQUIRES_FULL_DISK_ACCESS in self.requires:
-                renpy.call_screen("ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_FULL_DISK_ACCESS, onAcceptRequest=[SetVariable("AS_REQUIRES_FULL_DISK_ACCESS", True), Return(0)])
+                renpy.call_in_new_context(renpy.call_screen, "ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_FULL_DISK_ACCESS, onAcceptRequest=[SetVariable("AS_REQUIRES_FULL_DISK_ACCESS", True), Return(0)])
             
             if AS_REQUIRES_SYSTEM_EVENTS in self.requires:
-                renpy.call_screen("ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_SYSTEM_EVENTS, onAcceptRequest=[SetVariable("AS_REQUIRES_SYSTEM_EVENTS", True), Return(0)])
+                renpy.call_in_new_context(renpy.call_screen, "ASPermissionRequest", bundleName=self.bundleName, requestingFor=AS_REQUIRES_SYSTEM_EVENTS, onAcceptRequest=[SetVariable("AS_REQUIRES_SYSTEM_EVENTS", True), Return(0)])
             
             persistent.AS_PERMISSIONS[self.bundleId] = {
                 AS_REQUIRES_SYSTEM_EVENTS: store.AS_REQUIRES_SYSTEM_EVENTS,
@@ -149,7 +149,7 @@ init python:
         # Steps to take when the app is about to send a notification
         def applicationWillRequestNotification(self, message, withDetails, responseCallback=Return('didClickRespond')):
             if self.applicationShouldRequestNotification():
-                notificationResponse = renpy.call_screen("ASNotificationBanner", applet=self, message=message, withDetails=withDetails, responseCallback=responseCallback)
+                notificationResponse = renpy.call_in_new_context(renpy.call_screen, "ASNotificationBanner", applet=self, message=message, withDetails=withDetails, responseCallback=responseCallback)
                 self.applicationDidRequestNotification()
                 return notificationResponse
             else:
@@ -162,7 +162,7 @@ init python:
 
         def applicationWillRequestBasicAlert(self, message, withDetails, onDismissCallback=Return('didDismissAlert')):
             if self.applicationShouldRequestNotification():
-                notificationResponse = renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, onDismissCallback=onDismissCallback)
+                notificationResponse = renpy.call_in_new_context(renpy.call_screen, "ASNotificationAlert", message=message, withDetails=withDetails, onDismissCallback=onDismissCallback)
                 self.applicationDidRequestAlert()
                 return notificationResponse
             else:
@@ -171,7 +171,7 @@ init python:
 
         def applicationWillRequestExtendedAlert(self, message, withDetails, primaryActionText, onPrimaryCallback=Return('didClickPrimary'), secondaryActionText=None, onSecondaryCallback=Return('didClickSecondary')):
             if self.applicationShouldRequestNotification():
-                renpy.call_screen("ASNotificationAlert", message=message, withDetails=withDetails, primaryActionText=primaryActionText, onPrimaryCallback=onPrimaryCallback, secondaryActionText=secondaryActionText, onSecondaryCallback=onSecondaryCallback)
+                renpy.call_in_new_context(renpy.call_screen, "ASNotificationAlert", message=message, withDetails=withDetails, primaryActionText=primaryActionText, onPrimaryCallback=onPrimaryCallback, secondaryActionText=secondaryActionText, onSecondaryCallback=onSecondaryCallback)
                 self.applicationDidRequestAlert()
             else:
                 print "This app is not authorized to send notifications."
