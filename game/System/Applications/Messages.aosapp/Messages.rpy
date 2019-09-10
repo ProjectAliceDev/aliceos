@@ -27,6 +27,10 @@ init 10 python:
         def applicationShouldRequestNotification(self):
             return True
 
+        def applicationWillLaunch(self):
+            self.applicationWillRequestBasicAlert("Messages Not Ready", "You'll still be able to receive notifications from characters in-game, but you won't be able to send any.")
+            return
+
         def __init__(self):
             ASAppRepresentative.__init__(self, AS_DEFAULT_APP_DIR + "Messages.aosapp/")
 
