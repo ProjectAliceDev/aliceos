@@ -11,7 +11,7 @@ style ASInterfaceCheckbox_button is bui_button
 style ASInterfaceCheckbox_button:
     foreground AS_FRAMEWORK_DIR("ScreenKit") + "Resources/Checkboxes/Idle.png"
     selected_foreground AS_FRAMEWORK_DIR("ScreenKit") + "Resources/Checkboxes/Selected.png"
-    xpadding 24
+    xpadding 28
 
 style ASInterfaceCheckbox_text is ASInterface_text
 

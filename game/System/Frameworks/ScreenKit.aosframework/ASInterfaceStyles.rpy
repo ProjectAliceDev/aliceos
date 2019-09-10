@@ -24,6 +24,7 @@ style ASInterface_hbox is hbox:
 
 style ASInterface_text:
     font AS_FONTS_DIR + "Regular.ttf"
+    size 14
 
 style ASInterface_button is gui_button
 style ASInterface_button_text:
