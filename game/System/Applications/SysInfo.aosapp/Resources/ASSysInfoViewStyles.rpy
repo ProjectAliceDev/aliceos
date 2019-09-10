@@ -13,6 +13,9 @@ style ASSysInfoTitle_text:
 style ASSysInfoTitle_text_nobold is ASSysInfoTitle_text:
     font AS_FONTS_DIR + "Regular.ttf"
 
+style ASSysInfoVersion_text is ASInterface_text:
+    size 24
+
 style ASSysInfoProperty_text:
     font AS_FONTS_DIR + "Regular.ttf"
     size 17
