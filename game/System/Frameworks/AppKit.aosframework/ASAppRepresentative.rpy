@@ -68,6 +68,7 @@ init python:
                 16: self.bundleDir + "Resources/Iconset/16.png",
                 24: self.bundleDir + "Resources/Iconset/24.png",
                 32: self.bundleDir + "Resources/Iconset/32.png",
+                48: self.bundleDir + "Resources/Iconset/48.png",
                 64: self.bundleDir + "Resources/Iconset/64.png",
                 128: self.bundleDir + "Resources/Iconset/128.png",
                 256: self.bundleDir + "Resources/Iconset/256.png"
