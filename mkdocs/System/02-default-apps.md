@@ -21,3 +21,11 @@ Send a notification request that displays a text message from a person.
 
 **Returns**
 Returns the default values as indicated from [ASNotificationBanner](../../NotificationKit/01-banner/#returns)
+
+## About AliceOS
+
+![SysInfo icon](../images/system/defapps/sysinfo.png)
+
+About AliceOS is a simple app that displays information about the current distribution of AliceOS. Users can click on the app in Activites and view the information there.
+
+There are no available methods as the app uses the standard `applicationWillLaunch` method from AppKit.
