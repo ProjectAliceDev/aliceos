@@ -1,7 +1,5 @@
 # ScreenKit Overview
 
-![ScreenKit sample](../images/ui/landing.png)
-
 **ScreenKit** is the official API that offer beautiful interfaces for AliceOS apps and services. ScreenKit works on top of Ren'Py's beautiful screen language with new styles and puts more control of the interface into developers' hands. Apps using AppKit get to leverage ScreenKit easily without adding any additional code to their manifest.
 
 !!! warning

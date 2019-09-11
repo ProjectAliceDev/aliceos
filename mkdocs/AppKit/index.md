@@ -1,6 +1,8 @@
 #  AppKit Overview
 
-**AppKit** is the official API set for writing custom apps for the AliceOS framework. Apps are a fun and extensible means of further enhancing the AliceOS environment without needing to customize the base installation and recompile from source. Apps also take advantage of AliceOS's features and frameworks, such as NotificationKit.
+![AppManager screenshot](../images/system/app-manager.png)
+
+**AppKit** is the official API set for writing custom apps for the AliceOS framework. Apps are a fun and extensible means of further enhancing the AliceOS environment without needing to customize the base installation and recompile from source. Apps also take advantage of AliceOS's features and frameworks, such as NotificationKit and ScreenKit.
 
 ## About this documentation section
 
