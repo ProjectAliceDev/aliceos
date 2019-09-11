@@ -6,7 +6,7 @@ The bootloader is responsible for displaying a boot screen while important compo
 
 ## Available methods
 
-### `$ ASBootloader.boot(timeout=5, expressSetup=True, disclaimer=None)`
+### `$ ASBootloader.boot(timeout=5, expressSetup=True, disclaimer=None, bootView="ASBootloaderView")`
 
 Show the bootloader for a certain amount of time.
 
@@ -15,3 +15,4 @@ Show the bootloader for a certain amount of time.
 - `timeout`: The amount of seconds to show the bootloader for.
 - `expressSetup`: Whether the Setup Assistant should start in Express Mode.
 - `disclaimer`: Any license agreement or disclaimer that must be displayed during the Setup Assistant.
+- `bootView`: The name of the Ren'Py screen to display as the GUI for the boot loader.

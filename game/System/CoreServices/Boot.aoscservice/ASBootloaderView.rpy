@@ -11,7 +11,7 @@ init screen ASBootloaderView(timeout=5):
     tag ASBootloaderView
     zorder 100
     modal True
-    
+
     add ASBootloader.bundleDir + "Resources/Elements/PureBlackBoot.png"
     add ASBootloader.bundleDir + "Resources/Elements/Background.png"
 

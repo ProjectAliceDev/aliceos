@@ -5,11 +5,11 @@
 The Setup Assistant is a first-run tool designed to set any initial settings and/or configurations for AliceOS before starting the visual novel. It also lets the user create a username as well as read over and legel agreements or disclaimers the game creator has provided.
 
 !!! tip Express Mode
-    Starting with AliceOS Prospect Park, the Setup Assistant is automatically configured to use Express Mode, which skips a lot of the onerous steps in the original process. However, for a more throrough experience, Express Mode can be turned off.
+    Starting with AliceOS Prospect Park, the Setup Assistant is automatically configured to use Express Mode, which skips a lot of the onerous steps in the original process. However, for a more thorough experience, Express Mode can be turned off.
 
 ## Automatic Setup
 
-In the Bootloader, the Setup Assistant will run if it doesn't detect that any setup was done. This check is done via `persistent.AS_SETUP_COMPLETE`. The boot loader's `boot()` method contains parameters to customize the Assistant's modes and any additional disclaimers, if necessary.
+In the Bootloader, the Setup Assistant will run if it doesn't detect that any setup was done. This check is done via `persistent.AS_COMPLETED_SETUP`. The boot loader's `boot()` method contains parameters to customize the Assistant's modes and any additional disclaimers, if necessary.
 
 ## Manual Setup
 
