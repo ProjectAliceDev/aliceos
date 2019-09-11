@@ -42,7 +42,6 @@ init 5 python:
             if not persistent.AS_COMPLETED_SETUP:
                 ASSetup.startSetup(express=expressSetup, disclaimer=disclaimer)
 
-            print("INFO: Threading any startup services...")
             for app in self.gatherAllApplications():
                 appProcess = Thread(target=self.startLoginMethod, args=(app, ))
                 appProcess.start()
