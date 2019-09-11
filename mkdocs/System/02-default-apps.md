@@ -29,3 +29,11 @@ Returns the default values as indicated from [ASNotificationBanner](../../Notifi
 About AliceOS is a simple app that displays information about the current distribution of AliceOS. Users can click on the app in Activites and view the information there.
 
 There are no available methods as the app uses the standard `applicationWillLaunch` method from AppKit.
+
+## App Manager
+
+![AppManager icon](../images/system/defapps/appman.png)
+
+App Manager is a(n) utility in AliceOS that lets users view the apps installed on the AliceOS system and manage their permissions quickly. It is the official method of changing an app's permissions in AliceOS.
+
+There are no available methods as the app uses the standard `applicationWillLaunch` method from AppKit.

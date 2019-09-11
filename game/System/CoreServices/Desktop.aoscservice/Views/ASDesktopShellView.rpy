@@ -6,7 +6,7 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 # 
 
-init screen ASDesktopShellView:
+init screen ASDesktopShellView():
     tag ASDesktopShellView
     modal False
     add AS_DESKTOP_IMG

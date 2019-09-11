@@ -17,9 +17,7 @@ screen ASSysInfoView():
             xalign 0.5
             yalign 0.5
 
-            use ASInterfaceTitlebar("About AliceOS")
-
-            null height 32
+            use ASInterfaceTitlebar("About AliceOS", onClose=Hide("ASSysInfoView"))
 
             hbox:
                 spacing 32
@@ -31,7 +29,8 @@ screen ASSysInfoView():
                 vbox:
                     text "AliceOS {=ASSysInfoTitle_text_nobold}[AS_SYS_INFO[COMMON_NAME]]{/}":
                         style "ASSysInfoTitle_text"
-                    text "Version [AS_SYS_INFO[VERSION]] ([AS_SYS_INFO[BUILD_ID]])"
+                    text "Version [AS_SYS_INFO[VERSION]] ([AS_SYS_INFO[BUILD_ID]])":
+                        style "ASSysInfoVersion_text"
                     null height 16
                     text "{=ASSysInfoProperty_text_bold}Built for Ren'Py{/} 7.3.2.320":
                         style "ASSysInfoProperty_text"

@@ -6,7 +6,7 @@
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 #
 
-init screen ASDesktopLaunchpadView:
+init screen ASDesktopLaunchpadView():
     tag ASDesktopLaunchpadView
     modal False
     

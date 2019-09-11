@@ -1,19 +1,19 @@
 #
-# ASWindowTitleBar.rpy
+# ASInterfaceTitlebar.rpy
 # AliceOS
 #
 # Created by Marquis Kurt on 9/8/19.
 # Copyright © 2019 ProjectAliceDev. All rights reserved.
 #
 
-screen ASInterfaceTitlebar(name="ASWindow"):
+screen ASInterfaceTitlebar(name="ASWindow", onClose=Return("didCloseView")):
     hbox:
         style_prefix "ASWindowTitleBar"
         xfill True
 
         text name
 
-        imagebutton auto AS_FRAMEWORK_DIR("ScreenKit") + "Resources/wcClose_%s.png" action Return("didCloseView"):
+        imagebutton auto AS_FRAMEWORK_DIR("ScreenKit") + "Resources/WindowControls/wcClose_%s.png" action onClose:
             xalign 1.0
 
 style ASWindowTitleBar_hbox is hbox:
