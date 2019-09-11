@@ -7,6 +7,8 @@
 # 
 
 init 5 python:
+
+    from threading import Thread
     
     class ASBootloaderCoreService(ASCoreServiceRepresentative):
         bundleName = "Bootloader"
@@ -26,19 +28,26 @@ init 5 python:
                 if isinstance(obj, ASAppRepresentative):
                     apps.append(obj)
             return apps
+
+        def startLoginMethod(self, app):
+            if app.applicationShouldLaunchAtLogin is not None and app.applicationShouldLaunchAtLogin():
+                app.applicationWillLaunchAtLogin()
+            else:
+                if AS_REQUIRES_SYSTEM_EVENTS in app.requires and not app.applicationShouldLaunchAtLogin():
+                    print("WARN: %s cannot run its login service because it doesn't have permission to do so." % (app.bundleName,))
+                else:
+                    print("INFO: Skipping %s (%s) login service because it doesn't have one." % (app.bundleName, app.bundleId, ) )
         
         def boot(self, timeout=5, expressSetup=True, disclaimer=None, bootView="ASBootloaderView"):
             if not persistent.AS_COMPLETED_SETUP:
                 ASSetup.startSetup(express=expressSetup, disclaimer=disclaimer)
 
+            print("INFO: Threading any startup services...")
             for app in self.gatherAllApplications():
-                if app.applicationWillLaunchAtLogin is not None and app.applicationShouldLaunchAtLogin():
-                    app.applicationWillLaunchAtLogin()
-                else:
-                    if AS_REQUIRES_SYSTEM_EVENTS in app.requires and not app.applicationShouldLaunchAtLogin():
-                        print("WARN: %s cannot run its login service because it doesn't have permission to do so." % (app.bundleName,))
-                    else:
-                        print("INFO: Skipping %s (%s) login service because it doesn't have one." % (app.bundleName, app.bundleId, ) )
+                appProcess = Thread(target=self.startLoginMethod, args=(app, ))
+                appProcess.start()
+                appProcess.join()
+
 
             renpy.call_screen(bootView, timeout=timeout)
     
