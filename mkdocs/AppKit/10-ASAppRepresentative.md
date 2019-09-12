@@ -35,6 +35,14 @@ Requests a particular permission located in `requires`.
 
 Requests all permissions located in `requires`, one by one.
 
+### `applicationShouldLaunchAtLogin()`
+
+Returns whether the app is authorized to run any login tasks.
+
+### `applicationWillLaunchAtLogin()`
+
+Executes and preliminary actions during the boot sequence.
+
 ### `applicationWillLaunch()`
 
 Executes any preliminary actions before the app launches.
