@@ -1,61 +1,59 @@
-#  Prospect Park (2.0.0) Developer Beta 1
+#  Prospect Park (2.0.0) Developer Beta 2
 
 The following document covers the latest changes in AliceOS Prospect Park (v. 2.0.0).
 
-!!! warning "This document is not complete"
-    More documentation is being worked on with this document to describe exact changes.
-
-!!! info "Before you upgrade"
-    AliceOS Prospect Park is a dramatic overhaul of the classic AliceOS and may break upon installation. Please review everything carefully.
-
-## General
-
-- The system organization has migrated over to a macOS-styled directory structure with System, Library, and Applications.
-- Installation has changed over to an RPA-based solution. Installation now is as simple as dragging the RPA.
-- AliceOS APIs, class names, and function names have been renamed and switch over to camel case instead of snake case.
-
 ## Apps
 
-- Applets have been deprecated in favor of new apps written with AppKit in mind.
-- Apps no longer need to declare a desktop shell component as this is handled by the native `applicationWillLaunch` method.
+- Apps can now write starup/login services via `applicationWillLaunchAtLogin()` and check for System Events permissions with `applicationShouldLaunchAtLogin()`.
+- Notfications and alerts in AppKit are now invoked in a new context instead of interrupting the current one.
+- The 48 pixel icon entry in `ASAppRepresentative` has been re-added.
+- If unimplemented, `applicationWillLaunch()` will log a warning in the terminal.
 
-## Core Services and Applications
+## Messages
 
-- Applications such as Messages have been moved to `System/Applications/` and use AppKit.
-- The halt screen, bootloader, and Setup Assistant are now Core Services that use ServiceKit.
+- Messages now displays a "Coming Soon" alert when launched from the Desktop.
 
 ## Desktop
 
-- The Desktop now uses the `applicationWillLaunch` method from AppKit apps to start apps accordingly.
-- The Desktop image is defined as `AS_DESKTOP_IMG`.
-- The Desktop now refreshes quickly to get the latest time on the clock.
+- Apps on the desktop will invoke `applicationWillLaunch` as a Ren'Py function callback instead of calling the Python function directly to prevent continuous calls.
+- The main views in Desktop now have empty parameter lists to resolve linter warnings.
 
-### Known issues
+
+### Known Issues
 
 - The Desktop doesn't hide the quick menu.
-- The `showDesktop()` method from `ASDesktop` doesn't work in Ren'Py screen language.
+- The `showDesktop()` method from `ASDesktop` doesn't work in Ren'Py screen language when calling it as a button action.
 
 ### Workarounds
 
-- Call `ASDesktopShell` directly instead of using the `showDesktop()` method.
-
-## Halt screens (formerly Stop errors)
-
-- The halt screen uses the AliceOS dynamic blur instead of its own background.
-- A QR code has been added that redirects users to the AliceOS Error Database.
-- The text has been changed to indicate how long before AliceOS will automatically restart the game.
+- Use Ren'Py's `Function` call to run `showDesktop()` or make a call directly to the screen.
 
 ## Notifications
-
-- Notifications are now under the NotificationKit framework.
-- Alerts no longer appear as a white square. They now use the AliceOS dynamic blur feature.
 
 ### Known issues
 
 - Notification banners do not make a sound.
 
-## Setup Assistant
+### Workarounds
 
-- Express Mode is on by default, but can be disabled in the bootloader's `boot` method.
-- Instructions have been rewritten for conciseness and clarity.
-- The interface has changed to a more macOS-like experience.
+- Include a sound in your applet and make a wrapper around `applicationWillRequestNotification()`.
+
+## Bootloader
+
+- The bootloader will now attempt to run any authorized startup services in a new thread.
+- An optional `bootView` parameter allows developers to set a custom boot screen to display instead of the default.
+
+## ScreenKit
+
+- ScreenKit has been introduced as a means of creating user interfaces for AliceOS using Ren'Py's screen language and styling.
+- Styles for frames, vertical and horizontal boxes, text, checkbox buttons, vertical scrollbars, and push buttons have been implemented.
+- `ASInterfaceTitlebar` has been implemented as a smaller component to add a title bar to a given frame.
+
+## About AliceOS
+
+- The main interface has been written entirely with ScreenKit and displays information from system definitions.
+
+## App Manager
+
+- App Manager has been introduced as a means of managing an app's permissions and viewing details about the app.
+- Apps in App Manager list their permissions as toggleable checkboxes.
