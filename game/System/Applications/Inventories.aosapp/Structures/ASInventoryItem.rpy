@@ -14,7 +14,7 @@ init 10 python:
             self.description = description
             self.canBeUsed = canBeUsed
             self.canBeUsedOnce = canBeUsedOnce
-            self.runSpecialUseCase = specialUseCase
+            self.runSpecialUseCase = specialUseCase if callable(specialUseCase) else None
             self.imageName = imageName
 
         def useItem(self):

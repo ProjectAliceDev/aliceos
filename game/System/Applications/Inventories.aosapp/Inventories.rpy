@@ -23,10 +23,14 @@ init 10 python:
         inventory = []
 
         def applicationWillLaunch(self):
+            renpy.show_screen("ASInventoryManagerView")
             return
 
         def isEmpty(self):
             return len(self.inventory) == 0
+
+        def retrieve(self):
+            return self.inventory
 
         def containsItem(self, item):
             return item in self.inventory
@@ -40,7 +44,10 @@ init 10 python:
         def addItem(self, item):
             if isinstance(item, ASInventoryItem):
                 self.inventory.append(item)
-                self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.", responseCallback=Function(print, "oof"))
+                shouldDisplayItem = self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.")
+
+                if shouldDisplayItem == "didClickRespond":
+                    renpy.show_screen("ASInventoryManagerView", currentItem=item)
             else:
                 raise TypeError("Expected item to be ASInventoryItem, but received %s" % (type(item)))
 
@@ -49,7 +56,7 @@ init 10 python:
                 shouldDispose = item.useItem()
 
                 if shouldDispose:
-                    inventory.remove(item)
+                    self.inventory.remove(item)
             else:
                 raise KeyError("Item not found in the inventory: %s" % (item,) )
 
