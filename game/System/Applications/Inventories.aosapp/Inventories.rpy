@@ -20,6 +20,50 @@ init 10 python:
 
         requires = { AS_REQUIRES_NOTIFICATIONKIT }
 
+        inventory = []
+
+        def applicationWillLaunch(self):
+            return
+
+        def isEmpty(self):
+            return len(self.inventory) == 0
+
+        def containsItem(self, item):
+            return item in self.inventory
+
+        def lookupItemByName(self, name):
+            for item in self.inventory:
+                if item.name == name:
+                    return item
+            return None
+
+        def addItem(self, item):
+            if isinstance(item, ASInventoryItem):
+                self.inventory.append(item)
+                self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.", responseCallback=Function(print, "oof"))
+            else:
+                raise TypeError("Expected item to be ASInventoryItem, but received %s" % (type(item)))
+
+        def useItem(self, item):
+            if item in self.inventory:
+                shouldDispose = item.useItem()
+
+                if shouldDispose:
+                    inventory.remove(item)
+            else:
+                raise KeyError("Item not found in the inventory: %s" % (item,) )
+
+        def importFromList(self, list):
+
+            listAsInventoryChecks = map(lambda x: isinstance(x, ASInventoryItem), list)
+            isInventoryReal = reduce(lambda x, y: x and y, listAsInventoryChecks)
+
+            if isInventoryReal:
+                self.inventory = list
+            else:
+                raise TypeError("List contains non-ASInventoryItem items.")
+
+
         def __init__(self):
             ASAppRepresentative.__init__(self, AS_DEFAULT_APP_DIR + "Inventories.aosapp/")
 
