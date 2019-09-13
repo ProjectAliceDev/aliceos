@@ -9,6 +9,7 @@
 screen ASInventoryManagerView(currentItem=None):
     style_prefix "ASInterface"
     zorder 100
+    modal True
 
     $ inv = inventory.retrieve()
 
@@ -130,6 +131,6 @@ style ASInventories_button is gui_button:
 
 style ASInventoriesItemName is ASInventories_label
 style ASInventoriesItemName_text is ASInventories_label_text:
-    size 28
+    size 20
 
 style ASInventories_text is ASInterface_text

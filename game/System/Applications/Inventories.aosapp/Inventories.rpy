@@ -26,6 +26,10 @@ init 10 python:
             renpy.show_screen("ASInventoryManagerView")
             return
 
+        def callRecentItems(self):
+            renpy.show_screen("ASInventorySubView")
+            return
+
         def isEmpty(self):
             return len(self.inventory) == 0
 
@@ -35,7 +39,7 @@ init 10 python:
         def containsItem(self, item):
             return item in self.inventory
 
-        def lookupItemByName(self, name):
+        def getItemByName(self, name):
             for item in self.inventory:
                 if item.name == name:
                     return item
@@ -66,7 +70,8 @@ init 10 python:
             isInventoryReal = reduce(lambda x, y: x and y, listAsInventoryChecks)
 
             if isInventoryReal:
-                self.inventory = list
+                for item in list:
+                    self.inventory.append(item)
             else:
                 raise TypeError("List contains non-ASInventoryItem items.")
 
