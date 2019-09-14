@@ -1,4 +1,4 @@
-#  Welcome to AliceOS
+#  Welcome
 
 ![AliceOS Screenshot](images/hero.jpg)
 

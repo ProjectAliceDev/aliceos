@@ -40,7 +40,7 @@
     
     
       
-        <title>Getting Started - AliceOS Documentation</title>
+        <title>Apps Overview - AliceOS Documentation</title>
       
     
     
@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#getting-started" tabindex="1" class="md-skip">
+      <a href="#apps-overview" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -119,7 +119,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Getting Started
+                Apps Overview
               
             </span>
           
@@ -187,14 +187,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href=".." title="Welcome" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="Welcome" class="md-tabs__link">
         Welcome
       </a>
     
@@ -210,7 +212,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Apps/" title="Apps" class="md-tabs__link">
+        <a href="./" title="Apps" class="md-tabs__link md-tabs__link--active">
           Apps
         </a>
       
@@ -322,69 +324,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
-      </label>
-    
-    <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../01-install/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#downloading-the-base-system" title="Downloading the base system" class="md-nav__link">
-    Downloading the base system
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usage-with-ddlc-mods" title="Usage with DDLC Mods" class="md-nav__link">
-    Usage with DDLC Mods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-from-source-code" title="Building from source code" class="md-nav__link">
-    Building from source code
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -404,10 +348,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Apps
@@ -423,11 +369,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../Apps/" title="Apps Overview" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Apps Overview
+      </label>
+    
+    <a href="./" title="Apps Overview" class="md-nav__link md-nav__link--active">
       Apps Overview
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-section" title="About this section" class="md-nav__link">
+    About this section
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -437,7 +421,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Apps/01-manifest/" title="Declaring Your App" class="md-nav__link">
+    <a href="01-manifest/" title="Declaring Your App" class="md-nav__link">
       Declaring Your App
     </a>
   </li>
@@ -449,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Apps/02-sending-notifications/" title="Sending Notifications" class="md-nav__link">
+    <a href="02-sending-notifications/" title="Sending Notifications" class="md-nav__link">
       Sending Notifications
     </a>
   </li>
@@ -461,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Apps/10-ASAppRepresentative/" title="ASAppRepresentative()" class="md-nav__link">
+    <a href="10-ASAppRepresentative/" title="ASAppRepresentative()" class="md-nav__link">
       ASAppRepresentative()
     </a>
   </li>
@@ -805,28 +789,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloading-the-base-system" title="Downloading the base system" class="md-nav__link">
-    Downloading the base system
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#usage-with-ddlc-mods" title="Usage with DDLC Mods" class="md-nav__link">
-    Usage with DDLC Mods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#building-from-source-code" title="Building from source code" class="md-nav__link">
-    Building from source code
+  <a href="#about-this-section" title="About this section" class="md-nav__link">
+    About this section
   </a>
   
 </li>
@@ -848,28 +812,15 @@
               
                 
                 
-                <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<p>This document will help you get started with installing AliceOS and attaching it to your Ren'Py project.</p>
-<h2 id="downloading-the-base-system">Downloading the base system<a class="headerlink" href="#downloading-the-base-system" title="Permanent link">&para;</a></h2>
-<p>If you do not plan to customize AliceOS too much, you can add the base system archive and use AliceOS that way.</p>
-<p>Download the latest release from the Downloads page and extract the ZIP archive. Then, copy <code>AliceOSBaseSystem.rpa</code> over to your Ren'Py project's game folder.</p>
-<div class="admonition info">
-<p class="admonition-title">Ensure compatibility</p>
-<p>The latest version of AliceOS for download will always correspond to the latest version of the Ren'Py SDK made available at that time. At the time of writing, this means that AliceOS is building against Ren'Py SDK v<strong>7.3.2</strong>. If you are unsure of what version AliceOS is built with, check the <a href="https://travis-ci.com/alicerunsonfedora/CatalinaToriel">Travis results</a> and click on "Ren'Py Latest SDK".</p>
-<p>It is recommend that you make sure that your version of Ren'Py is up to date to ensure compatibility with AliceOS.</p>
+                <h1 id="apps-overview">Apps Overview<a class="headerlink" href="#apps-overview" title="Permanent link">&para;</a></h1>
+<p><img alt="AppManager screenshot" src="../images/system/app-manager.png" /></p>
+<p><strong>Apps</strong> are a fun and extensible means of further enhancing the AliceOS environment without needing to customize the base installation and recompile from source. Apps also take advantage of AliceOS's features and frameworks, such as NotificationKit and ScreenKit. To accomplish this, apps use AppKit, the official API set for writing custom apps for the AliceOS framework. </p>
+<h2 id="about-this-section">About this section<a class="headerlink" href="#about-this-section" title="Permanent link">&para;</a></h2>
+<p>The following documentation will cover the important facets of creating an AliceOS app and what frameworks are available. It will also cover important guidelines that all AliceOS apps should follow to maintain security, privacy, and consistency.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>AliceOS's AppKit should <em>not</em> be confused with Apple's AppKit for macOS, the interface kit responsible for creating macOS applications.</p>
 </div>
-<h3 id="usage-with-ddlc-mods">Usage with DDLC Mods<a class="headerlink" href="#usage-with-ddlc-mods" title="Permanent link">&para;</a></h3>
-<p>If you plan to use AliceOS in a mod for <em>Doki Doki Literature Club!</em>, you must make sure that the base system version that you use is built against Ren'Py <strong>6.99.12.4</strong> to maintain compatibility.</p>
-<p>The release ZIP file is generally noted as 'AliceOS-x.x.x-_AliceOSBaseSystem-rp6.zip'.</p>
-<h2 id="building-from-source-code">Building from source code<a class="headerlink" href="#building-from-source-code" title="Permanent link">&para;</a></h2>
-<p>Alternatively, you can build <code>AliceOSBaseSystem.rpa</code> yourself with the customization you need. This may also be helpful in building AliceOS for your specific Ren'Py version, if necessary.</p>
-<ol>
-<li>Download the source code for the particular release you'd like and open Ren'Py Launcher.</li>
-<li>Select the AliceOS source code and click "Build Distributions".</li>
-<li>Uncheck the distribution options and check "Alice OS Base System Distributable".</li>
-<li>Click "Build".</li>
-</ol>
-<p>Your resulting ZIP file will be located in <code>AliceOS-x.x.x-dists</code>, and you can follow the instructions from <strong>Downloading the base system</strong> to finalize installation.</p>
                 
                   
                 
@@ -890,7 +841,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Welcome" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../02-contributing/" title="Contribution Guidelines" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -899,19 +850,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Welcome
+                Contribution Guidelines
               </span>
             </div>
           </a>
         
         
-          <a href="../02-contributing/" title="Contribution Guidelines" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="01-manifest/" title="Declaring Your App" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Contribution Guidelines
+                Declaring Your App
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

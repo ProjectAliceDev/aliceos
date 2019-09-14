@@ -3,7 +3,7 @@
 AliceOS comes with several bundled Core Services that you should be aware of. These Core Services are crucial to AliceOS's core and are included in every AliceOS installation. Core Services are given the `.aoscservice` file extension and exist under `System/CoreServices`. Core services also make use of ServiceKit, an in-house framework for defining core services.
 
 !!! danger "About ServiceKit"
-    At all costs, do not remove **ServiceKit.aosframework** or attempt to write your own applications using ServiceKit. ServiceKit is a service-only API set that should be used for system-level utilities, not for third-party applications. Use [AppKit](../AppKit/index.md) instead.
+    At all costs, do not remove **ServiceKit.aosframework** or attempt to write your own applications using ServiceKit. ServiceKit is a service-only API set that should be used for system-level utilities, not for third-party applications. Use [AppKit](../Apps/index.md) instead.
 
 ## Desktop
 
