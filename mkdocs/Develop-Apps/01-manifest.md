@@ -70,9 +70,12 @@ The main permissions are:
 - `AS_REQUIRES_FULL_DISK_ACCESS`: Requires accessing files
 - `AS_REQUIRES_SYSTEM_EVENTS`: Requires changing settings or watching for events
 
+!!! warning "Important"
+    All AppKit apps must include this field. If you don't need any permissions or aren't using specific frameworks, leave the dictionary empty.
+
 More information on permissions can be found accordingly:
 
-- [Declaring notification permissions](../2-sending-notifications/#declaring-notification-permission)
+- [Declaring notification permissions](../02-sending-notifications/#declaring-notification-permission)
 
 ## Rebuilding icons
 
