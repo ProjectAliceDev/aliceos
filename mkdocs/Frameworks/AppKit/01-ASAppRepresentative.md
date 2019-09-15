@@ -1,6 +1,6 @@
-#  ASAppRepresentative()
+# ASAppRepresentative
 
-`ASAppRepresentative` is the Python class responsible for defining apps in AliceOS. The following documentation covers all of the methods and properties of this class.
+`ASAppRepresentative` is the Python class responsible for defining apps in AliceOS. This class acts as the app's delegate and information manifest. The following documentation covers all of the methods and properties of this class.
 
 ## Properties
 

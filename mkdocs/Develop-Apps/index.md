@@ -1,4 +1,4 @@
-# Develop Apps - Overview
+# Welcome
 
 ![AppManager screenshot](../images/system/app-manager.png)
 
@@ -8,5 +8,3 @@
 
 The following documentation will cover the important facets of creating an AliceOS app and what frameworks are available. It will also cover important guidelines that all AliceOS apps should follow to maintain security, privacy, and consistency.
 
-!!! warning
-    AliceOS's AppKit should _not_ be confused with Apple's AppKit for macOS, the interface kit responsible for creating macOS applications.

@@ -80,13 +80,9 @@ If there are any documented issues that the pull request addresses, reference th
 
 These guidelines apply to screenshots that are used for reference in issues and/or pull requests.
 
-### Respect the post author's visibility
+### Respect the user's/developer's visibility
 
-Mastodon supports posting to four different visibility levels. As a means of respecting privacy, please keep in mind the following:
-
-- Do not post a status published as a direct message, followers-only, or unlisted status _unless_ you have explicit permission from the status author.
-- If you made a direct message to yourself to demo a feature or fix a bug present in a post, you do not need to worry.
-- If you are unsure whether a public status should be included in a screenshot, consult the post author.
+Make sure that your screenshots don't display personally-identifiable information. When possible, try to use fake data designed for testing instead of real data.
 
 ### Ensure screenshots are clear
 

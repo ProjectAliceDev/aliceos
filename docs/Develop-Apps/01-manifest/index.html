@@ -229,7 +229,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../Frameworks/NotificationKit/" title="Frameworks" class="md-tabs__link">
+        <a href="../../Frameworks/AppKit/" title="Frameworks" class="md-tabs__link">
           Frameworks
         </a>
       
@@ -326,8 +326,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-install/" title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="../../01-install/" title="Installing AliceOS" class="md-nav__link">
+      Installing AliceOS
     </a>
   </li>
 
@@ -371,8 +371,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Develop Apps - Overview" class="md-nav__link">
-      Develop Apps - Overview
+    <a href="../" title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -444,6 +444,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#suggested-documentation" title="Suggested documentation" class="md-nav__link">
+    Suggested documentation
+  </a>
+  
+</li>
+      
       
       
       
@@ -473,8 +480,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../10-ASAppRepresentative/" title="ASAppRepresentative()" class="md-nav__link">
-      ASAppRepresentative()
+    <a href="../03-interface-design/" title="Giving your App an Interface" class="md-nav__link">
+      Giving your App an Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-watching-events/" title="Watching for Events" class="md-nav__link">
+      Watching for Events
     </a>
   </li>
 
@@ -513,10 +532,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
     
     <label class="md-nav__link" for="nav-5-1">
-      NotificationKit
+      AppKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-1">
+        AppKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/AppKit/" title="AppKit Overview" class="md-nav__link">
+      AppKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/AppKit/01-ASAppRepresentative/" title="ASAppRepresentative" class="md-nav__link">
+      ASAppRepresentative
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      NotificationKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
         NotificationKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -570,13 +637,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-2">
+    <label class="md-nav__link" for="nav-5-3">
       ScreenKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-2">
+      <label class="md-nav__title" for="nav-5-3">
         ScreenKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -851,6 +918,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#suggested-documentation" title="Suggested documentation" class="md-nav__link">
+    Suggested documentation
+  </a>
+  
+</li>
+      
       
       
       
@@ -932,10 +1006,6 @@
 <p class="admonition-title">Important</p>
 <p>All AppKit apps must include this field. If you don't need any permissions or aren't using specific frameworks, leave the dictionary empty.</p>
 </div>
-<p>More information on permissions can be found accordingly:</p>
-<ul>
-<li><a href="../02-sending-notifications/#declaring-notification-permission">Declaring notification permissions</a></li>
-</ul>
 <h2 id="rebuilding-icons">Rebuilding icons<a class="headerlink" href="#rebuilding-icons" title="Permanent link">&para;</a></h2>
 <p>Icons for AliceOS apps typically reside in the app's Resources folder, though <code>ASAppRepresentative</code> may not pick it up at first. To ensure your app's icon locations are updated, make sure you initialize the class, where <code>&lt;applicationname&gt;</code> is the name of your app:</p>
 <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -976,6 +1046,12 @@
     <span class="c1"># Finally, we create an instance to pre-load.</span>
     <span class="n">foobanizer</span> <span class="o">=</span> <span class="n">Foobanizer</span><span class="p">()</span>
 </pre></div>
+
+
+<h2 id="suggested-documentation">Suggested documentation<a class="headerlink" href="#suggested-documentation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../Frameworks/AppKit/01-ASAppRepresentative/"><code>ASAppRepresentative</code></a></li>
+</ul>
                 
                   
                 
@@ -996,7 +1072,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="Develop Apps - Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="Welcome" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1005,7 +1081,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Develop Apps - Overview
+                Welcome
               </span>
             </div>
           </a>

@@ -40,7 +40,7 @@
     
     
       
-        <title>ASAppRepresentative() - AliceOS Documentation</title>
+        <title>Watching for Events - AliceOS Documentation</title>
       
     
     
@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#asapprepresentative" tabindex="1" class="md-skip">
+      <a href="#watching-for-events" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -119,7 +119,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                ASAppRepresentative()
+                Watching for Events
               
             </span>
           
@@ -229,7 +229,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../Frameworks/NotificationKit/" title="Frameworks" class="md-tabs__link">
+        <a href="../../Frameworks/AppKit/" title="Frameworks" class="md-tabs__link">
           Frameworks
         </a>
       
@@ -326,8 +326,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../01-install/" title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="../../01-install/" title="Installing AliceOS" class="md-nav__link">
+      Installing AliceOS
     </a>
   </li>
 
@@ -371,8 +371,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Develop Apps - Overview" class="md-nav__link">
-      Develop Apps - Overview
+    <a href="../" title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -405,6 +405,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../03-interface-design/" title="Giving your App an Interface" class="md-nav__link">
+      Giving your App an Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -416,11 +428,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        ASAppRepresentative()
+        Watching for Events
       </label>
     
-    <a href="./" title="ASAppRepresentative()" class="md-nav__link md-nav__link--active">
-      ASAppRepresentative()
+    <a href="./" title="Watching for Events" class="md-nav__link md-nav__link--active">
+      Watching for Events
     </a>
     
       
@@ -434,127 +446,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#properties" title="Properties" class="md-nav__link">
-    Properties
+  <a href="#what-are-system-events" title="What are system events?" class="md-nav__link">
+    What are system events?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#methods" title="Methods" class="md-nav__link">
-    Methods
+  <a href="#running-tasks-during-boot" title="Running tasks during boot" class="md-nav__link">
+    Running tasks during boot
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#__init__appdirectory" title="__init__(appDirectory)" class="md-nav__link">
-    __init__(appDirectory)
+  <a href="#applicationwilllaunchatloginself" title="applicationWillLaunchAtLogin(self)" class="md-nav__link">
+    applicationWillLaunchAtLogin(self)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#requestpermissionforpermission" title="requestPermission(forPermission)" class="md-nav__link">
-    requestPermission(forPermission)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requestallpermissions" title="requestAllPermissions()" class="md-nav__link">
-    requestAllPermissions()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationshouldlaunchatlogin" title="applicationShouldLaunchAtLogin()" class="md-nav__link">
-    applicationShouldLaunchAtLogin()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwilllaunchatlogin" title="applicationWillLaunchAtLogin()" class="md-nav__link">
-    applicationWillLaunchAtLogin()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwilllaunch" title="applicationWillLaunch()" class="md-nav__link">
-    applicationWillLaunch()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidlaunch" title="applicationDidLaunch()" class="md-nav__link">
-    applicationDidLaunch()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillterminate" title="applicationWillTerminate()" class="md-nav__link">
-    applicationWillTerminate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidterminate" title="applicationDidTerminate()" class="md-nav__link">
-    applicationDidTerminate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationshouldrequestnotification" title="applicationShouldRequestNotification()" class="md-nav__link">
-    applicationShouldRequestNotification()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillrequestnotificationmessage-withdetails-responsecallback" title="applicationWillRequestNotification(message, withDetails, responseCallback)" class="md-nav__link">
-    applicationWillRequestNotification(message, withDetails, responseCallback)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidrequestnotification" title="applicationDidRequestNotification()" class="md-nav__link">
-    applicationDidRequestNotification()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillrequestbasicalertmessage-withdetails-ondismisscallback" title="applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)" class="md-nav__link">
-    applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback" title="applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)" class="md-nav__link">
-    applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidrequestalert" title="applicationDidRequestAlert()" class="md-nav__link">
-    applicationDidRequestAlert()
+  <a href="#applicationshouldlaunchatloginself" title="applicationShouldLaunchAtLogin(self)" class="md-nav__link">
+    applicationShouldLaunchAtLogin(self)
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-documentation" title="Suggested documentation" class="md-nav__link">
+    Suggested documentation
+  </a>
   
 </li>
       
@@ -603,10 +531,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
     
     <label class="md-nav__link" for="nav-5-1">
-      NotificationKit
+      AppKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-1">
+        AppKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/AppKit/" title="AppKit Overview" class="md-nav__link">
+      AppKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/AppKit/01-ASAppRepresentative/" title="ASAppRepresentative" class="md-nav__link">
+      ASAppRepresentative
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      NotificationKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
         NotificationKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -660,13 +636,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-2">
+    <label class="md-nav__link" for="nav-5-3">
       ScreenKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-2">
+      <label class="md-nav__title" for="nav-5-3">
         ScreenKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -907,127 +883,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#properties" title="Properties" class="md-nav__link">
-    Properties
+  <a href="#what-are-system-events" title="What are system events?" class="md-nav__link">
+    What are system events?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#methods" title="Methods" class="md-nav__link">
-    Methods
+  <a href="#running-tasks-during-boot" title="Running tasks during boot" class="md-nav__link">
+    Running tasks during boot
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#__init__appdirectory" title="__init__(appDirectory)" class="md-nav__link">
-    __init__(appDirectory)
+  <a href="#applicationwilllaunchatloginself" title="applicationWillLaunchAtLogin(self)" class="md-nav__link">
+    applicationWillLaunchAtLogin(self)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#requestpermissionforpermission" title="requestPermission(forPermission)" class="md-nav__link">
-    requestPermission(forPermission)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requestallpermissions" title="requestAllPermissions()" class="md-nav__link">
-    requestAllPermissions()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationshouldlaunchatlogin" title="applicationShouldLaunchAtLogin()" class="md-nav__link">
-    applicationShouldLaunchAtLogin()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwilllaunchatlogin" title="applicationWillLaunchAtLogin()" class="md-nav__link">
-    applicationWillLaunchAtLogin()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwilllaunch" title="applicationWillLaunch()" class="md-nav__link">
-    applicationWillLaunch()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidlaunch" title="applicationDidLaunch()" class="md-nav__link">
-    applicationDidLaunch()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillterminate" title="applicationWillTerminate()" class="md-nav__link">
-    applicationWillTerminate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidterminate" title="applicationDidTerminate()" class="md-nav__link">
-    applicationDidTerminate()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationshouldrequestnotification" title="applicationShouldRequestNotification()" class="md-nav__link">
-    applicationShouldRequestNotification()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillrequestnotificationmessage-withdetails-responsecallback" title="applicationWillRequestNotification(message, withDetails, responseCallback)" class="md-nav__link">
-    applicationWillRequestNotification(message, withDetails, responseCallback)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidrequestnotification" title="applicationDidRequestNotification()" class="md-nav__link">
-    applicationDidRequestNotification()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillrequestbasicalertmessage-withdetails-ondismisscallback" title="applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)" class="md-nav__link">
-    applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback" title="applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)" class="md-nav__link">
-    applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applicationdidrequestalert" title="applicationDidRequestAlert()" class="md-nav__link">
-    applicationDidRequestAlert()
+  <a href="#applicationshouldlaunchatloginself" title="applicationShouldLaunchAtLogin(self)" class="md-nav__link">
+    applicationShouldLaunchAtLogin(self)
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-documentation" title="Suggested documentation" class="md-nav__link">
+    Suggested documentation
+  </a>
   
 </li>
       
@@ -1048,80 +940,25 @@
               
                 
                 
-                <h1 id="asapprepresentative">ASAppRepresentative()<a class="headerlink" href="#asapprepresentative" title="Permanent link">&para;</a></h1>
-<p><code>ASAppRepresentative</code> is the Python class responsible for defining apps in AliceOS. The following documentation covers all of the methods and properties of this class.</p>
-<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+                <h1 id="watching-for-events">Watching for Events<a class="headerlink" href="#watching-for-events" title="Permanent link">&para;</a></h1>
+<p>Starting with AliceOS Prospect Park, apps can declare and make use of System Events. Apps that want to use system event watching must declare the <code>AS_REQUIRES_SYSTEM_EVENTS</code> permission in their manifest and use the appropriate methods outlined in this document.</p>
+<h2 id="what-are-system-events">What are system events?<a class="headerlink" href="#what-are-system-events" title="Permanent link">&para;</a></h2>
+<p>Any operation that AliceOS performs such as startup, login, or displaying an error is considered a system event. Apps that have the permission can access the following system events:</p>
 <ul>
-<li><code>bundleName</code>: The name of the application.</li>
-<li><code>bundleId</code>: The ID of the application in <a href="https://en.wikipedia.org/wiki/Reverse_domain_name_notation">reverse domain name notation</a>.</li>
-<li><code>bundleDir</code>: The location of the application. By default, apps use <code>AS_APPS_DIR + "&lt;applicationname&gt;.aosapp/"</code>.</li>
-<li><code>bundleAuthor</code>: The author or organization that developed the application.</li>
-<li><code>bundleVersion</code>: The version of the application.</li>
-<li><code>bundleDescription</code>: The description of the application.</li>
-<li><code>requires</code>: A dictionary containing all of the permissions needed for the app to function.</li>
-<li><code>icons</code>: A dictionary containing the paths of all icons for the appropriate sizes.</li>
+<li>Startup</li>
 </ul>
-<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
-<h3 id="__init__appdirectory"><code>__init__(appDirectory)</code><a class="headerlink" href="#__init__appdirectory" title="Permanent link">&para;</a></h3>
-<p>Constructs an instance of <code>ASAppRepresentative</code>.</p>
-<p><strong>Parameters</strong></p>
+<h2 id="running-tasks-during-boot">Running tasks during boot<a class="headerlink" href="#running-tasks-during-boot" title="Permanent link">&para;</a></h2>
+<p>Apps using AppKit may want to perform some initialization tasks when AliceOS boots. This can be accomplished by making use of the <code>applicationWillLaunchAtLogin</code> method.</p>
+<h3 id="applicationwilllaunchatloginself"><code>applicationWillLaunchAtLogin(self)</code><a class="headerlink" href="#applicationwilllaunchatloginself" title="Permanent link">&para;</a></h3>
+<p>Runs any initial tasks or specified startup tasks during boot.</p>
+<h3 id="applicationshouldlaunchatloginself"><code>applicationShouldLaunchAtLogin(self)</code><a class="headerlink" href="#applicationshouldlaunchatloginself" title="Permanent link">&para;</a></h3>
+<p>Determines whether the application has permission to run tasks during boot.</p>
+<p><strong>Returns</strong>: Boolean value dictating if the app has permission to run at boot.</p>
+<h2 id="suggested-documentation">Suggested documentation<a class="headerlink" href="#suggested-documentation" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>appDirectory</code>: The directory of which the app is located. Equivalent to <code>bundleDir</code>.</li>
+<li><a href="../../Frameworks/AppKit/01-ASAppRepresentative/">ASAppRepresentative</a></li>
+<li><a href="../../System/05-bootloader/">Bootloader</a></li>
 </ul>
-<h3 id="requestpermissionforpermission"><code>requestPermission(forPermission)</code><a class="headerlink" href="#requestpermissionforpermission" title="Permanent link">&para;</a></h3>
-<p>Requests a particular permission located in <code>requires</code>.</p>
-<p><strong>Parameters</strong></p>
-<ul>
-<li><code>forPermission</code>: The permission to request. Must be in <code>requires</code> to execute.</li>
-</ul>
-<h3 id="requestallpermissions"><code>requestAllPermissions()</code><a class="headerlink" href="#requestallpermissions" title="Permanent link">&para;</a></h3>
-<p>Requests all permissions located in <code>requires</code>, one by one.</p>
-<h3 id="applicationshouldlaunchatlogin"><code>applicationShouldLaunchAtLogin()</code><a class="headerlink" href="#applicationshouldlaunchatlogin" title="Permanent link">&para;</a></h3>
-<p>Returns whether the app is authorized to run any login tasks.</p>
-<h3 id="applicationwilllaunchatlogin"><code>applicationWillLaunchAtLogin()</code><a class="headerlink" href="#applicationwilllaunchatlogin" title="Permanent link">&para;</a></h3>
-<p>Executes and preliminary actions during the boot sequence.</p>
-<h3 id="applicationwilllaunch"><code>applicationWillLaunch()</code><a class="headerlink" href="#applicationwilllaunch" title="Permanent link">&para;</a></h3>
-<p>Executes any preliminary actions before the app launches.</p>
-<h3 id="applicationdidlaunch"><code>applicationDidLaunch()</code><a class="headerlink" href="#applicationdidlaunch" title="Permanent link">&para;</a></h3>
-<p>Executes post-launch actions after the app has launched.</p>
-<h3 id="applicationwillterminate"><code>applicationWillTerminate()</code><a class="headerlink" href="#applicationwillterminate" title="Permanent link">&para;</a></h3>
-<p>Executes cleanup actions before the app closes.</p>
-<h3 id="applicationdidterminate"><code>applicationDidTerminate()</code><a class="headerlink" href="#applicationdidterminate" title="Permanent link">&para;</a></h3>
-<p>Executes any tasks before finally closing.</p>
-<h3 id="applicationshouldrequestnotification"><code>applicationShouldRequestNotification()</code><a class="headerlink" href="#applicationshouldrequestnotification" title="Permanent link">&para;</a></h3>
-<p>Return whether the app is authorized to send notifications.</p>
-<p><strong>Returns</strong></p>
-<p>Boolean value dictating whether the app includes the notification permission and has permission to send notifications from the user.</p>
-<h3 id="applicationwillrequestnotificationmessage-withdetails-responsecallback"><code>applicationWillRequestNotification(message, withDetails, responseCallback)</code><a class="headerlink" href="#applicationwillrequestnotificationmessage-withdetails-responsecallback" title="Permanent link">&para;</a></h3>
-<p>Executes any pre-processing for a notification request and then sends a request.</p>
-<p><strong>Parameters</strong></p>
-<ul>
-<li><code>message</code>: The message or title of the notification.</li>
-<li><code>withDetails</code>: The details of the notification.</li>
-<li><code>responseCallback</code> (Optional) The action to perform when clicking 'Respond'.</li>
-</ul>
-<h3 id="applicationdidrequestnotification"><code>applicationDidRequestNotification()</code><a class="headerlink" href="#applicationdidrequestnotification" title="Permanent link">&para;</a></h3>
-<p>Executes any actions after sending a notification request.</p>
-<h3 id="applicationwillrequestbasicalertmessage-withdetails-ondismisscallback"><code>applicationWillRequestBasicAlert(message, withDetails, onDismissCallback)</code><a class="headerlink" href="#applicationwillrequestbasicalertmessage-withdetails-ondismisscallback" title="Permanent link">&para;</a></h3>
-<p>Executes any pre-processing for an alert and then sends an alert request.</p>
-<p><strong>Parameters</strong></p>
-<ul>
-<li><code>message</code>: The message or title of the alert.</li>
-<li><code>withDetails</code>: The details of the alert.</li>
-<li><code>onDismissCallback</code> (Optional) The action to perform when clicking 'OK'.</li>
-</ul>
-<h3 id="applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback"><code>applicationWillRequestExtendedAlert(message, withDetails, primaryActionText, onPrimaryCallback, secondaryActionText, onSecondaryCallback)</code><a class="headerlink" href="#applicationwillrequestextendedalertmessage-withdetails-primaryactiontext-onprimarycallback-secondaryactiontext-onsecondarycallback" title="Permanent link">&para;</a></h3>
-<p>Executes any pre-processing for an extended alert and then sends an alert request.</p>
-<ul>
-<li><code>message</code>: The message or title of the alert.</li>
-<li><code>withDetails</code>: The details of the alert.</li>
-<li><code>primaryActionText</code>: The text for the primary action button</li>
-<li><code>onPrimaryCallback</code> (Optional) The action to perform when clicking the primary button.</li>
-<li><code>secondaryActionText</code>: (Optional) The text for the secondary action button</li>
-<li><code>onSecondaryCallback</code> (Optional) The action to perform when clicking the secondary button.</li>
-</ul>
-<h3 id="applicationdidrequestalert"><code>applicationDidRequestAlert()</code><a class="headerlink" href="#applicationdidrequestalert" title="Permanent link">&para;</a></h3>
-<p>Executes any actions after sending an alert.</p>
                 
                   
                 
@@ -1142,7 +979,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../02-sending-notifications/" title="Sending Notifications" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../03-interface-design/" title="Giving your App an Interface" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1151,19 +988,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Sending Notifications
+                Giving your App an Interface
               </span>
             </div>
           </a>
         
         
-          <a href="../../Frameworks/NotificationKit/" title="NotificationKit Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Frameworks/AppKit/" title="AppKit Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                NotificationKit Overview
+                AppKit Overview
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

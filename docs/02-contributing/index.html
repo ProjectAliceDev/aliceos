@@ -227,7 +227,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Frameworks/NotificationKit/" title="Frameworks" class="md-tabs__link">
+        <a href="../Frameworks/AppKit/" title="Frameworks" class="md-tabs__link">
           Frameworks
         </a>
       
@@ -324,8 +324,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../01-install/" title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="../01-install/" title="Installing AliceOS" class="md-nav__link">
+      Installing AliceOS
     </a>
   </li>
 
@@ -459,8 +459,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#respect-the-post-authors-visibility" title="Respect the post author's visibility" class="md-nav__link">
-    Respect the post author's visibility
+  <a href="#respect-the-usersdevelopers-visibility" title="Respect the user's/developer's visibility" class="md-nav__link">
+    Respect the user's/developer's visibility
   </a>
   
 </li>
@@ -533,8 +533,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Develop-Apps/" title="Develop Apps - Overview" class="md-nav__link">
-      Develop Apps - Overview
+    <a href="../Develop-Apps/" title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -569,8 +569,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../Develop-Apps/10-ASAppRepresentative/" title="ASAppRepresentative()" class="md-nav__link">
-      ASAppRepresentative()
+    <a href="../Develop-Apps/03-interface-design/" title="Giving your App an Interface" class="md-nav__link">
+      Giving your App an Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Develop-Apps/04-watching-events/" title="Watching for Events" class="md-nav__link">
+      Watching for Events
     </a>
   </li>
 
@@ -609,10 +621,58 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
     
     <label class="md-nav__link" for="nav-5-1">
-      NotificationKit
+      AppKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-5-1">
+        AppKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Frameworks/AppKit/" title="AppKit Overview" class="md-nav__link">
+      AppKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Frameworks/AppKit/01-ASAppRepresentative/" title="ASAppRepresentative" class="md-nav__link">
+      ASAppRepresentative
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      NotificationKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
         NotificationKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -666,13 +726,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-2">
+    <label class="md-nav__link" for="nav-5-3">
       ScreenKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-2">
+      <label class="md-nav__title" for="nav-5-3">
         ScreenKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1009,8 +1069,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#respect-the-post-authors-visibility" title="Respect the post author's visibility" class="md-nav__link">
-    Respect the post author's visibility
+  <a href="#respect-the-usersdevelopers-visibility" title="Respect the user's/developer's visibility" class="md-nav__link">
+    Respect the user's/developer's visibility
   </a>
   
 </li>
@@ -1131,13 +1191,8 @@ This PR makes the following changes:</p>
 </blockquote>
 <h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
 <p>These guidelines apply to screenshots that are used for reference in issues and/or pull requests.</p>
-<h3 id="respect-the-post-authors-visibility">Respect the post author's visibility<a class="headerlink" href="#respect-the-post-authors-visibility" title="Permanent link">&para;</a></h3>
-<p>Mastodon supports posting to four different visibility levels. As a means of respecting privacy, please keep in mind the following:</p>
-<ul>
-<li>Do not post a status published as a direct message, followers-only, or unlisted status <em>unless</em> you have explicit permission from the status author.</li>
-<li>If you made a direct message to yourself to demo a feature or fix a bug present in a post, you do not need to worry.</li>
-<li>If you are unsure whether a public status should be included in a screenshot, consult the post author.</li>
-</ul>
+<h3 id="respect-the-usersdevelopers-visibility">Respect the user's/developer's visibility<a class="headerlink" href="#respect-the-usersdevelopers-visibility" title="Permanent link">&para;</a></h3>
+<p>Make sure that your screenshots don't display personally-identifiable information. When possible, try to use fake data designed for testing instead of real data.</p>
 <h3 id="ensure-screenshots-are-clear">Ensure screenshots are clear<a class="headerlink" href="#ensure-screenshots-are-clear" title="Permanent link">&para;</a></h3>
 <p>Screenshots are often included to help illustrate or demonstrate a point with an issue or pull request. It may be difficult to understand the screenshot's purpose if the image is too small or distorted. Ensure that all screenshots are clear and visible.</p>
 <h2 id="for-official-contributors">For Official Contributors<a class="headerlink" href="#for-official-contributors" title="Permanent link">&para;</a></h2>
@@ -1166,7 +1221,7 @@ This PR makes the following changes:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../01-install/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../01-install/" title="Installing AliceOS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1175,19 +1230,19 @@ This PR makes the following changes:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Getting Started
+                Installing AliceOS
               </span>
             </div>
           </a>
         
         
-          <a href="../Develop-Apps/" title="Develop Apps - Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Develop-Apps/" title="Welcome" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Develop Apps - Overview
+                Welcome
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -20,11 +20,3 @@
 
 - If the notification times out and dismisses, the banner will return `'notificationTimedOut'`.
 - If the notification's response callback is left as the default, the banner will return `'didClickRespond'` when clicking the "Respond" button.
-
-## Guidelines
-
-Banners are intended for temporary actions that can be ignored, if possible. Keep these guidelines in mind when using banners:
-
-- **Refrain from overloading banners**. This can be visually distracting and may annoy the user.
-- **Keep the message and details short**. Banners are intended for a quick glance or something that doesn't require a lot of attention.
-- **Don't force the user to interact with the banner**. Banners shouldn't require the user to perform an action.

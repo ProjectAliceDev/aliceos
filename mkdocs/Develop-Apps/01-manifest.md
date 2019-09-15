@@ -73,10 +73,6 @@ The main permissions are:
 !!! warning "Important"
     All AppKit apps must include this field. If you don't need any permissions or aren't using specific frameworks, leave the dictionary empty.
 
-More information on permissions can be found accordingly:
-
-- [Declaring notification permissions](../02-sending-notifications/#declaring-notification-permission)
-
 ## Rebuilding icons
 
 Icons for AliceOS apps typically reside in the app's Resources folder, though `ASAppRepresentative` may not pick it up at first. To ensure your app's icon locations are updated, make sure you initialize the class, where `<applicationname>` is the name of your app:
@@ -125,3 +121,7 @@ init 10 python:
     foobanizer = Foobanizer()
 
 ```
+
+## Suggested documentation
+
+- [`ASAppRepresentative`](../Frameworks/AppKit/01-ASAppRepresentative.md)

@@ -40,7 +40,3 @@
 - If the user clicks the primary action button and the action callback is left at the default, the alert returns `'didClickPrimary'`.
 - Likewise, if the user clicks the secondary action button and the action callback is left at the default, the alert returns `'didClickSecondary'`.
 
-## Guidelines
-
-- **Refrain from overloading alerts.** Alerts can be seen as intrivusive if too many are displayed at one time. Unless the user needs to make an immediate decision, refrain from using an alert.
-- **If the content isn't important, consider a banner.** Banners are less intrusive by nature and don't require an immediate action.

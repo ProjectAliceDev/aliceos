@@ -229,7 +229,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Frameworks" class="md-tabs__link md-tabs__link--active">
+        <a href="../../AppKit/" title="Frameworks" class="md-tabs__link">
           Frameworks
         </a>
       
@@ -326,8 +326,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../01-install/" title="Getting Started" class="md-nav__link">
-      Getting Started
+    <a href="../../../01-install/" title="Installing AliceOS" class="md-nav__link">
+      Installing AliceOS
     </a>
   </li>
 
@@ -369,8 +369,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Develop-Apps/" title="Develop Apps - Overview" class="md-nav__link">
-      Develop Apps - Overview
+    <a href="../../../Develop-Apps/" title="Welcome" class="md-nav__link">
+      Welcome
     </a>
   </li>
 
@@ -405,8 +405,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Develop-Apps/10-ASAppRepresentative/" title="ASAppRepresentative()" class="md-nav__link">
-      ASAppRepresentative()
+    <a href="../../../Develop-Apps/03-interface-design/" title="Giving your App an Interface" class="md-nav__link">
+      Giving your App an Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Develop-Apps/04-watching-events/" title="Watching for Events" class="md-nav__link">
+      Watching for Events
     </a>
   </li>
 
@@ -441,18 +453,66 @@
           
           
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      AppKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        AppKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../AppKit/" title="AppKit Overview" class="md-nav__link">
+      AppKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../AppKit/01-ASAppRepresentative/" title="ASAppRepresentative" class="md-nav__link">
+      ASAppRepresentative
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" checked>
     
-    <label class="md-nav__link" for="nav-5-1">
+    <label class="md-nav__link" for="nav-5-2">
       NotificationKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-1">
+      <label class="md-nav__title" for="nav-5-2">
         NotificationKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -529,13 +589,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#guidelines" title="Guidelines" class="md-nav__link">
-    Guidelines
-  </a>
-  
-</li>
-      
       
       
       
@@ -571,13 +624,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
     
-    <label class="md-nav__link" for="nav-5-2">
+    <label class="md-nav__link" for="nav-5-3">
       ScreenKit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-2">
+      <label class="md-nav__title" for="nav-5-3">
         ScreenKit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -844,13 +897,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#guidelines" title="Guidelines" class="md-nav__link">
-    Guidelines
-  </a>
-  
-</li>
-      
       
       
       
@@ -884,13 +930,6 @@
 <ul>
 <li>If the notification times out and dismisses, the banner will return <code>'notificationTimedOut'</code>.</li>
 <li>If the notification's response callback is left as the default, the banner will return <code>'didClickRespond'</code> when clicking the "Respond" button.</li>
-</ul>
-<h2 id="guidelines">Guidelines<a class="headerlink" href="#guidelines" title="Permanent link">&para;</a></h2>
-<p>Banners are intended for temporary actions that can be ignored, if possible. Keep these guidelines in mind when using banners:</p>
-<ul>
-<li><strong>Refrain from overloading banners</strong>. This can be visually distracting and may annoy the user.</li>
-<li><strong>Keep the message and details short</strong>. Banners are intended for a quick glance or something that doesn't require a lot of attention.</li>
-<li><strong>Don't force the user to interact with the banner</strong>. Banners shouldn't require the user to perform an action.</li>
 </ul>
                 
                   
