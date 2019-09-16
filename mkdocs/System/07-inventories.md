@@ -35,7 +35,7 @@ label the_story:
 
     "Quickly, I look around the room for any keys to open the door and finally get out of the office."
     "After searching under a few desks, I manage to find a key."
-    $ inventory.add(office_key_item)
+    $ inventory.addItem(office_key_item)
 
     while not used_office_key:
         "Great! Now to just get the door open."
