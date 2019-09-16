@@ -42,7 +42,7 @@ AppRoot/
     AppManifest.rpy
 ```
 
-## Suggested Documentation
+## Suggested documentation
 
 - [A Simple UI](../Frameworks/ScreenKit/01-a-simple-ui.md)
 - [Special ScreenKit Styles](../Frameworks/ScreenKit/02-special-styles.md)
