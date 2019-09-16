@@ -37,3 +37,11 @@ There are no available methods as the app uses the standard `applicationWillLaun
 App Manager is a(n) utility in AliceOS that lets users view the apps installed on the AliceOS system and manage their permissions quickly. It is the official method of changing an app's permissions in AliceOS.
 
 There are no available methods as the app uses the standard `applicationWillLaunch` method from AppKit.
+
+## Inventories
+
+![Inventories icon](../images/system/defapps/inventories.png)
+
+Inventories is a tool for AliceOS that lets developers and players work with an inventory.
+
+More information on Inventories can be found in the [Inventories documentation](07-inventories.md).
