@@ -1,4 +1,4 @@
-#  Getting Started
+#  Installing AliceOS
 
 This document will help you get started with installing AliceOS and attaching it to your Ren'Py project.
 
