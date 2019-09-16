@@ -9,20 +9,22 @@ edit_uri: ""
 theme:
     favicon: images/favicon.ico
     name: material
-    logo:
-        icon: 'developer_board'
+    logo: 'images/logo.svg'
     palette:
-        primary: 'white'
+        primary: 'grey'
         accent: 'yellow'
     font:
         text: 'Inter'
-        code: 'Fira Mono'
+        code: 'Fira Code'
+    feature:
+      tabs: true
 
 extra_css:
   - 'https://rsms.me/inter/inter.css'
+  - 'https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css'
 
 # Repository
-repo_name: 'ProjectAliceDev/aliceos'
+repo_name: 'ProjectAliceDev/AliceOS'
 repo_url: 'https://github.com/ProjectAliceDev/aliceos'
 
 copyright: 'Copyright &copy; 2018 - 2019 Project Alice.'
