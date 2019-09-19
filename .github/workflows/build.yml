@@ -47,9 +47,8 @@ jobs:
         if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TRAVIS_TAG: ${{ github.ref }}
         with:
-          args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', $TRAVIS_TAG, $TRAVIS_TAG) }}
+          args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', github.ref, github.ref) }}
 
 
 
