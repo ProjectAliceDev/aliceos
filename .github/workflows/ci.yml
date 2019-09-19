@@ -30,8 +30,8 @@ jobs:
           ./renpy.sh "../mod/" lint
           cd ..
         env:
-          - SDL_AUDIODRIVER: dummy
-          - SDL_VIDEODRIVER: dummy
+          SDL_AUDIODRIVER: dummy
+          SDL_VIDEODRIVER: dummy
       - name: Build AliceOS archive
         shell: bash
         run: |
@@ -39,5 +39,5 @@ jobs:
           ./renpy.sh launcher distribute "../mod/"
           cd ..
         env:
-          - SDL_AUDIODRIVER: dummy
-          - SDL_VIDEODRIVER: dummy
+          SDL_AUDIODRIVER: dummy
+          SDL_VIDEODRIVER: dummy
