@@ -26,12 +26,12 @@ jobs:
       - name: Lint AliceOS project
         shell: bash
         run: |
-          cd renpy
+          cd ../renpy
           ./renpy.sh "../mod/" lint
           cd ..
       - name: Build AliceOS archive
         shell: bash
         run: |
-          cd renpy
+          cd ../renpy
           ./renpy.sh launcher distribute "../mod/"
           cd ..
