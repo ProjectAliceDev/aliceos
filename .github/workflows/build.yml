@@ -30,7 +30,7 @@ jobs:
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
           aliceos/travis/inject_version.sh
         env:
-          TRAVIS_TAG: ${{ github.event.release['ref'] }}
+          TRAVIS_TAG: ${{ github.ref }}
           if: github.event.release
           TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
@@ -47,9 +47,9 @@ jobs:
         if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TRAVIS_TAG: ${{ github.event.release.ref }}
+          TRAVIS_TAG: ${{ github.ref }}
         with:
-          args: 'AliceOS-${TRAVIS_TAG}-dists/AliceOS-${TRAVIS_TAG}-_ASBaseSystem.zip'
+          args: ${{ format("AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip"), TRAVIS_TAG, TRAVIS_TAG }}
 
 
 
