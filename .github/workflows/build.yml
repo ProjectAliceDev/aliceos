@@ -41,6 +41,11 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: Publish Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: AliceOS Archive
+          path: "*-dists/*-_ASBaseSystem*.zip"
   build6:
     name: Build with Ren'Py (SDK v6.99.12.4)
     runs-on: ubuntu-latest
@@ -80,3 +85,8 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: Publish Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: AliceOS Archive
+          path: "*-dists/*-_ASBaseSystem*.zip"
