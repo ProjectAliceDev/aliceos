@@ -16,3 +16,11 @@ style ASInterfaceScrollbar_vscrollbar:
     thumb AS_FRAMEWORK_DIR("ScreenKit") + "Resources/Scrollbars/ScrollThumb.png"
     unscrollable "hide"
     yfit True
+
+style ASInterfaceScrollbar_hscrollbar:
+    bar_vertical False
+    bar_resizing False
+    base_bar AS_FRAMEWORK_DIR("ScreenKit") + "Resources/Scrollbars/ScrollAreaHorizontal.png"
+    thumb AS_FRAMEWORK_DIR("ScreenKit") + "Resources/Scrollbars/ScrollThumbHorizontal.png"
+    unscrollable "hide"
+    xfit True
