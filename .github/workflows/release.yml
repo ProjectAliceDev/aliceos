@@ -1,5 +1,5 @@
-name: Build AliceOS Archive
-on: push
+name: Build AliceOS Archive (Release)
+on: release
 
 jobs:
   build:
@@ -41,6 +41,12 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: Publish artifacts to release
+        uses: skx/github-action-publish-binaries@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: "*-dists/*-_ASBaseSystem*.zip"
 
 
   build6:
@@ -82,3 +88,9 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: Publish artifacts to release
+        uses: skx/github-action-publish-binaries@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: "*-dists/*-_ASBaseSystem*.zip"
