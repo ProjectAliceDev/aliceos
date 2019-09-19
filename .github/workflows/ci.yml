@@ -18,6 +18,7 @@ jobs:
       - name: Setup AliceOS for build
         shell: bash
         run: |
+          ls
           mkdir mod
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
