@@ -42,7 +42,7 @@ jobs:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
       - name: Release artifacts
-        uses: JasonEtco/upload-to-release@master
+        uses: Roang-zero1/github-upload-release-artifacts-action@v2.0.0
         if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
