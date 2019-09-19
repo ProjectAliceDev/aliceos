@@ -1,5 +1,5 @@
 name: Build AliceOS Archive
-on: push
+on: [push, release]
 
 jobs:
   build:
@@ -42,12 +42,12 @@ jobs:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
       - name: Release artifacts
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+        uses: JasonEtco/upload-to-release@master
+        if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: '*-dists/*-_ASBaseSystem*.zip'
+          args: '*-dists/*-_ASBaseSystem*.zip'
 
 
   build6:
@@ -89,10 +89,3 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
-      - name: Release artifacts
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: '*-dists/*-_ASBaseSystem*.zip'
