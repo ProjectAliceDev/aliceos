@@ -5,6 +5,7 @@
 # Just change the value of replacer, the script will do everything for you
  
 replacer="2.0.0"
+SHORTENED_HASH = echo $TRAVIS_COMMIT | head -c 9
 
 if [ ! -z $TRAVIS_TAG ]; then
   echo " ---> Tag exists, using tag."
@@ -14,8 +15,8 @@ if [ ! -z $TRAVIS_TAG ]; then
   cat mod/game/System/ASDefinitions.rpy | grep BUILD_ID;
 else
   echo " ---> Tag not exists, using hash."
-  sed -i "s/config.version = \"$replacer\"/config.version = \"${TRAVIS_COMMIT:0:9}\"/g" mod/game/options.rpy;
-  sed -i "s/\"BUILD_ID\": \"GITHASH\"/\"BUILD_ID\":  \"${TRAVIS_COMMIT:0:9}\"/g" mod/game/System/ASDefinitions.rpy;
+  sed -i "s/config.version = \"$replacer\"/config.version = \"$SHORTENED_HASH\"/g" mod/game/options.rpy;
+  sed -i "s/\"BUILD_ID\": \"GITHASH\"/\"BUILD_ID\":  \"$SHORTENED_HASH\"/g" mod/game/System/ASDefinitions.rpy;
   cat mod/game/options.rpy | grep config.version;
   cat mod/game/System/ASDefinitions.rpy | grep BUILD_ID;
 fi
