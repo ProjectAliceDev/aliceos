@@ -22,7 +22,6 @@ jobs:
           mkdir mod
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
-          aliceos/travis/inject_version.sh
       - name: Lint AliceOS project
         shell: bash
         run: |
@@ -53,7 +52,6 @@ jobs:
           mkdir mod
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
-          aliceos/travis/inject_version.sh
       - name: Lint AliceOS project
         shell: bash
         run: |

@@ -5,7 +5,7 @@
 # Just change the value of replacer, the script will do everything for you
  
 replacer="2.0.0"
-shortened_hash="$(echo $TRAVIS_COMMIT | head -c 9)"
+shortened_hash="$(echo $TRAVIS_COMMIT | head -c 7)"
 
 if [ ! -z $TRAVIS_TAG ]; then
   echo " ---> Tag exists, using tag."
