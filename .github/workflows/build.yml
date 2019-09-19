@@ -1,5 +1,5 @@
 name: Build AliceOS Archive
-on: [push, release]
+on: push
 
 jobs:
   build:
@@ -23,15 +23,10 @@ jobs:
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
           aliceos/travis/inject_version.sh
-      - name: Lint AliceOS project
-        shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh "../mod/" lint
-          cd ..
         env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
+          - TRAVIS_TAG: github.event.release.ref
+            if: github.event_name == "release"
+          - TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
         shell: bash
         run: |
@@ -41,13 +36,6 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
-      - name: Release artifacts
-        uses: Roang-zero1/github-upload-release-artifacts-action@v2.0.0
-        if: github.event.release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: '*-dists/*-_ASBaseSystem*.zip'
 
 
   build6:
@@ -71,12 +59,6 @@ jobs:
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
           aliceos/travis/inject_version.sh
-      - name: Lint AliceOS project
-        shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh "../mod/" lint
-          cd ..
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
