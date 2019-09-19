@@ -44,7 +44,7 @@ jobs:
           SDL_VIDEODRIVER: dummy
       - name: Release artifacts to GitHub Release
         uses: Roang-zero1/github-create-release-action@master
-        if: github.event.name == "release"
+        if: github.event_name == "release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRAVIS_TAG: ${{ github.event.release.ref }}
