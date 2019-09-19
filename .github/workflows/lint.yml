@@ -1,9 +1,9 @@
-name: Ren'Py Build
+name: Lint
 on: [push]
 
 jobs:
-  build:
-    name: Build with Ren'Py (Latest SDK)
+  lint:
+    name: Ren'Py Lint (Latest SDK)
     runs-on: ubuntu-latest
     steps:
       - name: Clone source
@@ -15,7 +15,7 @@ jobs:
         run: |
           cd ..
           aliceos/travis/install.sh 7.3.2
-      - name: Setup AliceOS for build
+      - name: Setup AliceOS for lint
         shell: bash
         run: |
           cd ..
@@ -32,17 +32,9 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
-      - name: Build AliceOS archive
-        shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh launcher distribute "../mod/"
-          cd ..
-        env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
-  build6:
-    name: Build with Ren'Py (SDK v6.99.12.4)
+
+  lint6:
+    name: Ren'Py Lint (SDK v6.99.12.4)
     runs-on: ubuntu-latest
     steps:
       - name: Clone source
@@ -54,7 +46,7 @@ jobs:
         run: |
           cd ..
           aliceos/travis/install.sh 6.99.12.4
-      - name: Setup AliceOS for build
+      - name: Setup AliceOS for lint
         shell: bash
         run: |
           cd ..
@@ -67,15 +59,6 @@ jobs:
         run: |
           cd ../renpy
           ./renpy.sh "../mod/" lint
-          cd ..
-        env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
-      - name: Build AliceOS archive
-        shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh launcher distribute "../mod/"
           cd ..
         env:
           SDL_AUDIODRIVER: dummy
