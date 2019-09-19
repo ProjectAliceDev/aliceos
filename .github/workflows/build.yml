@@ -30,7 +30,7 @@ jobs:
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
           aliceos/travis/inject_version.sh
         env:
-          TRAVIS_TAG: ${{ github.event.release.ref }}
+          TRAVIS_TAG: ${{ github.event.release['ref'] }}
           if: github.event.release
           TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
@@ -43,7 +43,7 @@ jobs:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
       - name: Release artifacts to GitHub Release
-        uses: Roang-zero1/github-create-release-action@master
+        uses: JasonEtco/upload-to-release@master
         if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
