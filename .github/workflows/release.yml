@@ -46,7 +46,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: "*-dists/*-_ASBaseSystem*.zip"
+          args: "AliceOS-*-dists/*-_ASBaseSystem*.zip"
 
 
   build6:

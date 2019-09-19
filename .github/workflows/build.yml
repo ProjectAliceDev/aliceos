@@ -1,5 +1,8 @@
 name: Build AliceOS Archive
-on: push
+on:
+  push:
+    paths:
+      - 'game/*'
 
 jobs:
   build:
