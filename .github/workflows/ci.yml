@@ -1,0 +1,13 @@
+name: Ren'Py Build
+on: [push]
+
+jobs:
+  build:
+    name: Build with Ren'Py 7
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone source
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 50
+
