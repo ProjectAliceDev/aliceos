@@ -15,3 +15,22 @@ jobs:
         run: |
           cd ..
           aliceos/travis/install.sh 7.3.2
+      - name: Setup AliceOS for build
+        shell: bash
+        run: |
+          mkdir mod
+          mkdir "./mod/game"
+          rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
+          aliceos/travis/inject_version.sh
+      - name: Lint AliceOS project
+        shell: bash
+        run: |
+          cd renpy
+          ./renpy.sh "../mod/" lint
+          cd ..
+      - name: Build AliceOS archive
+        shell: bash
+        run: |
+          cd renpy
+          ./renpy.sh launcher distribute "../mod/"
+          cd ..
