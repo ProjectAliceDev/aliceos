@@ -42,6 +42,15 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: Release artifacts to GitHub Release
+        uses: Roang-zero1/github-create-release-action@master
+        if: github.event.name == "release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRAVIS_TAG: ${{ github.event.release.ref }}
+        with:
+          args: 'AliceOS-${{ TRAVIS_TAG }}-dists/AliceOS-${{ TRAVIS_TAG }}-_ASBaseSystem.zip'
+
 
 
   build6:
