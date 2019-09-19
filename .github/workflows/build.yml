@@ -49,7 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRAVIS_TAG: ${{ github.event.release.ref }}
         with:
-          args: 'AliceOS-${{ TRAVIS_TAG }}-dists/AliceOS-${{ TRAVIS_TAG }}-_ASBaseSystem.zip'
+          args: 'AliceOS-${TRAVIS_TAG}-dists/AliceOS-${TRAVIS_TAG}-_ASBaseSystem.zip'
 
 
 
