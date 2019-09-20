@@ -8,9 +8,9 @@ replacer="2.0.0"
 shortened_hash="$(echo $TRAVIS_COMMIT | head -c 7)"
 
 if [[ $TRAVIS_TAG == "ref/tags"* ]]; then
-    tag_remove="ref/tags"
+    tag_remove="ref/tags/"
     NEW_TRAVIS_TAG=${TRAVIS_TAG#tag_remove}
-    TRAVIS_TAG=NEW_TRAVIS_TAG
+    TRAVIS_TAG=$NEW_TRAVIS_TAG
 fi
 
 if [ ! -z $TRAVIS_TAG ]; then
