@@ -8,8 +8,13 @@ on:
 
 
 jobs:
+  strategy:
+    matrix:
+      renpy-versions:
+        - '7.3.2'
+        - '6.99.12.4'
   build:
-    name: Build with Ren'Py (Latest SDK)
+    name: Build with Ren'Py SDK
     runs-on: ubuntu-latest
     steps:
       - name: Clone source
@@ -20,7 +25,7 @@ jobs:
         shell: bash
         run: |
           cd ..
-          aliceos/travis/install.sh 7.3.2
+          aliceos/travis/install.sh ${{ matrix.renpy-versions }}
       - name: Setup AliceOS for build
         shell: bash
         run: |
@@ -60,42 +65,5 @@ jobs:
         if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TRAVIS_TAG: '${travis/gh-tags.sh}'
         with:
           args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', '$TRAVIS_TAG', '$TRAVIS_TAG') }}
-
-
-
-  build6:
-    name: Build with Ren'Py (SDK v6.99.12.4)
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clone source
-        uses: actions/checkout@v1
-        with:
-          fetch-depth: 50
-      - name: Install Ren'Py SDK
-        shell: bash
-        run: |
-          cd ..
-          aliceos/travis/install.sh 6.99.12.4
-      - name: Setup AliceOS for build
-        shell: bash
-        run: |
-          cd ..
-          mkdir mod
-          mkdir "./mod/game"
-          rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
-          aliceos/travis/inject_version.sh
-        env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
-      - name: Build AliceOS archive
-        shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh launcher distribute "../mod/"
-          cd ..
-        env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
