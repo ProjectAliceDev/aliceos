@@ -30,10 +30,18 @@ jobs:
           mkdir mod
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
-          aliceos/travis/inject_version.sh
+      - name: Inject Release Strings
+        shell: bash
+        run: aliceos/travis/inject_version.sh
+        if: github.event.release
         env:
           TRAVIS_TAG: ${{ github.ref }}
-          if: github.event.release
+      - name: Inject Build Hash Strings
+        shell: bash
+        run: aliceos/travis/inject_version.sh
+        if: ! github.event.release
+        env:
+          TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
         shell: bash
         run: |
