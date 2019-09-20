@@ -48,4 +48,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: ../AliceOS-*-dists/AliceOS-*-_ASBaseSystem.zip
+          args: ${{ [steps.3.outputs.dir, steps.3.outputs.version], '-_ASBaseSystem.zip' }}
