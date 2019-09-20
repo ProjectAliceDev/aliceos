@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 50
 
       - name: Lint project
-        uses: ProjectAliceDev/renpy-lint-action@1.0.0
+        uses: ProjectAliceDev/renpy-lint-action@v1.0.0
         with:
           sdk-version: ${{ matrix.renpy-versions }}
         env:
