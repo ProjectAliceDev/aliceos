@@ -37,7 +37,7 @@ jobs:
           TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
         id: buildseq
-        uses: ProjectAliceDev/renpy-build-action@1.0.1
+        uses: ProjectAliceDev/renpy-build-action@1.0.2
         with:
           sdk-version: ${{ matrix.renpy-versions }}
         env:
