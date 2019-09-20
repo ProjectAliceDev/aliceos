@@ -36,6 +36,7 @@ jobs:
         env:
           TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
+        id: buildseq
         uses: ProjectAliceDev/renpy-build-action@1.0.1
         with:
           sdk-version: ${{ matrix.renpy-versions }}
@@ -48,4 +49,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: ${{ format('{0}/{1}-_ASBaseSystem.zip', steps.3.outputs.dir, steps.3.outputs.version) }}
+          args: ${{ format('{0}/{1}-_ASBaseSystem.zip', steps.buildseq.outputs.dir, steps.buildseq.outputs.version) }}
