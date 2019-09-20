@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # You find yourself in a strange place. This is where we inject semvering via Git Tags
 # No need to change anything below the replacer variable.
