@@ -48,4 +48,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: ${{ join([steps.3.outputs.dir, steps.3.outputs.version], '-_ASBaseSystem.zip') }}
+          args: ${{ format('{0}/{1}-_ASBaseSystem.zip', steps.3.outputs.dir, steps.3.outputs.version) }}
