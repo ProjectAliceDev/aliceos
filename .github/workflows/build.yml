@@ -21,6 +21,8 @@ jobs:
         run: |
           cd ..
           aliceos/travis/install.sh 7.3.2
+        env:
+          TRAVIS_COMMIT: ${{ github.sha }}
       - name: Setup AliceOS for build
         shell: bash
         run: |
@@ -32,7 +34,6 @@ jobs:
         env:
           TRAVIS_TAG: ${{ github.ref }}
           if: github.event.release
-          TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
         shell: bash
         run: |
