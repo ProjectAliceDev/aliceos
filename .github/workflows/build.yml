@@ -2,7 +2,7 @@ name: Build AliceOS Archive
 on:
   push:
     branches:
-      - '*'
+      - 'refs/heads/*'
   release:
     types: [published]
 
