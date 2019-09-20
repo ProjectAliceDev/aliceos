@@ -5,18 +5,18 @@
 # Just change the value of replacer, the script will do everything for you
 
 replacer="2.0.0"
-shortened_hash="$(echo $TRAVIS_COMMIT | head -c 7)"
+shortened_hash="$(echo $commit | head -c 7)"
 
-if [[ $TRAVIS_TAG == "refs/tags/"* ]]; then
+if [[ $tag == "refs/tags/"* ]]; then
     tag_remove="refs/tags/"
-    NEW_TRAVIS_TAG=${TRAVIS_TAG#"${tag_remove}"}
-    TRAVIS_TAG=$NEW_TRAVIS_TAG
+    new_tag=${tag#"${tag_remove}"}
+    tag=$new_tag
 fi
 
-if [ ! -z $TRAVIS_TAG ]; then
-  echo "Tag ${TRAVIS_TAG} found. Using tag..."
-  sed -i "s/define config.version = \"$replacer\"/define config.version = \"${TRAVIS_TAG}-rpy_${sdk}\"/g" game/options.rpy;
-  sed -i "s/\"BUILD_ID\": \"GITHASH\"/\"BUILD_ID\":  \"$TRAVIS_TAG\"/g" game/System/ASDefinitions.rpy;
+if [ ! -z $tag ]; then
+  echo "Tag ${tag} found. Using tag..."
+  sed -i "s/define config.version = \"$replacer\"/define config.version = \"${tag}-rpy_${sdk}\"/g" game/options.rpy;
+  sed -i "s/\"BUILD_ID\": \"GITHASH\"/\"BUILD_ID\":  \"$tag\"/g" game/System/ASDefinitions.rpy;
   cat game/options.rpy | grep config.version;
   cat game/System/ASDefinitions.rpy | grep BUILD_ID;
 else
