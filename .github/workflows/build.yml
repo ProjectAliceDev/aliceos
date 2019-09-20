@@ -39,7 +39,7 @@ jobs:
       - name: Inject Build Hash Strings
         shell: bash
         run: aliceos/travis/inject_version.sh
-        if: !(github.event.release)
+        if: github.event.push
         env:
           TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
