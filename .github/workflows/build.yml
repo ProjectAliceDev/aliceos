@@ -40,7 +40,7 @@ jobs:
         env:
           TRAVIS_COMMIT: ${{ github.sha }}
       - name: Build AliceOS archive
-        uses: ProjectAliceDev/renpy-build@master
+        uses: ProjectAliceDev/renpy-build-action@master
         with:
           sdk-version: ${{ matrix.renpy-versions }}
         env:
