@@ -57,6 +57,7 @@ jobs:
           cd ../renpy
           ./renpy.sh launcher distribute "../mod/"
           cd ..
+          ls | grep 'AliceOS-' | cd
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
