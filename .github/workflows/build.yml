@@ -62,7 +62,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRAVIS_TAG: '${travis/gh-tags.sh}'
         with:
-          args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', $TRAVIS_TAG, $TRAVIS_TAG) }}
+          args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', '$TRAVIS_TAG', '$TRAVIS_TAG') }}
 
 
 
