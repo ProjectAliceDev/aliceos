@@ -15,13 +15,13 @@ fi
 
 if [ ! -z $TRAVIS_TAG ]; then
   echo "Tag ${TRAVIS_TAG} found. Using tag..."
-  sed -i "s/define config.version = \"$replacer\"/define config.version = \"$TRAVIS_TAG-rpy_$sdk\"/g" game/options.rpy;
+  sed -i "s/define config.version = \"$replacer\"/define config.version = \"${TRAVIS_TAG}-rpy_${sdk}\"/g" game/options.rpy;
   sed -i "s/\"BUILD_ID\": \"GITHASH\"/\"BUILD_ID\":  \"$TRAVIS_TAG\"/g" game/System/ASDefinitions.rpy;
   cat game/options.rpy | grep config.version;
   cat game/System/ASDefinitions.rpy | grep BUILD_ID;
 else
   echo "No tag found. Using Git hash..."
-  sed -i "s/config.version = \"$replacer\"/config.version = \"$shortened_hash-rpy_$sdk\"/g" game/options.rpy;
+  sed -i "s/config.version = \"$replacer\"/config.version = \"${shortened_hash}-rpy_${sdk}\"/g" game/options.rpy;
   sed -i "s/\"BUILD_ID\": \"GITHASH\"/\"BUILD_ID\":  \"$shortened_hash\"/g" game/System/ASDefinitions.rpy;
   cat game/options.rpy | grep config.version;
   cat game/System/ASDefinitions.rpy | grep BUILD_ID;
