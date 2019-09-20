@@ -19,7 +19,7 @@ jobs:
       - name: Lint project
         uses: ProjectAliceDev/renpy-lint-action@1.0.0
         with:
-          sdk-version: ${{ matrix.renpy versions }}
+          sdk-version: ${{ matrix.renpy-versions }}
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
