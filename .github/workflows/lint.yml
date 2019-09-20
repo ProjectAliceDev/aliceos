@@ -3,8 +3,13 @@ on: [push, pull_request]
 
 jobs:
   lint:
-    name: Ren'Py Lint (Latest SDK)
+    name: Lint Project with SDK
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        renpy-versions:
+          - '7.3.2'
+          - '6.99.12.4'
     steps:
       - name: Clone source
         uses: actions/checkout@v1
@@ -12,52 +17,10 @@ jobs:
           fetch-depth: 50
       - name: Install Ren'Py SDK
         shell: bash
-        run: |
-          cd ..
-          aliceos/travis/install.sh 7.3.2
-      - name: Setup AliceOS for lint
-        shell: bash
-        run: |
-          cd ..
-          mkdir mod
-          mkdir "./mod/game"
-          rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
+        run: ./travis/install.sh ${{ matrix.renpy-versions }}
       - name: Lint AliceOS project
         shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh "../mod/" lint
-          cd ..
-        env:
-          SDL_AUDIODRIVER: dummy
-          SDL_VIDEODRIVER: dummy
-
-  lint6:
-    name: Ren'Py Lint (SDK v6.99.12.4)
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clone source
-        uses: actions/checkout@v1
-        with:
-          fetch-depth: 50
-      - name: Install Ren'Py SDK
-        shell: bash
-        run: |
-          cd ..
-          aliceos/travis/install.sh 6.99.12.4
-      - name: Setup AliceOS for lint
-        shell: bash
-        run: |
-          cd ..
-          mkdir mod
-          mkdir "./mod/game"
-          rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
-      - name: Lint AliceOS project
-        shell: bash
-        run: |
-          cd ../renpy
-          ./renpy.sh "../mod/" lint
-          cd ..
+        run: ../renpy/renpy.sh "." lint
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy

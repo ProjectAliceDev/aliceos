@@ -1,12 +1,12 @@
 ![AliceOS header](repo_assets/project_header_relname.png)
 
-![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg) ![Build Status](https://github.com/ProjectAliceDev/aliceos/workflows/ci.yml/badge.svg)
+![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg) ![Build Status](https://github.com/ProjectAliceDev/aliceos/workflows/build.yml/badge.svg) ![Lint Status](https://github.com/ProjectAliceDev/aliceos/workflows/lint.yml/badge.svg)
 
 AliceOS is a robust, evolving Ren'Py framework by Project Alice that adds an operating system-like experience to visual novel projects. AliceOS is easy to install, extendable, and is great for adding another layer of interactivity to your games.
 
 ## Core principles
 
-The core principles of AliceOS are: 
+The core principles of AliceOS are:
 
 - **Modular**: AliceOS uses a new framework format, under the `.aosframework` format. These frameworks are placed in the `System/Frameworks` folder and are not heavily reliant on AppKit.aosframework. However, the definitions file that states the default directories and what-not must be included in the System folder (including fonts).
 - **Apple-style APIs**: AliceOS's APIs aim to be easy-to-use and familiar to developers that have worked with APIs for macOS, iOS, tvOS, and watchOS.
@@ -26,4 +26,3 @@ To generate the documentation site (requires MkDocs and Material for MkDocs):
 ```bash
 mkdocs build -d docs
 ```
- 
