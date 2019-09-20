@@ -21,8 +21,6 @@ jobs:
         run: |
           cd ..
           aliceos/travis/install.sh 7.3.2
-        env:
-          TRAVIS_COMMIT: ${{ github.sha }}
       - name: Setup AliceOS for build
         shell: bash
         run: |
@@ -30,7 +28,7 @@ jobs:
           mkdir mod
           mkdir "./mod/game"
           rm -rf aliceos/game/README.html && cp -vRf aliceos/game/* mod/game/
-      - name: Inject Release Strings
+      - name: Add release tag to Build ID
         shell: bash
         run: |
           cd ..
@@ -39,7 +37,7 @@ jobs:
         if: github.event.release
         env:
           TRAVIS_TAG: ${{ github.ref }}
-      - name: Inject Build Hash Strings
+      - name: Add build hash to Build ID
         shell: bash
         run: |
           cd ..
@@ -62,8 +60,9 @@ jobs:
         if: github.event.release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRAVIS_TAG: `travis/gh-tags.sh`
         with:
-          args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', github.ref, github.ref) }}
+          args: ${{ format('AliceOS-{0}-dists/AliceOS-{1}-_ASBaseSystem.zip', $TRAVIS_TAG, $TRAVIS_TAG) }}
 
 
 
