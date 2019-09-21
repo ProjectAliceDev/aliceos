@@ -17,9 +17,10 @@ jobs:
           fetch-depth: 50
 
       - name: Lint project
-        uses: ProjectAliceDev/renpy-lint-action@v1.0.0
+        uses: ProjectAliceDev/renpy-lint-action@v1.1.0
         with:
           sdk-version: ${{ matrix.renpy-versions }}
+          project-dir: '.'
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
