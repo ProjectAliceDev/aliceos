@@ -1,0 +1,25 @@
+name: Lint
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: Lint Project with SDK
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        renpy-versions:
+          - '7.3.2'
+          - '6.99.12.4'
+    steps:
+      - name: Clone source
+        uses: actions/checkout@v1
+        with:
+          fetch-depth: 50
+
+      - name: Lint project
+        uses: ProjectAliceDev/renpy-lint-action@v1.0.0
+        with:
+          sdk-version: ${{ matrix.renpy-versions }}
+        env:
+          SDL_AUDIODRIVER: dummy
+          SDL_VIDEODRIVER: dummy

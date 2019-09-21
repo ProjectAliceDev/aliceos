@@ -152,13 +152,13 @@ define config.window_icon = "gui/window_icon.png"
 
 init python:
 
-    build.package(build.directory_name + "_ASBaseSystem", 'zip', build.name, description="AliceOS Base System Distributable")
-    
+    build.package(build.directory_name + "ASBaseSystem", 'zip', build.name, description="AliceOS Base System Distributable")
+
     build.archive("AliceOSBaseSystem", build.name)
-    
+
     build.classify("game/System/**.**", "AliceOSBaseSystem")
     build.classify("game/System/**.rpyc", "AliceOSBaseSystem")
-    
+
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
