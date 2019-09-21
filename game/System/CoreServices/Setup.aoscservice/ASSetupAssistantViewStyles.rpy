@@ -7,31 +7,23 @@
 # 
 
 init:
-    style ASSetupAssistantViewFrame:
-        background Frame([ASSetup.getFromElements("Window.png")], gui.confirm_frame_borders, tile=gui.frame_tile)
+    style ASSetupAssistantViewFrame is ASInterface_frame:
         xalign 0.5
         yalign 0.5
 
-    style ASSetupAssistantViewTitle is ASSystemBoldFont:
+    style ASSetupAssistantViewTitle is ASInterface_label_text:
+        font AS_FONTS_DIR + "Bold.ttf"
         size 28
         color "#ffffff"
 
-    style ASSetupAssistantViewDetail is ASSystemRegularFont:
+    style ASSetupAssistantViewDetail is ASInterface_text:
         size 18
         color "#ffffff"
 
-    style ASSetupAssistantViewSmallerDetail is ASSystemMediumFont:
+    style ASSetupAssistantViewSmallerDetail is ASInterface_text:
         size 10
         color "#999999"
 
-    style ASSetupAssistantViewButton is gui_button:
-        background Frame([ASSetup.getFromElements("Button.png")], gui.confirm_frame_borders, tile=gui.frame_tile)
-        hover_background Frame([ASSetup.getFromElements("ButtonHover.png")], gui.confirm_frame_borders, tile=gui.frame_tile)
-
-    style ASSetupAssistantViewButton_text is ASSystemMediumFont:
-        size 20
-        color "#000000"
-
-    style ASSetupAssistantViewInput is ASSystemRegularFont:
+    style ASSetupAssistantViewInput is ASInterface_text:
         size 20
         color "#ffffff"
