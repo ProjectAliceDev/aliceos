@@ -44,7 +44,7 @@ jobs:
           sdk: ${{ matrix.renpy-versions }}
       - name: Build AliceOS archive
         id: buildseq
-        uses: ProjectAliceDev/renpy-build-action@1.1.0
+        uses: ProjectAliceDev/renpy-build-action@v1.1.0
         with:
           sdk-version: ${{ matrix.renpy-versions }}
           project-dir: '.'
