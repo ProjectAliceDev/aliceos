@@ -656,6 +656,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#asinterfaceradio" title="ASInterfaceRadio" class="md-nav__link">
+    ASInterfaceRadio
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -924,6 +931,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#asinterfaceradio" title="ASInterfaceRadio" class="md-nav__link">
+    ASInterfaceRadio
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -969,15 +983,27 @@
                 <h1 id="special-screenkit-styles">Special ScreenKit Styles<a class="headerlink" href="#special-screenkit-styles" title="Permanent link">&para;</a></h1>
 <p>Not all ScreenKit elements can be easily inherited via the style prefix. To accommodate for this, ScreenKit also includes some special styles that must be applied to an interface element specifically.</p>
 <h2 id="text-buttons">Text Buttons<a class="headerlink" href="#text-buttons" title="Permanent link">&para;</a></h2>
-<p>The following styles apply to text buttons (<code>textbutton</code>). These styles can also be used as a style prefix when in a <code>hbox</code> or a <code>vbox</code>.</p>
+<p>The following styles apply to text buttons (<code>textbutton</code>). These styles can also be used as a style prefix when in a <code>hbox</code> or a <code>vbox</code>. For example, both are acceptable:</p>
+<div class="codehilite"><pre><span></span><span class="nv">textbutton</span> <span class="s2">&quot;</span><span class="s">Continue</span><span class="s2">&quot;</span> <span class="nv">action</span> <span class="nv">NullAction</span><span class="ss">()</span>:
+    <span class="nv">style</span> <span class="s2">&quot;</span><span class="s">ASInterfacePushButton</span><span class="s2">&quot;</span>
+
+<span class="nv">hbox</span>:
+    <span class="nv">style_prefix</span> <span class="s2">&quot;</span><span class="s">ASInterfacePushButton</span><span class="s2">&quot;</span>
+    <span class="nv">textbutton</span> <span class="s2">&quot;</span><span class="s">Cancel</span><span class="s2">&quot;</span> <span class="nv">action</span> <span class="nv">NullAction</span><span class="ss">()</span>
+    <span class="nv">textbutton</span> <span class="s2">&quot;</span><span class="s">Continue</span><span class="s2">&quot;</span> <span class="nv">action</span> <span class="nv">NullAction</span><span class="ss">()</span>
+</pre></div>
+
+
 <h3 id="asinterfacepushbutton"><code>ASInterfacePushButton</code><a class="headerlink" href="#asinterfacepushbutton" title="Permanent link">&para;</a></h3>
 <p>The base style for a push button.</p>
 <h3 id="asinterfacecheckbox"><code>ASInterfaceCheckbox</code><a class="headerlink" href="#asinterfacecheckbox" title="Permanent link">&para;</a></h3>
 <p>The base style for a checkbox.</p>
+<h3 id="asinterfaceradio"><code>ASInterfaceRadio</code><a class="headerlink" href="#asinterfaceradio" title="Permanent link">&para;</a></h3>
+<p>The base style for a radio button.</p>
 <h2 id="scrollable-content">Scrollable Content<a class="headerlink" href="#scrollable-content" title="Permanent link">&para;</a></h2>
-<p>The following styles apply to scrollable areas where a scrollbar is present.</p>
+<p>The following styles apply to scrollable areas where a scrollbar is present. Generally, this is called as a style prefix rather than the style itself.</p>
 <h3 id="asinterfacescrollbar"><code>ASInterfaceScrollbar</code><a class="headerlink" href="#asinterfacescrollbar" title="Permanent link">&para;</a></h3>
-<p>The base style for a vertically-scrolling area. </p>
+<p>The base style for a scrollable area.</p>
 <ul>
 <li>Used with <code>viewport</code>.</li>
 <li>Can be used as a style prefix.</li>

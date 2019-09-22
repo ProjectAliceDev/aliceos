@@ -32,7 +32,7 @@ screen ASSysInfoView():
                     text "Version [AS_SYS_INFO[VERSION]] ([AS_SYS_INFO[BUILD_ID]])":
                         style "ASSysInfoVersion_text"
                     null height 16
-                    text "{=ASSysInfoProperty_text_bold}Built for Ren'Py{/} 7.3.2.320":
+                    text "{=ASSysInfoProperty_text_bold}Built for Ren'Py{/} [renpy.version_only]":
                         style "ASSysInfoProperty_text"
                     null height 24
                     text "© 2018-2019 Project Alice.\nAliceOS is free and open-source software licensed under the BSD 2-Clause License.":
