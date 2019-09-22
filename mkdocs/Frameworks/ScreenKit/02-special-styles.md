@@ -4,7 +4,17 @@ Not all ScreenKit elements can be easily inherited via the style prefix. To acco
 
 ## Text Buttons
 
-The following styles apply to text buttons (`textbutton`). These styles can also be used as a style prefix when in a `hbox` or a `vbox`.
+The following styles apply to text buttons (`textbutton`). These styles can also be used as a style prefix when in a `hbox` or a `vbox`. For example, both are acceptable:
+
+```
+textbutton "Continue" action NullAction():
+    style "ASInterfacePushButton"
+
+hbox:
+    style_prefix "ASInterfacePushButton"
+    textbutton "Cancel" action NullAction()
+    textbutton "Continue" action NullAction()
+```
 
 ### `ASInterfacePushButton`
 The base style for a push button.
@@ -16,7 +26,7 @@ The base style for a checkbox.
 The base style for a radio button.
 
 ## Scrollable Content
-The following styles apply to scrollable areas where a scrollbar is present.
+The following styles apply to scrollable areas where a scrollbar is present. Generally, this is called as a style prefix rather than the style itself.
 
 ### `ASInterfaceScrollbar`
 The base style for a scrollable area.
