@@ -10,7 +10,7 @@ init 10 python:
     class ASMessages(ASAppRepresentative):
         bundleName = "Messages"
         bundleId = "app.aliceos.messages"
-        bundleDir = AS_DEFAULT_APP_DIR + "Messages/"
+        bundleDir = AS_DEFAULT_APP_DIR + "Messages.aosapp/"
         bundleAuthor = "Project Alice"
         bundleVersion = "2.0.0"
         bundleDescription = """\

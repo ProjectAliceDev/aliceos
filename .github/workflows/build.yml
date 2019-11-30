@@ -2,7 +2,12 @@ name: Build AliceOS Archive
 on:
   push:
     branches:
-      - 'refs/heads/*'
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+    paths:
+      - '*'
   release:
     types: [published]
 
@@ -14,7 +19,7 @@ jobs:
     strategy:
       matrix:
         renpy-versions:
-          - '7.3.2'
+          - '7.3.5'
           - '6.99.12.4'
     steps:
       - name: Clone source
@@ -39,9 +44,10 @@ jobs:
           sdk: ${{ matrix.renpy-versions }}
       - name: Build AliceOS archive
         id: buildseq
-        uses: ProjectAliceDev/renpy-build-action@1.0.2
+        uses: ProjectAliceDev/renpy-build-action@v1.1.1
         with:
           sdk-version: ${{ matrix.renpy-versions }}
+          project-dir: '.'
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy

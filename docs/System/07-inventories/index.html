@@ -1,0 +1,1338 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation site for AliceOS framework">
+      
+      
+      
+        <meta name="author" content="Project Alice">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Inventories - AliceOS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#757575">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700|Fira+Code&display=fallback">
+        <style>body,input{font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Fira Code","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="yellow">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#inventories" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="AliceOS Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              AliceOS Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Inventories
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/ProjectAliceDev/aliceos" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    ProjectAliceDev/AliceOS
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Welcome" class="md-tabs__link">
+        Welcome
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Develop-Apps/" title="Develop Apps" class="md-tabs__link">
+          Develop Apps
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Frameworks/AppKit/" title="Frameworks" class="md-tabs__link">
+          Frameworks
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Release-Notes/" title="Release Notes" class="md-tabs__link">
+          Release Notes
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../01-definitions/" title="System" class="md-tabs__link md-tabs__link--active">
+          System
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="AliceOS Documentation" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.svg" width="48" height="48">
+      
+    </a>
+    AliceOS Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/ProjectAliceDev/aliceos" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    ProjectAliceDev/AliceOS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../01-install/" title="Installing AliceOS" class="md-nav__link">
+      Installing AliceOS
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../02-contributing/" title="Contribution Guidelines" class="md-nav__link">
+      Contribution Guidelines
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Develop Apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Develop Apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Develop-Apps/" title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Develop-Apps/01-manifest/" title="Declaring Your App" class="md-nav__link">
+      Declaring Your App
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Develop-Apps/02-sending-notifications/" title="Sending Notifications" class="md-nav__link">
+      Sending Notifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Develop-Apps/03-interface-design/" title="Giving your App an Interface" class="md-nav__link">
+      Giving your App an Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Develop-Apps/04-watching-events/" title="Watching for Events" class="md-nav__link">
+      Watching for Events
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Frameworks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Frameworks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      AppKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        AppKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/AppKit/" title="AppKit Overview" class="md-nav__link">
+      AppKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/AppKit/01-ASAppRepresentative/" title="ASAppRepresentative" class="md-nav__link">
+      ASAppRepresentative
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      NotificationKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        NotificationKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/NotificationKit/" title="NotificationKit Overview" class="md-nav__link">
+      NotificationKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/NotificationKit/01-banner/" title="Banners" class="md-nav__link">
+      Banners
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/NotificationKit/02-alerts/" title="Alerts" class="md-nav__link">
+      Alerts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      ScreenKit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        ScreenKit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/ScreenKit/" title="ScreenKit Overview" class="md-nav__link">
+      ScreenKit Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/ScreenKit/01-a-simple-ui/" title="A Simple UI" class="md-nav__link">
+      A Simple UI
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Frameworks/ScreenKit/02-special-styles/" title="Special ScreenKit Styles" class="md-nav__link">
+      Special ScreenKit Styles
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Release Notes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Release Notes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release-Notes/" title="Prospect Park (2.0.0) Developer Beta 3" class="md-nav__link">
+      Prospect Park (2.0.0) Developer Beta 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release-Notes/1tp1/" title="Technical Preview 1 (1.0.0)" class="md-nav__link">
+      Technical Preview 1 (1.0.0)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release-Notes/1tp2/" title="Technical Preview 2 (1.0.0)" class="md-nav__link">
+      Technical Preview 2 (1.0.0)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release-Notes/2.0.0_db1/" title="Prospect Park (2.0.0) Developer Beta 1" class="md-nav__link">
+      Prospect Park (2.0.0) Developer Beta 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release-Notes/2.0.0_db2/" title="Prospect Park (2.0.0) Developer Beta 2" class="md-nav__link">
+      Prospect Park (2.0.0) Developer Beta 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      System
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        System
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01-definitions/" title="AliceOS Definitions" class="md-nav__link">
+      AliceOS Definitions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02-default-apps/" title="Default Apps" class="md-nav__link">
+      Default Apps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-core-services/" title="Core Services" class="md-nav__link">
+      Core Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-critical-errors/" title="Critical Errors" class="md-nav__link">
+      Critical Errors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05-bootloader/" title="Bootloader" class="md-nav__link">
+      Bootloader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06-setup-assistant/" title="Setup Assistant" class="md-nav__link">
+      Setup Assistant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Inventories
+      </label>
+    
+    <a href="./" title="Inventories" class="md-nav__link md-nav__link--active">
+      Inventories
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-sample-inventory-system" title="A sample inventory system" class="md-nav__link">
+    A sample inventory system
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-item" title="Creating an item" class="md-nav__link">
+    Creating an item
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-the-inventory" title="Managing the inventory" class="md-nav__link">
+    Managing the inventory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applicationwilllaunch" title="applicationWillLaunch()" class="md-nav__link">
+    applicationWillLaunch()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callrecentitems" title="callRecentItems()" class="md-nav__link">
+    callRecentItems()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isempty" title="isEmpty()" class="md-nav__link">
+    isEmpty()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve" title="retrieve()" class="md-nav__link">
+    retrieve()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containsitemitem" title="containsItem(item)" class="md-nav__link">
+    containsItem(item)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitembynamename" title="getItemByName(name)" class="md-nav__link">
+    getItemByName(name)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additemitem" title="addItem(item)" class="md-nav__link">
+    addItem(item)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useitemitem" title="useItem(item)" class="md-nav__link">
+    useItem(item)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importfromlistlist" title="importFromList(list)" class="md-nav__link">
+    importFromList(list)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-the-inventory" title="Saving the inventory" class="md-nav__link">
+    Saving the inventory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-hud" title="Using the HUD" class="md-nav__link">
+    Using the HUD
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-sample-inventory-system" title="A sample inventory system" class="md-nav__link">
+    A sample inventory system
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-item" title="Creating an item" class="md-nav__link">
+    Creating an item
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-the-inventory" title="Managing the inventory" class="md-nav__link">
+    Managing the inventory
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applicationwilllaunch" title="applicationWillLaunch()" class="md-nav__link">
+    applicationWillLaunch()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callrecentitems" title="callRecentItems()" class="md-nav__link">
+    callRecentItems()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isempty" title="isEmpty()" class="md-nav__link">
+    isEmpty()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve" title="retrieve()" class="md-nav__link">
+    retrieve()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containsitemitem" title="containsItem(item)" class="md-nav__link">
+    containsItem(item)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitembynamename" title="getItemByName(name)" class="md-nav__link">
+    getItemByName(name)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additemitem" title="addItem(item)" class="md-nav__link">
+    addItem(item)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useitemitem" title="useItem(item)" class="md-nav__link">
+    useItem(item)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importfromlistlist" title="importFromList(list)" class="md-nav__link">
+    importFromList(list)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-the-inventory" title="Saving the inventory" class="md-nav__link">
+    Saving the inventory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-hud" title="Using the HUD" class="md-nav__link">
+    Using the HUD
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="inventories">Inventories<a class="headerlink" href="#inventories" title="Permanent link">&para;</a></h1>
+<p><img alt="Inventories UI" src="../../images/system/inventories.png" /></p>
+<p>Inventories is a great tool included with AliceOS to set up, manage, and use an inventory system in any AliceOS-powered visual novel. Developers can easily define items and manage the inventory with the Inventories API, and users get an easy experience with managing items using the Inventories app built with ScreenKit. Inventories is an opt-in system, so if you don't think you need Inventories, you don't have to work with it at all.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<p>The Inventories app comes with some great features that work well with AliceOS:</p>
+<ul>
+<li>A fast and easy way to define items using the <code>ASInventoryItem</code> class that can state what an item is and how it can be used</li>
+<li>Methods to add and remove items from the inventory, as well as importing an inventory from a Python list</li>
+<li>GUI for players to use an item and see what they have in store</li>
+<li>Optional HUD to let players access the first five items in the inventory</li>
+</ul>
+<h2 id="a-sample-inventory-system">A sample inventory system<a class="headerlink" href="#a-sample-inventory-system" title="Permanent link">&para;</a></h2>
+<p>Creating and maintaining the inventory can be accomplished easily in Ren'Py:</p>
+<div class="codehilite"><pre><span></span><span class="nv">label</span> <span class="nv">the_story</span>:
+
+    <span class="nv">python</span>:
+        <span class="nv">used_office_key</span> <span class="o">=</span> <span class="nv">False</span>
+
+        <span class="nv">def</span> <span class="nv">use_office_key</span><span class="ss">()</span>:
+            <span class="nv">store</span>.<span class="nv">used_office_key</span> <span class="o">=</span> <span class="nv">True</span>
+
+        <span class="nv">office_key_item</span> <span class="o">=</span> <span class="nv">ASInventoryItem</span><span class="ss">(</span>
+                        <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">Office Key</span><span class="s2">&quot;</span>, 
+                        <span class="nv">description</span><span class="o">=</span><span class="s2">&quot;</span><span class="s">Opens up the office door</span><span class="s2">&quot;</span>, 
+                        <span class="nv">canBeUsedOnce</span><span class="o">=</span><span class="nv">True</span>, 
+                        <span class="nv">specialUseCase</span><span class="o">=</span><span class="nv">use_office_key</span>
+                    <span class="ss">)</span>
+
+    <span class="s2">&quot;</span><span class="s">Quickly, I look around the room for any keys to open the door and finally get out of the office.</span><span class="s2">&quot;</span>
+    <span class="s2">&quot;</span><span class="s">After searching under a few desks, I manage to find a key.</span><span class="s2">&quot;</span>
+    $ <span class="nv">inventory</span>.<span class="nv">addItem</span><span class="ss">(</span><span class="nv">office_key_item</span><span class="ss">)</span>
+
+    <span class="k">while</span> <span class="nv">not</span> <span class="nv">used_office_key</span>:
+        <span class="s2">&quot;</span><span class="s">Great! Now to just get the door open.</span><span class="s2">&quot;</span>
+
+    <span class="s2">&quot;</span><span class="s">The key unlocks the door, and I happily skip out.</span><span class="s2">&quot;</span>
+
+    <span class="k">return</span>
+</pre></div>
+
+
+<p>When a player uses the item via the Inventories app, all of the logic for handling one-time use and even removing the item from the inventory is taken care of for you.</p>
+<h2 id="creating-an-item">Creating an item<a class="headerlink" href="#creating-an-item" title="Permanent link">&para;</a></h2>
+<p>The inventory works with the <code>ASInventoryItem</code> class as a means of defining items and how they can be used in Inventories. Below are the required fields in the constructor (<code>__init__</code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Items in the inventory must use the <code>ASInventoryItem</code> class to ensure compatibility with the app and with the inventory methods.</p>
+</div>
+<ul>
+<li><code>name</code>: String containing the name of the item. Defaults to <code>"Item"</code></li>
+<li><code>description</code>: String containing the description of the item. Defaults to an empty string.</li>
+<li><code>canBeUsed</code>: Boolean dictating whether the item can be used. Defaults to <code>True</code>.</li>
+<li><code>specialUseCase</code>: Function that dictates any game-changing behavior or any other actions to be completed when an item is used. Defaults to <code>None</code>.</li>
+<li><code>canBeUsedOnce</code>: Boolean dictating whether the item is a one-time-use. Defaults to <code>False</code>.</li>
+<li><code>imageName</code>: String containing the path to the image. Should be 128px by 128px. Defaults to the standard missing item image path.</li>
+</ul>
+<h2 id="managing-the-inventory">Managing the inventory<a class="headerlink" href="#managing-the-inventory" title="Permanent link">&para;</a></h2>
+<p>The inventory can be invoked from <code>inventory</code> and is an instance of the <code>ASInventories</code> class, an app written with AppKit. The following methods are provided to make inventory management easier:</p>
+<h3 id="applicationwilllaunch"><code>applicationWillLaunch()</code><a class="headerlink" href="#applicationwilllaunch" title="Permanent link">&para;</a></h3>
+<p>Open the Inventories app. Inherited from <code>ASAppRepresentative</code>.</p>
+<h3 id="callrecentitems"><code>callRecentItems()</code><a class="headerlink" href="#callrecentitems" title="Permanent link">&para;</a></h3>
+<p>Opens the Inventories HUD which lets players access the first five items in the inventory. Useful in the quick menu or in scenarios where opening the Inventories app is impractical.</p>
+<h3 id="isempty"><code>isEmpty()</code><a class="headerlink" href="#isempty" title="Permanent link">&para;</a></h3>
+<p>Returns whether the inventory is empty or not as a boolean.</p>
+<h3 id="retrieve"><code>retrieve()</code><a class="headerlink" href="#retrieve" title="Permanent link">&para;</a></h3>
+<p>Returns the inventory as a list of items (<code>ASInventoryItem</code>).</p>
+<h3 id="containsitemitem"><code>containsItem(item)</code><a class="headerlink" href="#containsitemitem" title="Permanent link">&para;</a></h3>
+<p>Checks whether the inventory contains a specific item.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>item</code>: The item to check for (<code>ASInventoryItem</code>)</li>
+</ul>
+<p><strong>Returns</strong>: Boolean value stating whether the item is in the inventory</p>
+<h3 id="getitembynamename"><code>getItemByName(name)</code><a class="headerlink" href="#getitembynamename" title="Permanent link">&para;</a></h3>
+<p>Looks for an item in the inventory and returns it, if possible.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>name</code>: String containing the name of the item</li>
+</ul>
+<p><strong>Returns</strong>: The appropriate <code>ASInventoryItem</code> object if found or <code>None</code> if the search fails.</p>
+<h3 id="additemitem"><code>addItem(item)</code><a class="headerlink" href="#additemitem" title="Permanent link">&para;</a></h3>
+<p>Adds an item to the inventory if possible and displays a notification if the user permits.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>item</code>: The item to insert (<code>ASInventoryItem</code>)</li>
+</ul>
+<p><strong>Raises</strong>: May raise a <code>TypeError</code> if the item isn't an <code>ASInventoryItem</code> object</p>
+<h3 id="useitemitem"><code>useItem(item)</code><a class="headerlink" href="#useitemitem" title="Permanent link">&para;</a></h3>
+<p>Use an item if it exists in the inventory. Also removes any items that can no longer be used.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>item</code>: The item to use (<code>ASInventoryItem</code>)</li>
+</ul>
+<p><strong>Raises</strong>: May raise a <code>KeyError</code> if the item is not in the inventory</p>
+<h3 id="importfromlistlist"><code>importFromList(list)</code><a class="headerlink" href="#importfromlistlist" title="Permanent link">&para;</a></h3>
+<p>Imports the inventory from a Python list by appending each item to the inventory.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>list</code>: The list containing <code>ASInventoryItem</code> items to import</li>
+</ul>
+<p><strong>Raises</strong>: May raise a <code>TypeError</code> if the list contains elements that are not <code>ASInventoryItem</code> objects</p>
+<h2 id="saving-the-inventory">Saving the inventory<a class="headerlink" href="#saving-the-inventory" title="Permanent link">&para;</a></h2>
+<p>It might be helpful to make sure that the player's inventory is properly saved since the class re-initialized with an empty inventory from the beginning. We recommend storing the current inventory before closing out the game. For example, if you wanted to store the inventory to the persistent file:</p>
+<div class="codehilite"><pre><span></span><span class="nv">label</span> <span class="nv">quit</span>:
+    $ <span class="nv">persistent</span>.<span class="nv">saved_inventory</span> <span class="o">=</span> <span class="nv">inventory</span>.<span class="nv">retrieve</span><span class="ss">()</span>
+    <span class="k">return</span>
+</pre></div>
+
+
+<p>Then, when you start the game again, you can reload these items:</p>
+<div class="codehilite"><pre><span></span><span class="nv">label</span> <span class="nv">before_main_menu</span>:
+    $ <span class="nv">inventory</span>.<span class="nv">importFromList</span><span class="ss">(</span><span class="nv">persistent</span>.<span class="nv">saved_inventory</span><span class="ss">)</span>
+    <span class="k">return</span>
+</pre></div>
+
+
+<p>Alternatively, you can save the state of these items in your game's file save or in Ren'Py's store variables:</p>
+<div class="codehilite"><pre><span></span><span class="nv">default</span> <span class="nv">player_inventory</span> <span class="o">=</span> []
+$ <span class="nv">player_inventory</span> <span class="o">=</span> <span class="nv">inventory</span>.<span class="nv">retrieve</span><span class="ss">()</span>
+
+<span class="nv">label</span> <span class="nv">after_load</span>:
+    $ <span class="nv">inventory</span>.<span class="nv">importFromList</span><span class="ss">(</span><span class="nv">player_inventory</span><span class="ss">)</span>
+    <span class="k">return</span>
+</pre></div>
+
+
+<h2 id="using-the-hud">Using the HUD<a class="headerlink" href="#using-the-hud" title="Permanent link">&para;</a></h2>
+<p><img alt="Inventories HUD" src="../../images/system/inventories-hud.png" /></p>
+<p>The Inventories HUD is a great way to let players quickly access items without opening up the Inventories app. While you could make a cutton to open the app directly, it might be impractical at times. The HUD offers a solution as it shows players just the items and optionally lets them open the app for more items/details. </p>
+<p>For instance, it might be useful to include this HUD in the quick menu of your visual novel:</p>
+<div class="codehilite"><pre><span></span><span class="nv">screen</span> <span class="nv">quick_menu</span><span class="ss">()</span>:
+
+    ## <span class="nv">Ensure</span> <span class="nv">this</span> <span class="nv">appears</span> <span class="nv">on</span> <span class="nv">top</span> <span class="nv">of</span> <span class="nv">other</span> <span class="nv">screens</span>.
+    <span class="nv">zorder</span> <span class="mi">100</span>
+
+    <span class="k">if</span> <span class="nv">quick_menu</span>:
+
+        <span class="nv">hbox</span>:
+            <span class="nv">style_prefix</span> <span class="s2">&quot;</span><span class="s">quick</span><span class="s2">&quot;</span>
+
+            <span class="nv">xalign</span> <span class="mi">0</span>.<span class="mi">5</span>
+            <span class="nv">yalign</span> <span class="mi">1</span>.<span class="mi">0</span>
+
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Back</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">Rollback</span><span class="ss">()</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">History</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">ShowMenu</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">history</span><span class="s1">&#39;</span><span class="ss">)</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Skip</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">Skip</span><span class="ss">()</span> <span class="nv">alternate</span> <span class="nv">Skip</span><span class="ss">(</span><span class="nv">fast</span><span class="o">=</span><span class="nv">True</span>, <span class="nv">confirm</span><span class="o">=</span><span class="nv">True</span><span class="ss">)</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Auto</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">Preference</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">auto-forward</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">toggle</span><span class="s2">&quot;</span><span class="ss">)</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Save</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">ShowMenu</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">save</span><span class="s1">&#39;</span><span class="ss">)</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Use Item</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">Function</span><span class="ss">(</span><span class="nv">inventory</span>.<span class="nv">callRecentItems</span><span class="ss">)</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Q.Save</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">QuickSave</span><span class="ss">()</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Q.Load</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">QuickLoad</span><span class="ss">()</span>
+            <span class="nv">textbutton</span> <span class="nv">_</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">Prefs</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">action</span> <span class="nv">ShowMenu</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">preferences</span><span class="s1">&#39;</span><span class="ss">)</span>
+</pre></div>
+
+
+<p>During gameplay, the "Use Item" button will appear next to the typical buttons in the quick menu and players can click on it to open the HUD.</p>
+<p>More information on the <code>callRecentItems()</code> method used can be found in the <a href="#callrecentitems">inventory's class documentation</a>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../06-setup-assistant/" title="Setup Assistant" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Setup Assistant
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2018 - 2019 Project Alice.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/projectalicedev" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/justaliceproj" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

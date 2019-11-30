@@ -11,6 +11,7 @@ init screen ASSetupAssistantView(title="Setup Assistant", instructions="", useIn
     tag ASSetupAssistantView
     zorder 100
     modal True
+    style_prefix "ASInterface"
 
     add ASSetup.getFromElements("Background.png")
 
@@ -18,8 +19,8 @@ init screen ASSetupAssistantView(title="Setup Assistant", instructions="", useIn
         style "ASSetupAssistantViewFrame"
         xalign 0.5
         yalign 0.5
-        ysize 650
-        xsize 850
+        ysize 625
+        xsize 825
         padding (64, 48)
 
 
@@ -27,36 +28,41 @@ init screen ASSetupAssistantView(title="Setup Assistant", instructions="", useIn
             xalign 0.5
             xfill True
             yfill True
-            
-            hbox:
-                xalign 0.5
-                spacing 8
-                add ASSetup.icons[32]
-                text title:
-                    style "ASSetupAssistantViewTitle"
+            vbox:
+                xfill True
+                yfit True
+                spacing 16
+                hbox:
                     xalign 0.5
+                    spacing 8
+                    text title:
+                        style "ASSetupAssistantViewTitle"
+                        xalign 0.5
 
-            text instructions:
-                style "ASSetupAssistantViewDetail"
-                xalign 0.5
+                viewport:
+                    style_prefix "ASInterfaceScrollbar"
+                    mousewheel True
+                    scrollbars "vertical"
+                    ymaximum 400
+                    xfill True
+
+                    text instructions:
+                        style "ASSetupAssistantViewDetail"
+                        xalign 0.5
             
             if useInputMethod:
                 input:
                     style "ASSetupAssistantViewInput"
                     xalign 0.5
             else:
-                button action Return('didCompleteStep'):
-                    style "ASSetupAssistantViewButton"
+                python:
+                    button_text = "Finish" if completed else "Next"
+
+                textbutton "[button_text]" action Return('didCompleteStep'):
+                    style "ASInterfacePushButton"
                     xalign 0.5
                     yalign 0.85
-                    xpadding 128
-                    
-                    if completed:
-                        text "Finish":
-                            style "ASSetupAssistantViewButton_text"
-                    else:
-                        text "Next":
-                            style "ASSetupAssistantViewButton_text"
+                    xpadding 64
             
             if useInputMethod:
                 null height 16
