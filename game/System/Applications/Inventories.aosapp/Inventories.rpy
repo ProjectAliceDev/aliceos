@@ -34,10 +34,23 @@ init 10 python:
             return len(self.inventory) == 0
 
         def retrieve(self):
-            return self.inventory
+            print "WARN: ASInventories.retrieve is deprecated. Please use ASInventories.export instead."
+            return self.export()
+
+        def export(self, filter=None):
+            new_inventory = self.inventory.copy()
+            if callable(filter):
+                map(filter, new_inventory)
+            return new_inventory
 
         def containsItem(self, item):
             return item in self.inventory
+
+        def getItemById(self, itemId):
+            for item in self.inventory:
+                if item.itemId == itemId:
+                    return item
+            return None
 
         def getItemByName(self, name):
             for item in self.inventory:
@@ -61,6 +74,12 @@ init 10 python:
 
                 if shouldDispose:
                     self.inventory.remove(item)
+            else:
+                raise KeyError("Item not found in the inventory: %s" % (item,) )
+
+        def removeItem(self, item):
+            if item in self.inventory:
+                self.inventory.remove(item)
             else:
                 raise KeyError("Item not found in the inventory: %s" % (item,) )
 

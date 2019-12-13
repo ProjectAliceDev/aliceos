@@ -9,13 +9,14 @@
 init 10 python:
     class ASInventoryItem(object):
 
-        def __init__(self, name="Item", description="", canBeUsed=True, specialUseCase=None, canBeUsedOnce=False, imageName=ASInventories.bundleDir + "Resources/Item.png"):
+        def __init__(self, itemId=None, name="Item", description="", canBeUsed=True, specialUseCase=None, canBeUsedOnce=False, imageName=ASInventories.bundleDir + "Resources/Item.png"):
             self.name = name
             self.description = description
             self.canBeUsed = canBeUsed
             self.canBeUsedOnce = canBeUsedOnce
             self.runSpecialUseCase = specialUseCase if callable(specialUseCase) else None
             self.imageName = imageName
+            self.itemId = itemId
 
         def useItem(self):
             if self.canBeUsed:
