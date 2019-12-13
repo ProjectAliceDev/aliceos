@@ -58,13 +58,14 @@ init 10 python:
                     return item
             return None
 
-        def addItem(self, item):
+        def addItem(self, item, silent=False):
             if isinstance(item, ASInventoryItem):
                 self.inventory.append(item)
                 shouldDisplayItem = self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.")
 
-                if shouldDisplayItem == "didClickRespond":
-                    renpy.show_screen("ASInventoryManagerView", currentItem=item)
+                if not silent:
+                    if shouldDisplayItem == "didClickRespond":
+                        renpy.show_screen("ASInventoryManagerView", currentItem=item)
             else:
                 raise TypeError("Expected item to be ASInventoryItem, but received %s" % (type(item)))
 
