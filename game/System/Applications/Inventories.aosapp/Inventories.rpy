@@ -40,7 +40,7 @@ init 10 python:
         def export(self, filter=None):
             new_inventory = self.inventory.copy()
             if callable(filter):
-                map(filter, new_inventory)
+                new_inventory = map(filter, new_inventory)
             return new_inventory
 
         def containsItem(self, item):
