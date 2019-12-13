@@ -61,9 +61,9 @@ init 10 python:
         def addItem(self, item, silent=False):
             if isinstance(item, ASInventoryItem):
                 self.inventory.append(item)
-                shouldDisplayItem = self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.")
-
                 if not silent:
+                    shouldDisplayItem = self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.")
+
                     if shouldDisplayItem == "didClickRespond":
                         renpy.show_screen("ASInventoryManagerView", currentItem=item)
             else:
