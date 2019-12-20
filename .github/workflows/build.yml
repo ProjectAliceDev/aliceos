@@ -56,13 +56,6 @@ jobs:
         with:
           name: ${{ steps.buildseq.outputs.dir }}
           path: ${{ format('{0}/{1}-ASBaseSystem.zip', steps.buildseq.outputs.dir, steps.buildseq.outputs.version) }}
-      - name: Comment on PR
-        uses: thollander/actions-comment-pull-request@master
-        if: github.event.pull_request
-        with:
-          message: |
-            A testable build of AliceOS should be built in GitHub Actions\'s articacts. Visit here to download the built artifact: [View check suite &rsaquo;](https://${{ format('github.com/projectalicedev/commit/{0}/checks', github.sha) }})
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release artifacts to GitHub Release
         uses: skx/github-action-publish-binaries@master
         if: github.event.release
