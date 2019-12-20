@@ -61,7 +61,7 @@ jobs:
         if: github.event.pull_request
         with:
           message: | 
-            ${{ format('A testable build of AliceOS should be built in GitHub Actions\'s articacts. Visit here to download the built artifact: [View check suite &rsaquo;](https://github.com/ProjectAliceDev/aliceos/commit/{0}/checks)', github.sha ) }}
+            ${{ format('A testable build of AliceOS should be built in GitHub Actions\'s articacts. Visit here to download the built artifact: [View check suite &rsaquo;](https://github.com/ProjectAliceDev/aliceos/commit/{0}/checks)', github.sha ) }} }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release artifacts to GitHub Release
         uses: skx/github-action-publish-binaries@master
