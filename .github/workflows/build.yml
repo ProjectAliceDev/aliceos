@@ -51,6 +51,11 @@ jobs:
         env:
           SDL_AUDIODRIVER: dummy
           SDL_VIDEODRIVER: dummy
+      - name: Upload artifact to GitHub
+        uses: actions/upload-artifact@v1
+        with:
+          name: ${{ steps.buildseq.outputs.dir }}
+          path: ${{ format('{0}/{1}-ASBaseSystem.zip', steps.buildseq.outputs.dir, steps.buildseq.outputs.version) }}
       - name: Release artifacts to GitHub Release
         uses: skx/github-action-publish-binaries@master
         if: github.event.release
