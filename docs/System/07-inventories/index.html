@@ -645,8 +645,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Release-Notes/" title="Prospect Park (2.0.0) Developer Beta 3" class="md-nav__link">
-      Prospect Park (2.0.0) Developer Beta 3
+    <a href="../../Release-Notes/" title="Prospect Park (2.0.0)" class="md-nav__link">
+      Prospect Park (2.0.0)
     </a>
   </li>
 
@@ -695,6 +695,18 @@
   <li class="md-nav__item">
     <a href="../../Release-Notes/2.0.0_db2/" title="Prospect Park (2.0.0) Developer Beta 2" class="md-nav__link">
       Prospect Park (2.0.0) Developer Beta 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Release-Notes/20.0_db3/" title="Prospect Park (2.0.0) Developer Beta 3" class="md-nav__link">
+      Prospect Park (2.0.0) Developer Beta 3
     </a>
   </li>
 
@@ -880,6 +892,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#exportfilternone" title="export(filter=None)" class="md-nav__link">
+    export(filter=None)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#retrieve" title="retrieve()" class="md-nav__link">
     retrieve()
   </a>
@@ -901,8 +920,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#additemitem" title="addItem(item)" class="md-nav__link">
-    addItem(item)
+  <a href="#getitembyiditemid" title="getItemById(itemId)" class="md-nav__link">
+    getItemById(itemId)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additemitem-silentfalse" title="addItem(item, silent=False)" class="md-nav__link">
+    addItem(item, silent=False)
   </a>
   
 </li>
@@ -1027,6 +1053,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#exportfilternone" title="export(filter=None)" class="md-nav__link">
+    export(filter=None)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#retrieve" title="retrieve()" class="md-nav__link">
     retrieve()
   </a>
@@ -1048,8 +1081,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#additemitem" title="addItem(item)" class="md-nav__link">
-    addItem(item)
+  <a href="#getitembyiditemid" title="getItemById(itemId)" class="md-nav__link">
+    getItemById(itemId)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additemitem-silentfalse" title="addItem(item, silent=False)" class="md-nav__link">
+    addItem(item, silent=False)
   </a>
   
 </li>
@@ -1153,6 +1193,7 @@
 <p>Items in the inventory must use the <code>ASInventoryItem</code> class to ensure compatibility with the app and with the inventory methods.</p>
 </div>
 <ul>
+<li><code>itemId</code>: Any kind of identifier for this item. Defaults to <code>None</code> (no ID)</li>
 <li><code>name</code>: String containing the name of the item. Defaults to <code>"Item"</code></li>
 <li><code>description</code>: String containing the description of the item. Defaults to an empty string.</li>
 <li><code>canBeUsed</code>: Boolean dictating whether the item can be used. Defaults to <code>True</code>.</li>
@@ -1168,7 +1209,26 @@
 <p>Opens the Inventories HUD which lets players access the first five items in the inventory. Useful in the quick menu or in scenarios where opening the Inventories app is impractical.</p>
 <h3 id="isempty"><code>isEmpty()</code><a class="headerlink" href="#isempty" title="Permanent link">&para;</a></h3>
 <p>Returns whether the inventory is empty or not as a boolean.</p>
+<h3 id="exportfilternone"><code>export(filter=None)</code><a class="headerlink" href="#exportfilternone" title="Permanent link">&para;</a></h3>
+<p>Returns the inventory as a list.</p>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><code>filter</code>: (Optional) A function that defines what part of the inventory to return. Defaults to <code>None</code>, meaning return the item itself.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>The following can be used to grab the inventory, containing only the items' IDs.</p>
+<div class="codehilite"><pre><span></span><span class="n">filter_id</span> <span class="o">=</span> <span class="n">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">.</span><span class="n">itemId</span>
+<span class="n">items_by_id</span> <span class="o">=</span> <span class="n">inventory</span><span class="p">.</span><span class="n">export</span><span class="p">(</span><span class="n">filter</span><span class="o">=</span><span class="n">filter_id</span><span class="p">)</span>
+</pre></div>
+
+
+</div>
 <h3 id="retrieve"><code>retrieve()</code><a class="headerlink" href="#retrieve" title="Permanent link">&para;</a></h3>
+<div class="admonition warning deprecated">
+<p class="admonition-title">Warning</p>
+<p>This method had been deprecated in favor of <code>export(filter=None)</code> as of Prospect Park 2.0.0-devbeta4.</p>
+</div>
 <p>Returns the inventory as a list of items (<code>ASInventoryItem</code>).</p>
 <h3 id="containsitemitem"><code>containsItem(item)</code><a class="headerlink" href="#containsitemitem" title="Permanent link">&para;</a></h3>
 <p>Checks whether the inventory contains a specific item.</p>
@@ -1184,11 +1244,19 @@
 <li><code>name</code>: String containing the name of the item</li>
 </ul>
 <p><strong>Returns</strong>: The appropriate <code>ASInventoryItem</code> object if found or <code>None</code> if the search fails.</p>
-<h3 id="additemitem"><code>addItem(item)</code><a class="headerlink" href="#additemitem" title="Permanent link">&para;</a></h3>
+<h3 id="getitembyiditemid"><code>getItemById(itemId)</code><a class="headerlink" href="#getitembyiditemid" title="Permanent link">&para;</a></h3>
+<p>Looks for an item in the inventory and returns it, if possible.</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>itemId</code>: The item's ID</li>
+</ul>
+<p><strong>Returns</strong>: The appropriate <code>ASInventoryItem</code> object if found or <code>None</code> if the search fails.</p>
+<h3 id="additemitem-silentfalse"><code>addItem(item, silent=False)</code><a class="headerlink" href="#additemitem-silentfalse" title="Permanent link">&para;</a></h3>
 <p>Adds an item to the inventory if possible and displays a notification if the user permits.</p>
 <p><strong>Parameters</strong></p>
 <ul>
 <li><code>item</code>: The item to insert (<code>ASInventoryItem</code>)</li>
+<li><code>silent</code>: (Optional) Whether to silence the notification request upon adding the item. Defaults to <code>False</code>.</li>
 </ul>
 <p><strong>Raises</strong>: May raise a <code>TypeError</code> if the item isn't an <code>ASInventoryItem</code> object</p>
 <h3 id="useitemitem"><code>useItem(item)</code><a class="headerlink" href="#useitemitem" title="Permanent link">&para;</a></h3>
@@ -1208,7 +1276,7 @@
 <h2 id="saving-the-inventory">Saving the inventory<a class="headerlink" href="#saving-the-inventory" title="Permanent link">&para;</a></h2>
 <p>It might be helpful to make sure that the player's inventory is properly saved since the class re-initialized with an empty inventory from the beginning. We recommend storing the current inventory before closing out the game. For example, if you wanted to store the inventory to the persistent file:</p>
 <div class="codehilite"><pre><span></span><span class="nv">label</span> <span class="nv">quit</span>:
-    $ <span class="nv">persistent</span>.<span class="nv">saved_inventory</span> <span class="o">=</span> <span class="nv">inventory</span>.<span class="nv">retrieve</span><span class="ss">()</span>
+    $ <span class="nv">persistent</span>.<span class="nv">saved_inventory</span> <span class="o">=</span> <span class="nv">inventory</span>.<span class="nv">export</span><span class="ss">()</span>
     <span class="k">return</span>
 </pre></div>
 

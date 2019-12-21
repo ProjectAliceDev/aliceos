@@ -31,8 +31,11 @@ init 5 python:
             from time import gmtime, strftime
             return strftime("%a. %I:%M %p")
 
-        def showDesktop(self):
+        def _callDesktop(self):
             renpy.call_screen("ASDesktopShellView")
+
+        def showDesktop(self):
+            renpy.show_screen("ASDesktopShellView")
 
         def showTopBar(self):
             renpy.call_screen("ASDesktopTopBar")

@@ -1,6 +1,6 @@
 ![AliceOS header](repo_assets/project_header_relname.png)
 
-![AliceOS 2.0.0](https://img.shields.io/badge/aliceos-2.0.0-yellow.svg) ![Build Status](https://github.com/ProjectAliceDev/aliceos/workflows/Build%20AliceOS%20Archive/badge.svg) ![Lint Status](https://github.com/ProjectAliceDev/aliceos/workflows/Lint/badge.svg)
+[![Latest release](https://img.shields.io/github/v/release/projectalicedev/aliceos)](https://github.com/projectalicedev/aliceos/releases) ![Build Status](https://github.com/ProjectAliceDev/aliceos/workflows/Build%20AliceOS%20Archive/badge.svg) ![Lint Status](https://github.com/ProjectAliceDev/aliceos/workflows/Lint/badge.svg)
 
 AliceOS is a robust, evolving Ren'Py framework by Project Alice that adds an operating system-like experience to visual novel projects. AliceOS is easy to install, extendable, and is great for adding another layer of interactivity to your games.
 
