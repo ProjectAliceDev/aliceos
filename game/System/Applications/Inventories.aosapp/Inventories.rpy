@@ -34,10 +34,23 @@ init 10 python:
             return len(self.inventory) == 0
 
         def retrieve(self):
-            return self.inventory
+            print "WARN: ASInventories.retrieve is deprecated. Please use ASInventories.export instead."
+            return self.export()
+
+        def export(self, filter=None):
+            new_inventory = self.inventory.copy()
+            if callable(filter):
+                new_inventory = map(filter, new_inventory)
+            return new_inventory
 
         def containsItem(self, item):
             return item in self.inventory
+
+        def getItemById(self, itemId):
+            for item in self.inventory:
+                if item.itemId == itemId:
+                    return item
+            return None
 
         def getItemByName(self, name):
             for item in self.inventory:
@@ -45,13 +58,14 @@ init 10 python:
                     return item
             return None
 
-        def addItem(self, item):
+        def addItem(self, item, silent=False):
             if isinstance(item, ASInventoryItem):
                 self.inventory.append(item)
-                shouldDisplayItem = self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.")
+                if not silent:
+                    shouldDisplayItem = self.applicationWillRequestNotification("%s received!" % (item.name), "Go to Inventories to learn more.")
 
-                if shouldDisplayItem == "didClickRespond":
-                    renpy.show_screen("ASInventoryManagerView", currentItem=item)
+                    if shouldDisplayItem == "didClickRespond":
+                        renpy.show_screen("ASInventoryManagerView", currentItem=item)
             else:
                 raise TypeError("Expected item to be ASInventoryItem, but received %s" % (type(item)))
 
@@ -61,6 +75,12 @@ init 10 python:
 
                 if shouldDispose:
                     self.inventory.remove(item)
+            else:
+                raise KeyError("Item not found in the inventory: %s" % (item,) )
+
+        def removeItem(self, item):
+            if item in self.inventory:
+                self.inventory.remove(item)
             else:
                 raise KeyError("Item not found in the inventory: %s" % (item,) )
 

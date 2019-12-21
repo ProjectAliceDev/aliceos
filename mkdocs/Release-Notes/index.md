@@ -1,20 +1,9 @@
-#  Prospect Park (2.0.0) Developer Beta 3
+#  Prospect Park (2.0.0) Developer Beta 4
 
 The following document covers the latest changes in AliceOS Prospect Park (v. 2.0.0).
+## Inventories
 
-## ScreenKit
-
-- ScreenKit now include horizontal scrollbars and radio buttons.
-- ScreenKit frames are more rectangular.
-
-## Apps
-
-- Introduces a new Inventories app, a fast and fun way to create and manage a game inventory.
-
-## About AliceOS
-
-- The Ren'Py version should now match the proper built version and not be hard-coded.
-
-## Setup Assistant
-
-- Setup Assistant now uses ScreenKit to draw elements.
+- `ASInventoryItem` objects can now have an optional ID field, `itemId`.
+- `ASInventories` includes new methods:
+    - `export(filter=None)`: Return the inventory with a filter, if specified.
+    - `getItemById(itemId)`: Find an item by its ID.

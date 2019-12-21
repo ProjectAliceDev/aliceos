@@ -54,6 +54,7 @@ The inventory works with the `ASInventoryItem` class as a means of defining item
 !!! note
     Items in the inventory must use the `ASInventoryItem` class to ensure compatibility with the app and with the inventory methods.
 
+- `itemId`: Any kind of identifier for this item. Defaults to `None` (no ID)
 - `name`: String containing the name of the item. Defaults to `"Item"`
 - `description`: String containing the description of the item. Defaults to an empty string.
 - `canBeUsed`: Boolean dictating whether the item can be used. Defaults to `True`.
@@ -77,7 +78,26 @@ Opens the Inventories HUD which lets players access the first five items in the 
 
 Returns whether the inventory is empty or not as a boolean.
 
+### `export(filter=None)`
+
+Returns the inventory as a list.
+
+**Parameters**:
+
+- `filter`: (Optional) A function that defines what part of the inventory to return. Defaults to `None`, meaning return the item itself.
+
+!!! example
+    The following can be used to grab the inventory, containing only the items' IDs.
+
+        
+        filter_id = lambda item: item.itemId
+        items_by_id = inventory.export(filter=filter_id)
+        
+
 ### `retrieve()`
+
+!!! warning Deprecated
+    This method had been deprecated in favor of `export(filter=None)` as of Prospect Park 2.0.0-devbeta4.
 
 Returns the inventory as a list of items (`ASInventoryItem`).
 
@@ -101,13 +121,24 @@ Looks for an item in the inventory and returns it, if possible.
 
 **Returns**: The appropriate `ASInventoryItem` object if found or `None` if the search fails.
 
-### `addItem(item)`
+### `getItemById(itemId)`
+
+Looks for an item in the inventory and returns it, if possible.
+
+**Parameters**
+
+- `itemId`: The item's ID
+
+**Returns**: The appropriate `ASInventoryItem` object if found or `None` if the search fails.
+
+### `addItem(item, silent=False)`
 
 Adds an item to the inventory if possible and displays a notification if the user permits.
 
 **Parameters**
 
 - `item`: The item to insert (`ASInventoryItem`)
+- `silent`: (Optional) Whether to silence the notification request upon adding the item. Defaults to `False`.
 
 
 **Raises**: May raise a `TypeError` if the item isn't an `ASInventoryItem` object
@@ -138,7 +169,7 @@ It might be helpful to make sure that the player's inventory is properly saved s
 
 ```renpy
 label quit:
-    $ persistent.saved_inventory = inventory.retrieve()
+    $ persistent.saved_inventory = inventory.export()
     return
 ```
 
