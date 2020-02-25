@@ -1,7 +1,7 @@
-# 
+#
 # ASInventorySubView.rpy
 # AliceOS
-# 
+#
 # Created by Marquis Kurt on 9/13/19
 # Copyright © 2019 Marquis Kurt. All rights reserved.
 #
@@ -14,8 +14,8 @@ screen ASInventorySubView():
     default top_items = []
 
     python:
-        if len(inventory.retrieve()) > 0:
-            for item in inventory.retrieve():
+        if len(inventory.export()) > 0:
+            for item in inventory.export():
                 top_items.append(item)
 
             if len(top_items) > 4:

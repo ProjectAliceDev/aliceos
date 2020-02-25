@@ -1,7 +1,7 @@
-# 
+#
 # ASInventoryManagerView.rpy
 # AliceOS
-# 
+#
 # Created by Marquis Kurt on 9/13/19
 # Copyright © 2019 Marquis Kurt. All rights reserved.
 #
@@ -11,7 +11,7 @@ screen ASInventoryManagerView(currentItem=None):
     zorder 100
     modal True
 
-    $ inv = inventory.retrieve()
+    $ inv = inventory.export()
 
     default currentItemView = currentItem
 

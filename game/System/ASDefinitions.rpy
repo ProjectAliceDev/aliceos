@@ -1,4 +1,4 @@
-# 
+#
 # ASDefinitions.rpy
 # AliceOS
 #
@@ -10,9 +10,9 @@ init -1000:
 
     # MARK: OS release definitions
     # These definitions are used as a means of identifying the current
-    # version of AliceOS provided with a 
+    # version of AliceOS provided with a
     define AS_SYS_INFO = {
-        "VERSION": "2.0.0",
+        "VERSION": "2.1.0",
         "COMMON_NAME": "Prospect Park",
         "BUILD_ID": "GITHASH"
     }
@@ -29,7 +29,7 @@ init -1000:
     define AS_LIBRARY_DIR = "System/Library/"
 
     init python:
-        
+
         # Get the framework directory from the framework name. This function
         # is intended to prevent re-typing of framework locations for typical
         # AliceOS frameworks.
