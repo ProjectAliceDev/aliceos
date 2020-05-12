@@ -2,7 +2,7 @@
 
 ![AliceOS Screenshot](images/hero.jpg)
 
-[![Latest release on GitHub](https://img.shields.io/github/v/release/projectalicedev/aliceos?include_prereleases)](https://github.com/hyperspacedev/hyperspace/releases) [![Build Status](https://github.com/ProjectAliceDev/aliceos/workflows/Build%20AliceOS%20Archive/badge.svg)](https://github.com/projectalicedev/aliceos/actions)
+[![Latest release on GitHub](https://img.shields.io/github/v/release/ProjectAliceDev/aliceos?include_prereleases)](https://github.com/ProjectAliceDev/aliceos/releases) [![Build Status](https://github.com/ProjectAliceDev/aliceos/workflows/Build%20AliceOS%20Archive/badge.svg)](https://github.com/ProjectAliceDev/aliceos/actions)
 
 AliceOS is a robust and evolving framework for developing interactive visual novel experiences with operating system-like features such as notifications and setup assistants.
 
