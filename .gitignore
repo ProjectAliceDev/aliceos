@@ -1,6 +1,7 @@
 game/saves/*
 game/cache/*
 game/**.rpyc
+game/**.rpymc
 game/script.rpy
 game/gui.rpy
 game/screens.rpy
