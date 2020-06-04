@@ -48,3 +48,6 @@ DerivedData/
 
 ## IDEA
 .idea/*
+
+## Other
+**/.DS_Store
