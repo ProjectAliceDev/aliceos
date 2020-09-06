@@ -70,6 +70,9 @@ init 10 python:
                 raise TypeError("Expected item to be ASInventoryItem, but received %s" % (type(item)))
 
         def useItem(self, item):
+            if not isinstance(item, ASInventoryItem):
+                raise TypeError("Expected item to be ASInventoryItem, but received %s" % (type(item)))
+
             if item in self.inventory:
                 shouldDispose = item.useItem()
 
