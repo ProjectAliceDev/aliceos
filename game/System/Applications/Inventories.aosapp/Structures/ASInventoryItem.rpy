@@ -19,7 +19,7 @@ init 10 python:
             self.itemId = itemId
 
         def __repr__(self):
-            return '<ASInventoryItem %s %s>' % (str(self.itemId), str(self.name))
+            return '<ASInventoryItem "%s" "%s">' % (str(self.itemId), str(self.name))
 
         def useItem(self):
             if self.canBeUsed:
