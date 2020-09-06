@@ -21,6 +21,14 @@ init 10 python:
         def __repr__(self):
             return '<ASInventoryItem "%s" "%s">' % (str(self.itemId), str(self.name))
 
+        def __eq__(self, other):
+            if not isinstance(other, ASInventoryItem):
+                return False
+            if self.itemId is None and other.itemId is None:
+                return self.name == other.name
+            else:
+                return self.itemId == other.itemId
+
         def useItem(self):
             if self.canBeUsed:
                 if self.runSpecialUseCase is not None:
