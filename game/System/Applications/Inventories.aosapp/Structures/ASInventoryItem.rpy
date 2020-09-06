@@ -18,6 +18,9 @@ init 10 python:
             self.imageName = imageName
             self.itemId = itemId
 
+        def __repr__(self):
+            return '<ASInventoryItem %s %s>' % (str(self.itemId), str(self.name))
+
         def useItem(self):
             if self.canBeUsed:
                 if self.runSpecialUseCase is not None:
